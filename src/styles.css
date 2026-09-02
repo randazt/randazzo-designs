@@ -1,0 +1,89 @@
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #f6f7f9;
+
+  --color-navy: #071526;
+  --color-navy-soft: #0d2138;
+
+  --color-blue: #315fd6;
+  --color-purple: #8256c8;
+  --color-teal: #16aaa7;
+  --color-orange: #ef7b2d;
+
+  --color-text: #121820;
+  --color-muted: #5d6673;
+  --color-border: #dde2e8;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 5rem;
+
+  --max-width: 1200px;
+}
+
+.site-header {
+  width: 100%;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-inner {
+  width: min(100% - 2rem, var(--max-width));
+  min-height: 76px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.brand {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-nav a {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.main-nav a:hover {
+  color: var(--color-blue);
+}
+
+.header-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+  padding: 0.75rem 1.1rem;
+
+  border-radius: var(--radius-sm);
+  background: var(--color-navy);
+  color: #ffffff;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.header-cta:hover {
+  background: var(--color-navy-soft);
+}

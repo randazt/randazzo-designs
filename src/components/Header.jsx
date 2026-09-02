@@ -1,0 +1,25 @@
+function Header() {
+  return (
+    <header className="site-header">
+      <div className="header-inner">
+        <a className="brand" href="/" aria-label="Randazzo Designs home">
+          Randazzo Designs
+        </a>
+
+        <nav className="main-nav" aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="#technology">Technology</a>
+          <a href="#awesomeverse">Awesomeverse</a>
+          <a href="#learn">Learn</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <a className="header-cta" href="#contact">
+          Book a Conversation
+        </a>
+      </div>
+    </header>
+  )
+}
+
+export default Header
