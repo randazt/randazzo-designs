@@ -4,6 +4,7 @@ import Hero from './sections/Hero'
 import Ecosystem from './sections/Ecosystem'
 import DaisyFeature from './sections/DaisyFeature'
 import WorkingTechnology from './sections/WorkingTechnology'
+import Awesomeverse from './sections/Awesomeverse'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Ecosystem />
         <DaisyFeature />
         <WorkingTechnology />
+        <Awesomeverse />
       </main>
     </>
   )

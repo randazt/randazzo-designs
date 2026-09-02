@@ -1196,3 +1196,360 @@ button:focus-visible {
     transform: none;
   }
 }
+
+/* =========================================================
+   AWESOMEVERSE
+   ========================================================= */
+
+.awesomeverse {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 80% 25%,
+      rgba(18, 104, 160, 0.18),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 18% 70%,
+      rgba(177, 50, 29, 0.12),
+      transparent 30%
+    ),
+    #050a10;
+
+  color: #ffffff;
+}
+
+.awesomeverse-inner {
+  width: min(100% - 2rem, var(--max-width));
+  margin: 0 auto;
+  padding: clamp(5rem, 9vw, 8rem) 0;
+}
+
+
+/* =========================================================
+   AWESOMEVERSE HEADING
+   ========================================================= */
+
+.awesomeverse-heading {
+  max-width: 760px;
+  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.awesomeverse-eyebrow {
+  margin: 0 0 1rem;
+
+  color: #66c8e8;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.awesomeverse-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+}
+
+.awesomeverse-intro {
+  max-width: 660px;
+  margin: 1.5rem 0 0;
+
+  color: #aebdca;
+
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   AWESOMEVERSE FEATURE
+   ========================================================= */
+
+.awesomeverse-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.75fr);
+
+  overflow: hidden;
+
+  border: 1px solid rgba(133, 168, 191, 0.24);
+  border-radius: var(--radius-lg);
+
+  background: #09121c;
+
+  box-shadow:
+    0 32px 80px rgba(0, 0, 0, 0.38),
+    0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+
+/* =========================================================
+   AWESOMEVERSE ARTWORK
+   ========================================================= */
+
+.awesomeverse-artwork {
+  position: relative;
+
+  min-height: 560px;
+  overflow: hidden;
+
+  background: #020508;
+}
+
+.awesomeverse-artwork img {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  inset: 0;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 700ms ease;
+}
+
+.awesomeverse-feature:hover .awesomeverse-artwork img {
+  transform: scale(1.018);
+}
+
+.awesomeverse-artwork-shade {
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent 58%,
+      rgba(5, 10, 16, 0.35) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(3, 7, 11, 0.28),
+      transparent 40%
+    );
+}
+
+
+/* =========================================================
+   AWESOMEVERSE STORY
+   ========================================================= */
+
+.awesomeverse-story {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: clamp(2rem, 4vw, 4rem);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(13, 29, 43, 0.98),
+      rgba(6, 15, 24, 0.98)
+    );
+}
+
+.awesomeverse-story::before {
+  content: "";
+
+  position: absolute;
+  top: 3rem;
+  left: 0;
+
+  width: 3px;
+  height: 80px;
+
+  background: linear-gradient(
+    to bottom,
+    #19a9c6,
+    #315fd6,
+    #d6502c
+  );
+}
+
+.awesomeverse-label {
+  margin: 0 0 1.25rem;
+
+  color: #ef7656;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.awesomeverse-story h3 {
+  margin: 0;
+
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.awesomeverse-story > p:not(.awesomeverse-label) {
+  margin: 1.5rem 0 0;
+
+  color: #b8c4cf;
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   AWESOMEVERSE LINKS
+   ========================================================= */
+
+.awesomeverse-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  margin-top: 2.25rem;
+}
+
+.awesomeverse-primary-link,
+.awesomeverse-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  font-weight: 800;
+
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.awesomeverse-primary-link {
+  padding-bottom: 0.3rem;
+
+  border-bottom: 1px solid #66c8e8;
+
+  color: #ffffff;
+}
+
+.awesomeverse-primary-link:hover {
+  color: #66c8e8;
+  transform: translateX(2px);
+}
+
+.awesomeverse-secondary-link {
+  color: #91a5b7;
+
+  font-size: 0.9rem;
+}
+
+.awesomeverse-secondary-link:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   AWESOMEVERSE FOOTER
+   ========================================================= */
+
+.awesomeverse-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+
+  border-top: 1px solid rgba(137, 165, 185, 0.2);
+
+  color: #758b9c;
+
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+
+/* =========================================================
+   AWESOMEVERSE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .awesomeverse-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .awesomeverse-artwork {
+    min-height: 440px;
+  }
+
+  .awesomeverse-story {
+    min-height: 400px;
+  }
+
+  .awesomeverse-artwork-shade {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(5, 10, 16, 0.55),
+        transparent 45%
+      );
+  }
+}
+
+@media (max-width: 600px) {
+  .awesomeverse-inner {
+    width: min(100% - 1.5rem, var(--max-width));
+    padding: 4.5rem 0;
+  }
+
+  .awesomeverse-heading h2 {
+    font-size: clamp(2.8rem, 14vw, 4rem);
+  }
+
+  .awesomeverse-feature {
+    border-radius: var(--radius-md);
+  }
+
+  .awesomeverse-artwork {
+    min-height: 300px;
+  }
+
+  .awesomeverse-story {
+    min-height: auto;
+    padding: 2.25rem 1.5rem 2.5rem;
+  }
+
+  .awesomeverse-story::before {
+    top: 2.25rem;
+    height: 60px;
+  }
+
+  .awesomeverse-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    line-height: 1.5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .awesomeverse-artwork img,
+  .awesomeverse-primary-link,
+  .awesomeverse-secondary-link {
+    transition: none;
+  }
+
+  .awesomeverse-feature:hover .awesomeverse-artwork img {
+    transform: none;
+  }
+}
