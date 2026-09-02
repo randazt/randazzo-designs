@@ -1,3 +1,5 @@
+import heroImg from '../assets/hero.png'
+
 function Hero() {
   return (
     <section className="hero">
@@ -27,10 +29,12 @@ function Hero() {
           </div>
         </div>
 
-        <div className="hero-visual" aria-hidden="true">
-          <div className="hero-visual-placeholder">
-            <span>Randazzo Designs</span>
-          </div>
+        <div className="hero-visual">
+          <img
+            className="hero-image"
+            src={heroImg}
+            alt="Randazzo Designs cube logo"
+          />
         </div>
       </div>
     </section>
