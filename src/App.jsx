@@ -5,6 +5,7 @@ import Ecosystem from './sections/Ecosystem'
 import DaisyFeature from './sections/DaisyFeature'
 import WorkingTechnology from './sections/WorkingTechnology'
 import Awesomeverse from './sections/Awesomeverse'
+import ServicesLearn from './sections/ServicesLearn'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <DaisyFeature />
         <WorkingTechnology />
         <Awesomeverse />
+        <ServicesLearn />
       </main>
     </>
   )
