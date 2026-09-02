@@ -99,6 +99,8 @@
    ========================================================= */
 
 .hero {
+  overflow: hidden;
+
   background:
     radial-gradient(
       circle at 75% 30%,
@@ -117,7 +119,7 @@
 
 .hero-inner {
   width: min(100% - 2rem, var(--max-width));
-  min-height: 520px;
+  min-height: 540px;
   margin: 0 auto;
   padding: var(--space-6) 0;
 
@@ -128,6 +130,8 @@
 }
 
 .hero-content {
+  position: relative;
+  z-index: 2;
   max-width: 650px;
 }
 
@@ -220,60 +224,210 @@
    ========================================================= */
 
 .hero-visual {
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  min-width: 0;
+}
+
+.hero-visual::before {
+  content: "";
+
+  position: absolute;
+
+  width: min(90%, 420px);
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(49, 95, 214, 0.16),
+    rgba(130, 86, 200, 0.08) 45%,
+    transparent 70%
+  );
+
+  pointer-events: none;
 }
 
 .hero-image {
+  position: relative;
+  z-index: 1;
+
   width: min(100%, 460px);
   height: auto;
 
   object-fit: contain;
 
   filter: drop-shadow(
-    0 24px 44px rgba(0, 0, 0, 0.32)
+    0 24px 44px rgba(0, 0, 0, 0.3)
   );
 }
 
 
-/* Temporary fallback if the placeholder is ever used again */
+/* =========================================================
+   ECOSYSTEM
+   ========================================================= */
 
-.hero-visual-placeholder {
-  width: min(100%, 430px);
-  aspect-ratio: 1 / 1;
+.ecosystem {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
 
-  display: grid;
-  place-items: center;
+.ecosystem-inner {
+  width: min(100% - 2rem, var(--max-width));
+  margin: 0 auto;
+  padding: var(--space-6) 0;
+}
 
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 28px;
+.ecosystem-heading {
+  max-width: 760px;
+}
 
-  background:
-    linear-gradient(
-      rgba(255, 255, 255, 0.04) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.04) 1px,
-      transparent 1px
-    ),
-    rgba(255, 255, 255, 0.025);
+.section-eyebrow {
+  margin: 0 0 var(--space-2);
 
-  background-size: 28px 28px;
+  color: var(--color-blue);
 
-  color: rgba(255, 255, 255, 0.5);
-
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
+}
+
+.ecosystem h2 {
+  margin: 0;
+
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.section-intro {
+  max-width: 680px;
+  margin: var(--space-3) 0 0;
+
+  color: var(--color-muted);
+
+  font-size: 1.08rem;
+  line-height: 1.7;
 }
 
 
 /* =========================================================
-   RESPONSIVE
+   ECOSYSTEM CARDS
    ========================================================= */
+
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+
+  margin-top: var(--space-5);
+}
+
+.ecosystem-card {
+  min-height: 280px;
+  padding: var(--space-3);
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  background: #ffffff;
+
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.ecosystem-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #cfd6df;
+
+  box-shadow:
+    0 18px 40px rgba(7, 21, 38, 0.08);
+}
+
+.ecosystem-icon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  flex: 0 0 auto;
+
+  border-radius: 50%;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.ecosystem-icon-blue {
+  background: rgba(49, 95, 214, 0.1);
+  color: var(--color-blue);
+}
+
+.ecosystem-icon-teal {
+  background: rgba(22, 170, 167, 0.1);
+  color: var(--color-teal);
+}
+
+.ecosystem-icon-purple {
+  background: rgba(130, 86, 200, 0.1);
+  color: var(--color-purple);
+}
+
+.ecosystem-icon-orange {
+  background: rgba(239, 123, 45, 0.1);
+  color: var(--color-orange);
+}
+
+.ecosystem-card h3 {
+  margin: var(--space-3) 0 var(--space-1);
+
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.ecosystem-card p {
+  margin: 0;
+
+  color: var(--color-muted);
+
+  line-height: 1.65;
+}
+
+.ecosystem-card a {
+  margin-top: auto;
+  padding-top: var(--space-3);
+
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.ecosystem-card a:hover {
+  color: var(--color-blue);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .ecosystem-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 @media (max-width: 900px) {
   .main-nav {
@@ -283,6 +437,7 @@
   .hero-inner {
     grid-template-columns: 1fr;
     min-height: auto;
+    gap: var(--space-4);
   }
 
   .hero-visual {
@@ -292,11 +447,12 @@
   .hero-image {
     width: min(100%, 340px);
   }
-
-  .hero-visual-placeholder {
-    width: min(100%, 320px);
-  }
 }
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
 
 @media (max-width: 600px) {
   .header-inner {
@@ -310,12 +466,12 @@
   .header-cta {
     min-height: 40px;
     padding: 0.65rem 0.85rem;
+
     font-size: 0.8rem;
   }
 
   .hero-inner {
     padding: var(--space-5) 0;
-    gap: var(--space-4);
   }
 
   .hero h1 {
@@ -334,6 +490,19 @@
   .button {
     width: 100%;
   }
+
+  .ecosystem-inner {
+    padding: var(--space-5) 0;
+  }
+
+  .ecosystem-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .ecosystem-card {
+    min-height: auto;
+  }
 }
 
 
@@ -347,7 +516,8 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
-.site-header a:focus-visible {
+.site-header a:focus-visible,
+.ecosystem a:focus-visible {
   outline-color: var(--color-blue);
 }
 
@@ -356,11 +526,13 @@ button:focus-visible {
     scroll-behavior: auto;
   }
 
-  .button {
+  .button,
+  .ecosystem-card {
     transition: none;
   }
 
-  .button:hover {
+  .button:hover,
+  .ecosystem-card:hover {
     transform: none;
   }
 }
