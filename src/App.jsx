@@ -6,6 +6,7 @@ import DaisyFeature from './sections/DaisyFeature'
 import WorkingTechnology from './sections/WorkingTechnology'
 import Awesomeverse from './sections/Awesomeverse'
 import ServicesLearn from './sections/ServicesLearn'
+import About from './sections/About'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <WorkingTechnology />
         <Awesomeverse />
         <ServicesLearn />
+        <About />
       </main>
     </>
   )
