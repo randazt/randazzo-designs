@@ -14,6 +14,14 @@
   --color-muted: #5d6673;
   --color-border: #dde2e8;
 
+  --daisy-cream: #fbfaf5;
+  --daisy-green: #082f24;
+  --daisy-green-mid: #17634c;
+  --daisy-green-soft: #eaf3ef;
+  --daisy-gold: #f2bd42;
+  --daisy-border: #d9d5c9;
+  --daisy-muted: #53645f;
+
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 22px;
@@ -132,6 +140,7 @@
 .hero-content {
   position: relative;
   z-index: 2;
+
   max-width: 650px;
 }
 
@@ -243,12 +252,13 @@
 
   border-radius: 50%;
 
-  background: radial-gradient(
-    circle,
-    rgba(49, 95, 214, 0.16),
-    rgba(130, 86, 200, 0.08) 45%,
-    transparent 70%
-  );
+  background:
+    radial-gradient(
+      circle,
+      rgba(49, 95, 214, 0.16),
+      rgba(130, 86, 200, 0.08) 45%,
+      transparent 70%
+    );
 
   pointer-events: none;
 }
@@ -262,9 +272,10 @@
 
   object-fit: contain;
 
-  filter: drop-shadow(
-    0 24px 44px rgba(0, 0, 0, 0.3)
-  );
+  filter:
+    drop-shadow(
+      0 24px 44px rgba(0, 0, 0, 0.3)
+    );
 }
 
 
@@ -420,7 +431,243 @@
 
 
 /* =========================================================
-   RESPONSIVE — TABLET
+   D.AI.SY FEATURE
+   ========================================================= */
+
+.daisy-feature {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(241, 185, 64, 0.13),
+      transparent 24%
+    ),
+    var(--daisy-cream);
+
+  color: var(--daisy-green);
+
+  border-top: 1px solid #e5e0d4;
+}
+
+.daisy-feature-inner {
+  width: min(100% - 2rem, var(--max-width));
+  margin: 0 auto;
+  padding: 6.5rem 0;
+}
+
+.daisy-feature-heading {
+  max-width: 760px;
+}
+
+.daisy-eyebrow {
+  margin: 0 0 1rem;
+
+  color: var(--daisy-green-mid);
+
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.daisy-feature h2 {
+  margin: 0;
+
+  font-size: clamp(3rem, 7vw, 5.75rem);
+  line-height: 0.94;
+  letter-spacing: -0.05em;
+}
+
+.daisy-intro {
+  max-width: 660px;
+  margin: 1.75rem 0 0;
+
+  color: var(--daisy-muted);
+
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.daisy-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+
+  border-bottom: 1px solid var(--daisy-green-mid);
+
+  color: #0b4938;
+
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.daisy-link:hover {
+  color: var(--daisy-green-mid);
+}
+
+
+/* =========================================================
+   D.AI.SY HUMAN AGENCY PROGRESSION
+   ========================================================= */
+
+.daisy-progression {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+
+  margin-top: 4.5rem;
+
+  border-top: 1px solid var(--daisy-border);
+  border-bottom: 1px solid var(--daisy-border);
+}
+
+.daisy-progression-item {
+  position: relative;
+
+  min-width: 0;
+}
+
+.daisy-stage {
+  min-height: 175px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1.5rem 1.25rem;
+}
+
+.daisy-stage-number {
+  color: #71817b;
+
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.daisy-stage-dot {
+  position: relative;
+
+  width: 46px;
+  height: 46px;
+
+  margin: 0.9rem 0 1rem;
+
+  border: 2px solid #0b4938;
+  border-radius: 50%;
+
+  background: #fffdf7;
+
+  box-shadow:
+    0 0 0 6px rgba(23, 99, 76, 0.05);
+}
+
+.daisy-stage-dot::after {
+  content: "";
+
+  position: absolute;
+  inset: 9px;
+
+  border-radius: 50%;
+
+  background: var(--daisy-gold);
+}
+
+.daisy-stage-title {
+  max-width: 145px;
+
+  color: var(--daisy-green);
+
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.daisy-stage-arrow {
+  position: absolute;
+  z-index: 3;
+
+  top: 50%;
+  right: -0.55rem;
+
+  transform: translateY(-50%);
+
+  color: var(--daisy-green-mid);
+
+  font-size: 1.45rem;
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   D.AI.SY AUTHORITY STATEMENT
+   ========================================================= */
+
+.daisy-authority-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 0.8rem 1rem;
+
+  padding: 1.4rem 1rem;
+
+  color: #0b4938;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.daisy-authority-line span:nth-child(even) {
+  color: #d49a1f;
+}
+
+
+/* =========================================================
+   D.AI.SY PRODUCT VISUAL
+   ========================================================= */
+
+.daisy-product-visual {
+  margin-top: 4rem;
+  padding: 0.7rem;
+
+  overflow: hidden;
+
+  border: 1px solid #ded9cd;
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  box-shadow:
+    0 24px 60px rgba(8, 47, 36, 0.08);
+}
+
+.daisy-product-image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 17px;
+
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+/* =========================================================
+   RESPONSIVE — DESKTOP / TABLET
    ========================================================= */
 
 @media (max-width: 1000px) {
@@ -446,6 +693,69 @@
 
   .hero-image {
     width: min(100%, 340px);
+  }
+
+  .daisy-feature-inner {
+    padding: 5rem 0;
+  }
+
+  .daisy-progression {
+    grid-template-columns: 1fr;
+
+    margin-top: 3.5rem;
+
+    border-bottom: 0;
+  }
+
+  .daisy-progression-item {
+    border-bottom: 1px solid var(--daisy-border);
+  }
+
+  .daisy-stage {
+    min-height: 88px;
+
+    display: grid;
+    grid-template-columns: 28px 46px minmax(0, 1fr);
+    align-items: center;
+    gap: 1rem;
+
+    padding: 0.9rem 0;
+  }
+
+  .daisy-stage-number {
+    font-size: 0.68rem;
+  }
+
+  .daisy-stage-dot {
+    width: 40px;
+    height: 40px;
+
+    margin: 0;
+  }
+
+  .daisy-stage-dot::after {
+    inset: 8px;
+  }
+
+  .daisy-stage-title {
+    max-width: none;
+
+    font-size: 0.86rem;
+  }
+
+  .daisy-stage-arrow {
+    display: none;
+  }
+
+  .daisy-authority-line {
+    justify-content: flex-start;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .daisy-product-visual {
+    margin-top: 3.5rem;
   }
 }
 
@@ -503,6 +813,65 @@
   .ecosystem-card {
     min-height: auto;
   }
+
+  .daisy-feature-inner {
+    padding: 4rem 0;
+  }
+
+  .daisy-feature h2 {
+    font-size: clamp(2.8rem, 14vw, 4rem);
+  }
+
+  .daisy-intro {
+    font-size: 1rem;
+  }
+
+  .daisy-progression {
+    margin-top: 3rem;
+  }
+
+  .daisy-stage {
+    min-height: 78px;
+
+    grid-template-columns: 24px 38px minmax(0, 1fr);
+    gap: 0.8rem;
+  }
+
+  .daisy-stage-dot {
+    width: 36px;
+    height: 36px;
+  }
+
+  .daisy-stage-dot::after {
+    inset: 7px;
+  }
+
+  .daisy-stage-title {
+    font-size: 0.8rem;
+  }
+
+  .daisy-authority-line {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.7rem;
+
+    font-size: 0.72rem;
+  }
+
+  .daisy-authority-line span:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .daisy-product-visual {
+    margin-top: 3rem;
+    padding: 0.45rem;
+
+    border-radius: 18px;
+  }
+
+  .daisy-product-image {
+    border-radius: 14px;
+  }
 }
 
 
@@ -517,7 +886,8 @@ button:focus-visible {
 }
 
 .site-header a:focus-visible,
-.ecosystem a:focus-visible {
+.ecosystem a:focus-visible,
+.daisy-feature a:focus-visible {
   outline-color: var(--color-blue);
 }
 
