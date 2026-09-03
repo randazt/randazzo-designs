@@ -1534,6 +1534,15 @@ button:focus-visible {
     height: 60px;
   }
 
+  .awesomeverse-actions {
+    gap: 1.35rem;
+    margin-top: 2rem;
+  }
+
+  .awesomeverse-secondary-link {
+    padding-top: 0.15rem;
+  }
+
   .awesomeverse-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2106,9 +2115,18 @@ button:focus-visible {
   }
 
   .about-journey span:nth-child(even) {
-    padding: 0.1rem 0 0.1rem 0.4rem;
-    transform: rotate(90deg);
-    transform-origin: left center;
+    width: max-content;
+    padding: 0.15rem 0;
+    color: var(--color-blue);
+    font-size: 0;
+    line-height: 1;
+    transform: none;
+  }
+
+  .about-journey span:nth-child(even)::before {
+    content: "↓";
+    font-size: 1rem;
+    font-weight: 800;
   }
 
   .about-milestone {
@@ -2359,6 +2377,17 @@ button:focus-visible {
     width: min(100% - 2rem, var(--max-width));
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+
+  .footer-projects {
+    gap: 0.35rem;
+  }
+
+  .footer-projects a {
+    display: block;
+    min-height: 32px;
+    padding: 0.35rem 0;
+    line-height: 1.4;
   }
 
   .footer-bottom {
