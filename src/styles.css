@@ -2409,3 +2409,311 @@ button:focus-visible {
     transform: none;
   }
 }
+
+/* ========================================
+   INTERACTIVE AI EXPERIENCES
+======================================== */
+
+.ai-experiences {
+  position: relative;
+  overflow: hidden;
+  padding: 7rem 1.5rem;
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(49, 95, 214, 0.14),
+      transparent 32rem
+    ),
+    var(--color-navy);
+  color: #ffffff;
+}
+
+.ai-experiences::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 85%);
+}
+
+.ai-experiences-inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, var(--max-width));
+  margin: 0 auto;
+}
+
+.ai-experiences-heading {
+  max-width: 760px;
+  margin-bottom: 4rem;
+}
+
+.ai-experiences .section-eyebrow {
+  color: #7da2ff;
+}
+
+.ai-experiences-heading h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(3rem, 6vw, 5.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.ai-experiences-intro {
+  max-width: 650px;
+  margin: 1.75rem 0 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.ai-experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.ai-experience-card {
+  --experience-accent: #7da2ff;
+
+  position: relative;
+  display: flex;
+  min-height: 330px;
+  flex-direction: column;
+  padding: 1.65rem;
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-lg);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+.ai-experience-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.65rem;
+  right: 1.65rem;
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    var(--experience-accent),
+    transparent
+  );
+}
+
+.ai-experience-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.24);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.095),
+      rgba(255, 255, 255, 0.035)
+    );
+}
+
+.ai-experience-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.ai-experience-orbit {
+  position: relative;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  place-items: center;
+
+  border: 1px solid color-mix(
+    in srgb,
+    var(--experience-accent) 65%,
+    transparent
+  );
+  border-radius: 50%;
+}
+
+.ai-experience-orbit::before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 16px;
+
+  border: 1px solid color-mix(
+    in srgb,
+    var(--experience-accent) 42%,
+    transparent
+  );
+  border-radius: 50%;
+
+  transform: rotate(-28deg);
+}
+
+.ai-experience-orbit span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--experience-accent);
+  box-shadow: 0 0 14px var(--experience-accent);
+}
+
+.ai-experience-descriptor {
+  margin: 0;
+  color: var(--experience-accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ai-experience-content {
+  margin-top: 2.25rem;
+}
+
+.ai-experience-content h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.45rem;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.ai-experience-content p {
+  margin: 1rem 0 0;
+  color: rgba(255, 255, 255, 0.66);
+  line-height: 1.65;
+}
+
+.ai-experience-link {
+  width: max-content;
+  margin-top: auto;
+  padding-top: 2rem;
+
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 800;
+
+  transition:
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+a.ai-experience-link:hover {
+  color: var(--experience-accent);
+  transform: translateX(3px);
+}
+
+.ai-experience-link-disabled {
+  color: rgba(255, 255, 255, 0.38);
+  cursor: default;
+}
+
+.ai-experiences-note {
+  max-width: 760px;
+  margin-top: 2rem;
+}
+
+.ai-experiences-note p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+
+/* Individual experience identities */
+
+.ai-experience-green {
+  --experience-accent: #79c7a5;
+}
+
+.ai-experience-blue {
+  --experience-accent: #7da2ff;
+}
+
+.ai-experience-purple {
+  --experience-accent: #b597f2;
+}
+
+.ai-experience-teal {
+  --experience-accent: #5fd4d0;
+}
+
+.ai-experience-orange {
+  --experience-accent: #f2a56d;
+}
+
+.ai-experience-red {
+  --experience-accent: #ef8b83;
+}
+
+.ai-experience-sky {
+  --experience-accent: #7fc8ef;
+}
+
+.ai-experience-pink {
+  --experience-accent: #e4a3d5;
+}
+
+.ai-experience-uncanny {
+  --experience-accent: #c8c2b8;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .ai-experiences {
+    padding: 5.5rem 1.5rem;
+  }
+
+  .ai-experiences-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .ai-experiences {
+    padding: 4.5rem 1.25rem;
+  }
+
+  .ai-experiences-heading {
+    margin-bottom: 2.75rem;
+  }
+
+  .ai-experiences-heading h2 {
+    font-size: clamp(2.75rem, 15vw, 4rem);
+  }
+
+  .ai-experiences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-experience-card {
+    min-height: 0;
+  }
+
+  .ai-experience-link {
+    padding-top: 1.75rem;
+  }
+}
