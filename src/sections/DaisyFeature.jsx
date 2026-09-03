@@ -1,4 +1,4 @@
-import daisyInterface from '../assets/daisy-interface.png'
+import daisyInterface from '../assets/daisy-interface.webp'
 
 function DaisyFeature() {
   const progression = [

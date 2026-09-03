@@ -1,4 +1,4 @@
-import awesomeverseHero from '../assets/awesomeverse-hero.png'
+import awesomeverseHero from '../assets/awesomeverse-hero.webp'
 
 function Awesomeverse() {
   return (
