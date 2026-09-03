@@ -14,7 +14,12 @@ function Header() {
           <a href="#about">About</a>
         </nav>
 
-        <a className="header-cta" href="#contact">
+        <a
+          className="header-cta"
+          href="https://cal.com/randazzo-designs/conversation"
+          target="_blank"
+          rel="noreferrer"
+        >
           Book a Conversation
         </a>
       </div>

@@ -7,6 +7,7 @@ import WorkingTechnology from './sections/WorkingTechnology'
 import Awesomeverse from './sections/Awesomeverse'
 import ServicesLearn from './sections/ServicesLearn'
 import About from './sections/About'
+import SiteFooter from './sections/SiteFooter'
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <ServicesLearn />
         <About />
       </main>
+
+      <SiteFooter />
     </>
   )
 }
