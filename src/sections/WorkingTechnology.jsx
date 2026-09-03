@@ -14,9 +14,9 @@ function WorkingTechnology() {
     },
     {
       number: '03',
-      title: 'Information & Experience Design',
+      title: 'Web, Information & Experience Design',
       description:
-        'Information architecture, UX/UI, visual communication, interactive media, and web design grounded in communication and information design.',
+        'Information architecture, UX/UI, responsive web design, visual communication, interactive media, and digital experiences grounded in communication and information design.',
     },
   ]
 
@@ -59,18 +59,19 @@ function WorkingTechnology() {
 
             <p>
               Current work includes D.AI.SY, creative AI systems, agentic
-              workflows, digital publishing systems, interactive experiences,
-              and purpose-built assistants supporting research, storytelling,
-              design, production, and operations.
+              workflows, responsive websites, digital publishing systems,
+              interactive experiences, and purpose-built assistants supporting
+              research, storytelling, design, production, and operations.
             </p>
           </div>
 
           <div className="technology-proof-tags" aria-label="Technology areas">
             <span>Human-in-the-loop AI</span>
             <span>Agentic workflows</span>
-            <span>Interactive systems</span>
+            <span>Responsive web design</span>
+            <span>UX/UI</span>
             <span>Information design</span>
-            <span>Web experiences</span>
+            <span>Interactive systems</span>
             <span>Creative tooling</span>
           </div>
         </div>

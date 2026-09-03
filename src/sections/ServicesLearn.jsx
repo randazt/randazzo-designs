@@ -2,9 +2,9 @@ function ServicesLearn() {
   const services = [
     {
       number: '01',
-      title: 'Creative & Information Design',
+      title: 'Web Design & Digital Experiences',
       description:
-        'Branding, graphic design, information design, UX/UI, web experiences, and visual communication shaped for clarity and use.',
+        'Responsive websites and digital experiences built around clear information architecture, thoughtful UX/UI, visual communication, accessibility, and performance.',
     },
     {
       number: '02',
@@ -75,7 +75,12 @@ function ServicesLearn() {
             </p>
           </div>
 
-          <a className="services-learn-button" href="#contact">
+          <a
+            className="services-learn-button"
+            href="https://cal.com/randazzo-designs/conversation"
+            target="_blank"
+            rel="noreferrer"
+          >
             Book a Conversation
             <span aria-hidden="true"> →</span>
           </a>
