@@ -13,8 +13,8 @@ const experiences = [
     descriptor: 'AI Design Collaborator',
     description:
       'A senior-level design partner grounded in UX psychology, cognitive science, visual hierarchy, accessibility, branding systems, web design, and rationale-driven critique.',
-    href: null,
-    cta: 'Public link coming soon',
+    href: 'https://chatgpt.com/g/g-691fb42b3aa88191ba5291ce59554971-creative-systems-assistant',
+    cta: 'Explore Creative Systems',
     accent: 'blue',
   },
   {
@@ -124,21 +124,15 @@ function AIExperiences() {
                 <p>{experience.description}</p>
               </div>
 
-              {experience.href ? (
-                <a
-                  className="ai-experience-link"
-                  href={experience.href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {experience.cta}
-                  <span aria-hidden="true"> ↗</span>
-                </a>
-              ) : (
-                <span className="ai-experience-link ai-experience-link-disabled">
-                  {experience.cta}
-                </span>
-              )}
+              <a
+                className="ai-experience-link"
+                href={experience.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {experience.cta}
+                <span aria-hidden="true"> ↗</span>
+              </a>
             </article>
           ))}
         </div>
