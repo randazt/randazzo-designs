@@ -1,19 +1,16 @@
 function WorkingTechnology() {
   const capabilityGroups = [
     {
-      number: '01',
       title: 'Creative Systems',
       description:
         'Interactive experiences, digital tools, web interfaces, and structured systems designed to turn ideas into usable experiences.',
     },
     {
-      number: '02',
       title: 'AI & Agentic Systems',
       description:
         'Human-directed AI workflows, generative AI systems, prompt and system design, and agent-based applications built around practical use.',
     },
     {
-      number: '03',
       title: 'Web, Information & Experience Design',
       description:
         'Information architecture, UX/UI, responsive web design, visual communication, interactive media, and digital experiences grounded in communication and information design.',
@@ -42,8 +39,6 @@ function WorkingTechnology() {
         <div className="working-technology-grid">
           {capabilityGroups.map((group) => (
             <article className="technology-card" key={group.title}>
-              <span className="technology-card-number">{group.number}</span>
-
               <h3>{group.title}</h3>
 
               <p>{group.description}</p>

@@ -1,25 +1,21 @@
 function ServicesLearn() {
   const services = [
     {
-      number: '01',
       title: 'Web Design & Digital Experiences',
       description:
         'Responsive websites and digital experiences built around clear information architecture, thoughtful UX/UI, visual communication, accessibility, and performance.',
     },
     {
-      number: '02',
       title: 'AI & Creative Technology',
       description:
         'Generative and agentic AI systems, human-directed workflows, prompt and system design, interactive tools, and AI-enhanced creative work.',
     },
     {
-      number: '03',
       title: 'Media & Storytelling',
       description:
         'Visual storytelling, content development, video and media production, interactive experiences, and original creative development.',
     },
     {
-      number: '04',
       title: 'Education & Knowledge',
       description:
         'Practical AI education, guides, learning resources, and systems that help people understand and use emerging technology.',
@@ -48,8 +44,6 @@ function ServicesLearn() {
         <div className="services-learn-grid">
           {services.map((service) => (
             <article className="service-learn-card" key={service.title}>
-              <span className="service-learn-number">{service.number}</span>
-
               <h3>{service.title}</h3>
 
               <p>{service.description}</p>

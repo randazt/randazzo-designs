@@ -28,17 +28,21 @@ function DaisyFeature() {
     <section className="daisy-feature" id="daisy">
       <div className="daisy-feature-inner">
         <div className="daisy-feature-heading">
-          <p className="daisy-eyebrow">D.AI.SY · Human Agency Platform</p>
+          <p className="daisy-eyebrow">
+            D.AI.SY — Daily AI Systems
+          </p>
 
           <h2>
-            AI assists.
+            AI Assists.
             <br />
-            Humans decide.
+            Humans Decide.
           </h2>
 
           <p className="daisy-intro">
             D.AI.SY helps people move from cognitive friction toward clarity,
-            agency, useful workflows, and explicitly authorized action.
+            agency, useful everyday workflows, and explicitly authorized
+            action—supporting better productivity, cognition, accessibility,
+            and human agency.
           </p>
 
           <a
@@ -71,21 +75,24 @@ function DaisyFeature() {
           ))}
         </div>
 
-        <div className="daisy-authority-line">
+        <div
+          className="daisy-authority-line"
+          aria-label="D.AI.SY human authorization model"
+        >
           <span>AI assists</span>
           <span aria-hidden="true">→</span>
           <span>Human understands</span>
           <span aria-hidden="true">→</span>
           <span>Human decides</span>
           <span aria-hidden="true">→</span>
-          <span>AI acts with authority</span>
+          <span>AI acts when authorized</span>
         </div>
 
         <div className="daisy-product-visual">
           <img
             className="daisy-product-image"
             src={daisyInterface}
-            alt="D.AI.SY product interface showing human-directed support and an example workspace"
+            alt="D.AI.SY — Daily AI Systems interface showing human-directed support and an example workspace"
           />
         </div>
       </div>

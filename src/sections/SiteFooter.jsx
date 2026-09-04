@@ -82,6 +82,15 @@ function SiteFooter() {
           <div className="footer-location">
             <p>Based on Florida’s Suncoast.</p>
             <p>Working wherever ideas travel.</p>
+
+            <a
+              className="footer-linkedin"
+              href="https://www.linkedin.com/in/thaddeus-randazzo-48a66b6a/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Connect on LinkedIn ↗
+            </a>
           </div>
         </div>
 
