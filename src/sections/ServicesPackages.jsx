@@ -208,18 +208,20 @@ function ServicesPackages() {
                       <p className="service-engagement-price">
                         {engagement.price}
                       </p>
-
-                      <a
-                        href="https://cal.com/randazzo-designs/conversation"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Discuss this engagement
-                        <span aria-hidden="true"> →</span>
-                      </a>
                     </div>
                   </article>
                 ))}
+              </div>
+
+              <div className="service-pillar-cta">
+                <a
+                  href="https://cal.com/randazzo-designs/conversation"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Discuss your project
+                  <span aria-hidden="true"> →</span>
+                </a>
               </div>
             </section>
           ))}

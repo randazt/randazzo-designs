@@ -6,6 +6,7 @@ import DaisyFeature from './sections/DaisyFeature'
 import WorkingTechnology from './sections/WorkingTechnology'
 import AIExperiences from './sections/AIExperiences'
 import Awesomeverse from './sections/Awesomeverse'
+import SelectedWork from './sections/SelectedWork'
 import ServicesPackages from './sections/ServicesPackages'
 import ServicesLearn from './sections/ServicesLearn'
 import About from './sections/About'
@@ -23,6 +24,7 @@ function App() {
         <WorkingTechnology />
         <AIExperiences />
         <Awesomeverse />
+        <SelectedWork />
         <ServicesPackages />
         <ServicesLearn />
         <About />
