@@ -8,6 +8,7 @@ import AIExperiences from './sections/AIExperiences'
 import Awesomeverse from './sections/Awesomeverse'
 import SelectedWork from './sections/SelectedWork'
 import ServicesPackages from './sections/ServicesPackages'
+import HowWeWork from './sections/HowWeWork'
 import ServicesLearn from './sections/ServicesLearn'
 import About from './sections/About'
 import ProjectNavigator from './sections/ProjectNavigator'
@@ -27,6 +28,7 @@ function App() {
         <Awesomeverse />
         <SelectedWork />
         <ServicesPackages />
+        <HowWeWork />
         <ServicesLearn />
         <About />
         <ProjectNavigator />

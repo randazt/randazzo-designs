@@ -4115,3 +4115,278 @@ a.ai-experience-link:hover {
     transform: none;
   }
 }
+
+/* =========================================================
+   HOW WE WORK
+   ========================================================= */
+
+.how-we-work {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 88% 12%,
+      rgba(49, 95, 214, 0.08),
+      transparent 30rem
+    ),
+    #ffffff;
+
+  color: var(--color-text);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.how-we-work-inner {
+  width: min(100% - 2rem, var(--max-width));
+  margin: 0 auto;
+  padding: clamp(5.5rem, 9vw, 8rem) 0;
+}
+
+
+/* =========================================================
+   HOW WE WORK HEADING
+   ========================================================= */
+
+.how-we-work-heading {
+  max-width: 820px;
+}
+
+.how-we-work-heading h2 {
+  margin: 0;
+
+  color: var(--color-navy);
+
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.how-we-work-intro {
+  max-width: 700px;
+  margin: 1.75rem 0 0;
+
+  color: var(--color-muted);
+
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   HOW WE WORK STAGES
+   ========================================================= */
+
+.how-we-work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+
+  margin-top: 4rem;
+}
+
+.how-we-work-stage {
+  position: relative;
+
+  min-height: 250px;
+  padding: 1.75rem;
+
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      rgba(246, 247, 249, 0.72)
+    );
+
+  box-shadow:
+    0 12px 30px rgba(18, 24, 32, 0.04);
+
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.how-we-work-stage::before {
+  content: "";
+
+  position: absolute;
+  top: -1px;
+  left: 1.75rem;
+
+  width: 3.5rem;
+  height: 3px;
+
+  background: var(--color-blue);
+}
+
+.how-we-work-stage:nth-child(2)::before {
+  background: var(--color-teal);
+}
+
+.how-we-work-stage:nth-child(3)::before {
+  background: var(--color-purple);
+}
+
+.how-we-work-stage:nth-child(4)::before {
+  background: var(--color-orange);
+}
+
+.how-we-work-stage:nth-child(5)::before {
+  background: var(--color-blue);
+}
+
+.how-we-work-stage:nth-child(6)::before {
+  background: var(--color-teal);
+}
+
+.how-we-work-stage:hover {
+  transform: translateY(-3px);
+
+  border-color: #c9d2dd;
+
+  box-shadow:
+    0 18px 38px rgba(18, 24, 32, 0.07);
+}
+
+.how-we-work-stage h3 {
+  margin: 2.25rem 0 0.85rem;
+
+  color: var(--color-navy);
+
+  font-size: 1.4rem;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.how-we-work-stage p {
+  margin: 0;
+
+  color: var(--color-muted);
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   HOW WE WORK PRINCIPLE
+   ========================================================= */
+
+.how-we-work-principle {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+
+  margin-top: 1rem;
+  padding: clamp(2rem, 4vw, 3rem);
+
+  border-radius: var(--radius-lg);
+
+  background:
+    radial-gradient(
+      circle at 88% 20%,
+      rgba(49, 95, 214, 0.18),
+      transparent 24rem
+    ),
+    var(--color-navy);
+
+  color: #ffffff;
+}
+
+.how-we-work-label {
+  margin: 0 0 0.8rem;
+
+  color: #8faeff;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.how-we-work-principle h3 {
+  margin: 0;
+
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.how-we-work-principle > p {
+  margin: 0;
+
+  color: #c4cfdd;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   HOW WE WORK RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .how-we-work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .how-we-work-principle {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .how-we-work-inner {
+    width: min(100% - 1.5rem, var(--max-width));
+    padding: 4.5rem 0;
+  }
+
+  .how-we-work-heading h2 {
+    font-size: clamp(2.8rem, 14vw, 4rem);
+  }
+
+  .how-we-work-intro {
+    font-size: 1rem;
+  }
+
+  .how-we-work-grid {
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
+
+  .how-we-work-stage {
+    min-height: auto;
+    padding: 1.5rem;
+  }
+
+  .how-we-work-stage::before {
+    left: 1.5rem;
+  }
+
+  .how-we-work-stage h3 {
+    margin-top: 1.8rem;
+  }
+
+  .how-we-work-principle {
+    padding: 1.75rem;
+  }
+}
+
+
+/* =========================================================
+   HOW WE WORK MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .how-we-work-stage {
+    transition: none;
+  }
+
+  .how-we-work-stage:hover {
+    transform: none;
+  }
+}
