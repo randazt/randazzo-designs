@@ -10,6 +10,7 @@ import SelectedWork from './sections/SelectedWork'
 import ServicesPackages from './sections/ServicesPackages'
 import ServicesLearn from './sections/ServicesLearn'
 import About from './sections/About'
+import ProjectNavigator from './sections/ProjectNavigator'
 import SiteFooter from './sections/SiteFooter'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <ServicesPackages />
         <ServicesLearn />
         <About />
+        <ProjectNavigator />
       </main>
 
       <SiteFooter />
