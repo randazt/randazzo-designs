@@ -75,7 +75,7 @@ function SiteFooter() {
               target="_blank"
               rel="noreferrer"
             >
-              Cinema Building Agent ↗
+              STUDIO//ONE ↗
             </a>
           </div>
 

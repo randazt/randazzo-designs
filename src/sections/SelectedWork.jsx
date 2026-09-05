@@ -11,6 +11,16 @@ function SelectedWork() {
       linkLabel: 'Explore D.AI.SY',
     },
     {
+      eyebrow: 'Agentic Creative Technology',
+      title: 'STUDIO//ONE',
+      description:
+        'A production-coordination system designed for one-person creative teams, bringing structured workflows, persistent production context, AI-assisted reasoning, and human approval into a connected creative process.',
+      proof:
+        'Agentic workflow design, production systems, persistent production memory, human approval controls, AI-assisted reasoning, interface design, and cloud implementation.',
+      href: 'https://studio.randazzodesignsai.com',
+      linkLabel: 'Explore STUDIO//ONE',
+    },
+    {
       eyebrow: 'Web & Digital Systems',
       title: 'Randazzo Designs',
       description:
