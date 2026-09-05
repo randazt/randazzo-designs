@@ -2094,9 +2094,15 @@ button:focus-visible {
     padding-left: 1rem;
   }
 
-  .about-heading h2 br {
-    display: none;
-  }
+  .about-heading h2 {
+  font-size: 2.25rem;
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+}
+
+.about-heading h2 br {
+  display: none;
+}
 
   .about-journey {
     grid-template-columns: 1fr;
@@ -4141,6 +4147,20 @@ a.ai-experience-link:hover {
   width: min(100% - 2rem, var(--max-width));
   margin: 0 auto;
   padding: clamp(5.5rem, 9vw, 8rem) 0;
+}
+
+.how-we-work-principle h3 {
+  margin: 0;
+
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.how-we-work-dash {
+  display: inline-block;
+  margin-left: -0.08em;
+  margin-right: -0.02em;
 }
 
 
