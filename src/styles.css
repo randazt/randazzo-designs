@@ -1010,7 +1010,7 @@
   }
 
   .header-cta {
-    min-height: 40px;
+    min-height: 44px;
     padding: 0.65rem 0.85rem;
 
     font-size: 0.8rem;
@@ -2379,11 +2379,12 @@ button:focus-visible {
   }
 
   .footer-projects a {
-    display: block;
-    min-height: 32px;
-    padding: 0.35rem 0;
-    line-height: 1.4;
-  }
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.35rem 0;
+  line-height: 1.4;
+}
 
   .footer-bottom {
     width: min(100% - 2rem, var(--max-width));
