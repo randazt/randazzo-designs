@@ -905,13 +905,37 @@
 
 @media (max-width: 900px) {
   .main-nav {
-    display: none;
-  }
+  order: 3;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.25rem;
+
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.main-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+
+  font-size: 0.82rem;
+  text-align: center;
+}
 
   .hero-inner {
     grid-template-columns: 1fr;
     min-height: auto;
     gap: var(--space-4);
+  }
+
+  .header-inner {
+  flex-wrap: wrap;
+  padding: 0.65rem 0;
   }
 
   .hero-visual {
