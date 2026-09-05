@@ -4561,3 +4561,24 @@ a.ai-experience-link:hover {
     transition: none;
   }
 }
+
+/* =========================================================
+   ACCESSIBILITY — CONTRAST REFINEMENTS
+   ========================================================= */
+
+.daisy-stage-number {
+  color: #596a64;
+}
+
+.daisy-authority-line span:nth-child(even) {
+  color: #9a6a00;
+}
+
+.footer-nav > p,
+.footer-projects > p {
+  color: #7f8ea1;
+}
+
+.ai-experiences-note p {
+  color: rgba(255, 255, 255, 0.56);
+}
