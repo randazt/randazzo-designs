@@ -19,7 +19,7 @@ function Hero() {
           </p>
 
           <div className="hero-actions">
-            <a className="button button-primary" href="#work">
+            <a className="button button-primary" href="#selected-work">
               Explore Our Work
             </a>
 

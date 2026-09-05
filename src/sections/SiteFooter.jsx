@@ -52,7 +52,7 @@ function SiteFooter() {
 
           <nav className="footer-nav" aria-label="Footer navigation">
             <p>Explore</p>
-            <a href="#work">Work</a>
+            <a href="#selected-work">Work</a>
             <a href="#technology">Technology</a>
             <a href="#awesomeverse">Awesomeverse</a>
             <a href="#learn">Learn</a>

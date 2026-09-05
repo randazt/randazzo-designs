@@ -51,19 +51,11 @@ function Awesomeverse() {
             <div className="awesomeverse-actions">
               <a
                 className="awesomeverse-primary-link"
-                href="#awesomeverse-work"
-              >
-                Explore the Awesomeverse
-                <span aria-hidden="true"> →</span>
-              </a>
-
-              <a
-                className="awesomeverse-secondary-link"
                 href="https://www.youtube.com/@thaawesomeverse"
                 target="_blank"
                 rel="noreferrer"
               >
-                Watch on YouTube
+                Watch the Awesomeverse
                 <span aria-hidden="true"> ↗</span>
               </a>
             </div>
