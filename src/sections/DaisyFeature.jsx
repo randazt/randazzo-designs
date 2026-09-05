@@ -56,6 +56,7 @@ function DaisyFeature() {
 
         <div
           className="daisy-progression"
+          role="group"
           aria-label="D.AI.SY human agency progression"
         >
           {progression.map((stage, index) => (
@@ -77,6 +78,7 @@ function DaisyFeature() {
 
         <div
           className="daisy-authority-line"
+          role="group"
           aria-label="D.AI.SY human authorization model"
         >
           <span>AI assists</span>

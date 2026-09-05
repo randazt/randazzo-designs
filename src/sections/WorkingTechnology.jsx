@@ -60,7 +60,11 @@ function WorkingTechnology() {
             </p>
           </div>
 
-          <div className="technology-proof-tags" aria-label="Technology areas">
+          <div
+            className="technology-proof-tags"
+            role="group"
+            aria-label="Technology areas"
+          >
             <span>Human-in-the-loop AI</span>
             <span>Agentic workflows</span>
             <span>Responsive web design</span>
