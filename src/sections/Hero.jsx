@@ -33,7 +33,7 @@ function Hero() {
           <img
             className="hero-image"
             src={heroImg}
-            alt="Randazzo Designs cube logo"
+            alt=""
           />
         </div>
       </div>
