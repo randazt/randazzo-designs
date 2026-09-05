@@ -20,7 +20,7 @@ const servicePillars = [
         title: 'Custom Digital Experience',
         price: 'Starting at $6,000',
         description:
-          'A purpose-built digital experience for projects requiring custom interaction, systems architecture, specialized workflows, integrations, AI-assisted functionality, or more complex implementation.',
+          'A purpose-built digital experience for projects that go beyond a conventional website—combining custom interaction, workflows, systems architecture, integrations, AI-assisted functionality, or specialized implementation around a defined user or business need.',
       },
     ],
   },
@@ -80,25 +80,25 @@ const servicePillars = [
   {
     category: 'AI Workforce Enablement',
     statement:
-      'Build practical AI capability across teams while supporting understanding, responsible use, and human decision-making.',
+      'Build practical AI capability through role-relevant instruction, workflow guidance, visual learning resources, responsible use, and meaningful human decision-making.',
     engagements: [
       {
         title: 'AI Workforce Workshop',
         price: 'Remote from $1,500',
         description:
-          'Customized practical training built around real roles, workflows, use cases, exercises, and responsible-use guidance.',
+          'Customized practical training built around real roles, workflows, use cases, guided exercises, demonstrations, and responsible-use guidance.',
       },
       {
         title: 'On-Site Workshop Delivery',
         price: 'Starting at $2,500',
         description:
-          'The workforce workshop delivered in person with scope adjusted for location, participant needs, and organizational requirements.',
+          'The workforce workshop delivered in person with scope adjusted for location, participant needs, organizational requirements, and appropriate instructional materials.',
       },
       {
         title: 'AI Enablement Program',
         price: 'Starting at $5,000',
         description:
-          'A multi-stage engagement combining assessment, learning, workflow development, implementation guidance, and follow-up support.',
+          'A multi-stage engagement combining assessment, learning, workflow development, tutorials, visual and instructional resources, implementation guidance, and follow-up support.',
       },
     ],
   },
