@@ -11,6 +11,7 @@ import ServicesPackages from './sections/ServicesPackages'
 import HowWeWork from './sections/HowWeWork'
 import ServicesLearn from './sections/ServicesLearn'
 import About from './sections/About'
+import FAQ from './sections/FAQ'
 import ProjectNavigator from './sections/ProjectNavigator'
 import SiteFooter from './sections/SiteFooter'
 
@@ -31,6 +32,7 @@ function App() {
         <HowWeWork />
         <ServicesLearn />
         <About />
+        <FAQ />
         <ProjectNavigator />
       </main>
 
