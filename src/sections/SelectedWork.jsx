@@ -52,6 +52,7 @@ const projects = [
       'A collection of purpose-built AI assistants designed around specific roles, workflows, knowledge domains, and user needs through structured guidance, guardrails, and human-directed interaction.',
     capabilities:
       'Cognitive support, accessibility, design collaboration, research and analysis, operational guidance, creative production, learning, and specialized workflow support.',
+    caseStudyHref: '/work/ai-assistants',
     href: '#ai-experiences',
     linkLabel: 'Explore AI Experiences',
     accent: 'teal',
