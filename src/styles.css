@@ -11789,28 +11789,6 @@ a.ai-experience-link:hover {
   padding: 0.8rem 0.9rem;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
-  outline: none;
-  background: rgba(255, 255, 255, 0.045);
-  color: #ffffff;
-  font: inherit;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  transition:
-    border-color 160ms ease,
-    box-shadow 160ms ease;
-}
-
-.daisy-concierge__form textarea::placeholder {
-  color: #697687;
-}
-
-.daisy-concierge__form textarea {
-  width: 100%;
-  min-height: 78px;
-  resize: vertical;
-  padding: 0.8rem 0.9rem;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 8px;
   background: rgba(255, 255, 255, 0.045);
   color: #ffffff;
   font: inherit;
@@ -11834,6 +11812,22 @@ a.ai-experience-link:hover {
   outline-offset: 3px;
   border-color: #44c9bd;
   box-shadow: 0 0 0 3px rgba(68, 201, 189, 0.16);
+}
+
+.daisy-concierge__form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.daisy-concierge__form-footer p {
+  max-width: 235px;
+  margin: 0;
+  color: #6f7c8e;
+  font-size: 0.67rem;
+  line-height: 1.4;
 }
 
 .daisy-concierge__form-footer button {
