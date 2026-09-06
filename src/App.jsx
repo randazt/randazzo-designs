@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 import './styles.css'
+
 import Header from './components/Header'
+
 import Hero from './sections/Hero'
 import Ecosystem from './sections/Ecosystem'
 import DaisyFeature from './sections/DaisyFeature'
@@ -15,6 +17,8 @@ import About from './sections/About'
 import FAQ from './sections/FAQ'
 import ProjectNavigator from './sections/ProjectNavigator'
 import SiteFooter from './sections/SiteFooter'
+
+import DaisyCaseStudy from './case-studies/DaisyCaseStudy'
 
 function HomePage() {
   return (
@@ -39,14 +43,6 @@ function HomePage() {
 
       <SiteFooter />
     </>
-  )
-}
-
-function DaisyCaseStudy() {
-  return (
-    <main>
-      <h1>D.AI.SY Case Study</h1>
-    </main>
   )
 }
 
