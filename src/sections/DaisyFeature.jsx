@@ -48,6 +48,8 @@ function DaisyFeature() {
           <a
             className="daisy-link"
             href="https://daisy.randazzodesignsai.com"
+            target="_blank"
+            rel="noreferrer"
           >
             Explore D.AI.SY
             <span aria-hidden="true"> →</span>
