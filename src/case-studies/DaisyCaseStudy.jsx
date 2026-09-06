@@ -74,7 +74,7 @@ function DaisyCaseStudy() {
   ]
 
   return (
-    <article className="case-study case-study--daisy">
+    <main className="case-study case-study--daisy">
       <header className="case-study-hero">
         <div className="case-study-hero-inner">
           <p className="section-eyebrow">
@@ -467,7 +467,7 @@ function DaisyCaseStudy() {
           </div>
         </div>
       </section>
-    </article>
+    </main>
   )
 }
 

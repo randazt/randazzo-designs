@@ -53,8 +53,12 @@ function DaisyConcierge() {
       return
     }
 
+    const prefersReducedMotion = window.matchMedia(
+      '(prefers-reduced-motion: reduce)'
+    ).matches
+
     messagesEndRef.current?.scrollIntoView({
-      behavior: 'smooth',
+      behavior: prefersReducedMotion ? 'auto' : 'smooth',
       block: 'end',
     })
   }, [messages, isSending, isOpen])
