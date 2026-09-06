@@ -1,4 +1,4 @@
-import heroImg from '../assets/randazzo-cube.png'
+import heroImg from '../assets/randazzo-designs-logo.png'
 
 function Hero() {
   return (
@@ -33,7 +33,7 @@ function Hero() {
           <img
             className="hero-image"
             src={heroImg}
-            alt=""
+            alt="Randazzo Designs logo"
           />
         </div>
       </div>

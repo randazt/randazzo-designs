@@ -267,7 +267,9 @@
   position: relative;
   z-index: 1;
 
-  width: min(100%, 460px);
+  display: block;
+
+  width: min(100%, 540px);
   height: auto;
 
   object-fit: contain;
