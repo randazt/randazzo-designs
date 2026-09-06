@@ -16,6 +16,7 @@ import ServicesLearn from './sections/ServicesLearn'
 import About from './sections/About'
 import FAQ from './sections/FAQ'
 import ProjectNavigator from './sections/ProjectNavigator'
+import SocialNetwork from './sections/SocialNetwork'
 import SiteFooter from './sections/SiteFooter'
 
 import DaisyCaseStudy from './case-studies/DaisyCaseStudy'
@@ -28,7 +29,6 @@ function HomePage() {
   return (
     <>
       <Header />
-
       <main>
         <Hero />
         <Ecosystem />
@@ -43,8 +43,8 @@ function HomePage() {
         <About />
         <FAQ />
         <ProjectNavigator />
+        <SocialNetwork />
       </main>
-
       <SiteFooter />
     </>
   )
@@ -54,24 +54,16 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-
       <Route path="/work/daisy" element={<DaisyCaseStudy />} />
-
-      <Route
-        path="/work/studio-one"
-        element={<StudioOneCaseStudy />}
-      />
-
+      <Route path="/work/studio-one" element={<StudioOneCaseStudy />} />
       <Route
         path="/work/ai-assistants"
         element={<AIAssistantsCaseStudy />}
       />
-
       <Route
         path="/work/randazzo-designs"
         element={<RandazzoDesignsCaseStudy />}
       />
-
       <Route
         path="/work/awesomeverse"
         element={<AwesomeverseCaseStudy />}
