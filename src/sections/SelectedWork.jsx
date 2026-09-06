@@ -30,6 +30,7 @@ const projects = [
       'A responsive digital ecosystem bringing together professional services, creative technology, AI systems, education, and original intellectual property.',
     capabilities:
       'Information architecture, responsive UX, visual communication, frontend development, service architecture, accessibility-conscious design, deployment, and SEO.',
+    caseStudyHref: '/work/randazzo-designs',
     href: '#services',
     linkLabel: 'Explore Services',
     accent: 'purple',

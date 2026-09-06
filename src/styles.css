@@ -8460,3 +8460,874 @@ a.ai-experience-link:hover {
     transition: none;
   }
 }
+
+/* =========================================================
+   RANDAZZO DESIGNS CASE STUDY
+   ========================================================= */
+
+.case-study--randazzo {
+  --rd-bg: #ffffff;
+  --rd-surface: #f5f7fa;
+  --rd-navy: #071526;
+  --rd-navy-soft: #0d2138;
+  --rd-text: #121820;
+  --rd-muted: #5d6673;
+  --rd-border: #dce2e8;
+  --rd-blue: #315fd6;
+  --rd-purple: #8256c8;
+  --rd-teal: #16aaa7;
+
+  overflow: hidden;
+  background: var(--rd-bg);
+  color: var(--rd-text);
+}
+
+.case-study--randazzo .case-study-shell {
+  width: min(1200px, calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+.case-study--randazzo .case-study-eyebrow {
+  margin: 0 0 1.25rem;
+  color: var(--rd-blue);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.case-study--randazzo .case-study-back-link {
+  display: inline-flex;
+  align-items: center;
+  color: #b8c5d5;
+  font-size: 0.86rem;
+  font-weight: 700;
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.case-study--randazzo .case-study-back-link:hover {
+  color: #ffffff;
+  transform: translateX(-3px);
+}
+
+/* HERO */
+
+.case-study--randazzo .randazzo-case-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 92vh;
+  padding: clamp(2rem, 5vw, 4rem) 0 clamp(5rem, 10vw, 9rem);
+  background:
+    radial-gradient(
+      circle at 84% 20%,
+      rgba(49, 95, 214, 0.26),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 18% 82%,
+      rgba(130, 86, 200, 0.18),
+      transparent 34%
+    ),
+    linear-gradient(145deg, #071526 0%, #091a2d 52%, #07111f 100%);
+  color: #ffffff;
+}
+
+.case-study--randazzo .randazzo-case-hero::after {
+  position: absolute;
+  right: -10%;
+  bottom: -35%;
+  width: min(700px, 70vw);
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 80px rgba(255, 255, 255, 0.018),
+    0 0 0 160px rgba(255, 255, 255, 0.012);
+  content: '';
+  pointer-events: none;
+}
+
+.case-study--randazzo .randazzo-case-hero .case-study-eyebrow {
+  color: #6ed8d4;
+}
+
+.case-study--randazzo .randazzo-case-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1050px;
+  margin-top: clamp(5rem, 11vw, 9rem);
+}
+
+.case-study--randazzo .randazzo-case-hero h1 {
+  max-width: 1050px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(4rem, 9vw, 8.4rem);
+  font-weight: 850;
+  letter-spacing: -0.065em;
+  line-height: 0.88;
+}
+
+.case-study--randazzo .randazzo-case-hero h1 span {
+  display: block;
+  max-width: 850px;
+  margin-top: 1.5rem;
+  color: #aab8c9;
+  font-size: clamp(1.55rem, 3.2vw, 2.9rem);
+  font-weight: 650;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.case-study--randazzo .randazzo-case-hero-lede {
+  max-width: 720px;
+  margin: 2.5rem 0 0;
+  color: #c4cfdb;
+  font-size: clamp(1.05rem, 1.7vw, 1.22rem);
+  line-height: 1.75;
+}
+
+.case-study--randazzo .randazzo-case-hero-principle {
+  display: inline-block;
+  margin: 2rem 0 0;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--rd-teal);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.case-study--randazzo .randazzo-case-meta {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 1px;
+  max-width: 980px;
+  margin-top: clamp(4rem, 7vw, 6rem);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.case-study--randazzo .randazzo-case-meta > div {
+  padding: 1.35rem 1.5rem;
+  background: rgba(7, 21, 38, 0.88);
+}
+
+.case-study--randazzo .randazzo-case-meta span {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: #7f91a5;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.case-study--randazzo .randazzo-case-meta strong {
+  color: #eef3f8;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.case-study--randazzo .randazzo-case-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.case-study--randazzo .randazzo-case-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0.9rem 1.2rem;
+  border-radius: 9px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.case-study--randazzo .randazzo-case-button:hover {
+  transform: translateY(-2px);
+}
+
+.case-study--randazzo .randazzo-case-button--primary {
+  border: 1px solid var(--rd-teal);
+  background: var(--rd-teal);
+  color: #061817;
+}
+
+.case-study--randazzo .randazzo-case-button--secondary {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+}
+
+.case-study--randazzo .randazzo-case-button--secondary:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* CHALLENGE */
+
+.case-study--randazzo .randazzo-case-challenge {
+  padding: clamp(6rem, 11vw, 10rem) 0;
+  background: #ffffff;
+}
+
+.case-study--randazzo .randazzo-case-challenge-heading {
+  max-width: 980px;
+}
+
+.case-study--randazzo .randazzo-case-challenge-heading h2 {
+  max-width: 950px;
+  margin: 0;
+  color: var(--rd-text);
+  font-size: clamp(2.8rem, 5.8vw, 5.5rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.case-study--randazzo .randazzo-case-challenge-copy {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 6vw, 5rem);
+  max-width: 1000px;
+  margin-top: clamp(3.5rem, 7vw, 5.5rem);
+}
+
+.case-study--randazzo .randazzo-case-challenge-copy p {
+  margin: 0;
+  color: var(--rd-muted);
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.case-study--randazzo .randazzo-case-challenge-statement {
+  max-width: 920px;
+  margin-top: clamp(4rem, 8vw, 7rem);
+  padding-left: clamp(1.5rem, 4vw, 3rem);
+  border-left: 4px solid var(--rd-blue);
+}
+
+.case-study--randazzo .randazzo-case-challenge-statement p {
+  margin: 0;
+  color: var(--rd-text);
+  font-size: clamp(1.8rem, 4vw, 3.6rem);
+  font-weight: 750;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+/* SYSTEM */
+
+.case-study--randazzo .randazzo-case-system {
+  padding: clamp(6rem, 11vw, 10rem) 0;
+  background: var(--rd-surface);
+}
+
+.case-study--randazzo .randazzo-case-system-heading {
+  max-width: 900px;
+}
+
+.case-study--randazzo .randazzo-case-system-heading h2,
+.case-study--randazzo .randazzo-case-method-heading h2,
+.case-study--randazzo .randazzo-case-ai-heading h2,
+.case-study--randazzo .randazzo-case-evidence-heading h2 {
+  margin: 0;
+  color: var(--rd-text);
+  font-size: clamp(2.7rem, 5.5vw, 5.2rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.case-study--randazzo .randazzo-case-system-heading > p:last-child,
+.case-study--randazzo .randazzo-case-method-heading > p:last-child,
+.case-study--randazzo .randazzo-case-ai-heading > p:last-child,
+.case-study--randazzo .randazzo-case-evidence-heading > p:last-child {
+  max-width: 760px;
+  margin: 2rem 0 0;
+  color: var(--rd-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.case-study--randazzo .randazzo-case-system-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: clamp(3.5rem, 6vw, 5rem);
+}
+
+.case-study--randazzo .randazzo-case-system-card {
+  position: relative;
+  min-height: 250px;
+  padding: clamp(1.8rem, 4vw, 2.8rem);
+  overflow: hidden;
+  border: 1px solid var(--rd-border);
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.case-study--randazzo .randazzo-case-system-card::before {
+  display: block;
+  width: 44px;
+  height: 4px;
+  margin-bottom: 2rem;
+  border-radius: 999px;
+  background: var(--rd-blue);
+  content: '';
+}
+
+.case-study--randazzo .randazzo-case-system-card:nth-child(2)::before {
+  background: var(--rd-purple);
+}
+
+.case-study--randazzo .randazzo-case-system-card:nth-child(3)::before {
+  background: var(--rd-teal);
+}
+
+.case-study--randazzo .randazzo-case-system-card:nth-child(4)::before {
+  background: var(--rd-blue);
+}
+
+.case-study--randazzo .randazzo-case-system-card h3 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+  letter-spacing: -0.03em;
+}
+
+.case-study--randazzo .randazzo-case-system-card p {
+  max-width: 500px;
+  margin: 1.15rem 0 0;
+  color: var(--rd-muted);
+  line-height: 1.75;
+}
+
+.case-study--randazzo .randazzo-case-system-principle {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding-top: 2rem;
+  border-top: 1px solid var(--rd-border);
+}
+
+.case-study--randazzo .randazzo-case-system-principle span {
+  color: var(--rd-blue);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.case-study--randazzo .randazzo-case-system-principle p {
+  max-width: 700px;
+  margin: 0;
+  font-size: clamp(1.25rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE FOUNDATION */
+
+@media (max-width: 900px) {
+  .case-study--randazzo .randazzo-case-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study--randazzo .randazzo-case-challenge-copy,
+  .case-study--randazzo .randazzo-case-system-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study--randazzo .randazzo-case-system-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-study--randazzo .case-study-shell {
+    width: min(100% - 2rem, 1200px);
+  }
+
+  .case-study--randazzo .randazzo-case-hero {
+    min-height: auto;
+  }
+
+  .case-study--randazzo .randazzo-case-hero h1 {
+    font-size: clamp(3.3rem, 17vw, 5.5rem);
+  }
+
+  .case-study--randazzo .randazzo-case-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .case-study--randazzo .randazzo-case-button {
+    width: 100%;
+  }
+
+  .case-study--randazzo .randazzo-case-system-principle {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-study--randazzo .case-study-back-link,
+  .case-study--randazzo .randazzo-case-button {
+    transition: none;
+  }
+}
+
+/* =========================================================
+   RANDAZZO DESIGNS — WORKING METHOD
+   ========================================================= */
+
+.case-study--randazzo .randazzo-case-method {
+  padding: clamp(6rem, 11vw, 10rem) 0;
+  background: #ffffff;
+}
+
+.case-study--randazzo .randazzo-case-method-heading {
+  max-width: 1000px;
+}
+
+.case-study--randazzo .randazzo-case-method-heading h2 {
+  max-width: 980px;
+}
+
+.case-study--randazzo .randazzo-case-method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: clamp(3.5rem, 7vw, 5.5rem);
+  overflow: hidden;
+  border: 1px solid var(--rd-border);
+  border-radius: 18px;
+  background: var(--rd-border);
+}
+
+.case-study--randazzo .randazzo-case-method-card {
+  position: relative;
+  min-height: 270px;
+  padding: clamp(1.6rem, 3vw, 2.4rem);
+  background: #ffffff;
+}
+
+.case-study--randazzo .randazzo-case-method-card span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(49, 95, 214, 0.08);
+  color: var(--rd-blue);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.case-study--randazzo .randazzo-case-method-card:nth-child(2) span,
+.case-study--randazzo .randazzo-case-method-card:nth-child(5) span {
+  background: rgba(130, 86, 200, 0.09);
+  color: var(--rd-purple);
+}
+
+.case-study--randazzo .randazzo-case-method-card:nth-child(3) span,
+.case-study--randazzo .randazzo-case-method-card:nth-child(6) span {
+  background: rgba(22, 170, 167, 0.09);
+  color: #0c817e;
+}
+
+.case-study--randazzo .randazzo-case-method-card p {
+  max-width: 320px;
+  margin: 2rem 0 0;
+  color: var(--rd-muted);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+/* =========================================================
+   RANDAZZO DESIGNS — HUMAN + AI WORKFLOW
+   ========================================================= */
+
+.case-study--randazzo .randazzo-case-ai {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(6rem, 11vw, 10rem) 0;
+  background:
+    radial-gradient(
+      circle at 90% 12%,
+      rgba(49, 95, 214, 0.2),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 8% 88%,
+      rgba(22, 170, 167, 0.12),
+      transparent 30%
+    ),
+    var(--rd-navy);
+  color: #ffffff;
+}
+
+.case-study--randazzo .randazzo-case-ai .case-study-eyebrow {
+  color: #6ed8d4;
+}
+
+.case-study--randazzo .randazzo-case-ai-heading {
+  max-width: 980px;
+}
+
+.case-study--randazzo .randazzo-case-ai-heading h2 {
+  color: #ffffff;
+}
+
+.case-study--randazzo .randazzo-case-ai-heading > p:last-child {
+  color: #aebccc;
+}
+
+.case-study--randazzo .randazzo-case-ai-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 1050px;
+  margin-top: clamp(3.5rem, 7vw, 5.5rem);
+}
+
+.case-study--randazzo .randazzo-case-ai-card {
+  padding: clamp(1.8rem, 4vw, 2.8rem);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.case-study--randazzo .randazzo-case-ai-card:first-child {
+  border-top: 3px solid var(--rd-blue);
+}
+
+.case-study--randazzo .randazzo-case-ai-card:last-child {
+  border-top: 3px solid var(--rd-teal);
+}
+
+.case-study--randazzo .randazzo-case-ai-card h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.case-study--randazzo .randazzo-case-ai-card ul {
+  display: grid;
+  gap: 0.85rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.case-study--randazzo .randazzo-case-ai-card li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: #b9c5d2;
+  line-height: 1.55;
+}
+
+.case-study--randazzo .randazzo-case-ai-card li::before {
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rd-teal);
+  content: '';
+}
+
+.case-study--randazzo
+  .randazzo-case-ai-card:first-child
+  li::before {
+  background: #6f8cf0;
+}
+
+.case-study--randazzo .randazzo-case-ai-principle {
+  max-width: 1050px;
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding: clamp(2rem, 4vw, 3.2rem);
+  border: 1px solid rgba(22, 170, 167, 0.32);
+  border-radius: 18px;
+  background: rgba(22, 170, 167, 0.075);
+}
+
+.case-study--randazzo .randazzo-case-ai-principle p {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  font-weight: 850;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+/* =========================================================
+   RANDAZZO DESIGNS — EVIDENCE
+   ========================================================= */
+
+.case-study--randazzo .randazzo-case-evidence {
+  padding: clamp(6rem, 11vw, 10rem) 0;
+  background: var(--rd-surface);
+}
+
+.case-study--randazzo .randazzo-case-evidence-heading {
+  max-width: 1000px;
+}
+
+.case-study--randazzo .randazzo-case-evidence-heading h2 {
+  max-width: 950px;
+}
+
+.case-study--randazzo .randazzo-case-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: clamp(3.5rem, 7vw, 5.5rem);
+}
+
+.case-study--randazzo .randazzo-case-evidence-card {
+  min-height: 280px;
+  padding: clamp(1.6rem, 3vw, 2.3rem);
+  border: 1px solid var(--rd-border);
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.case-study--randazzo .randazzo-case-evidence-card::before {
+  display: block;
+  width: 38px;
+  height: 3px;
+  margin-bottom: 1.7rem;
+  border-radius: 999px;
+  background: var(--rd-blue);
+  content: '';
+}
+
+.case-study--randazzo
+  .randazzo-case-evidence-card:nth-child(3n + 2)::before {
+  background: var(--rd-purple);
+}
+
+.case-study--randazzo
+  .randazzo-case-evidence-card:nth-child(3n + 3)::before {
+  background: var(--rd-teal);
+}
+
+.case-study--randazzo .randazzo-case-evidence-card h3 {
+  margin: 0;
+  color: var(--rd-text);
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.case-study--randazzo .randazzo-case-evidence-card p {
+  margin: 1.15rem 0 0;
+  color: var(--rd-muted);
+  font-size: 0.96rem;
+  line-height: 1.72;
+}
+
+.case-study--randazzo .randazzo-case-evidence-statement {
+  margin-top: clamp(4rem, 7vw, 6rem);
+  padding-top: 2rem;
+  border-top: 1px solid var(--rd-border);
+}
+
+.case-study--randazzo .randazzo-case-evidence-statement p {
+  margin: 0;
+  color: var(--rd-text);
+  font-size: clamp(2.4rem, 6vw, 5.5rem);
+  font-weight: 850;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+}
+
+/* =========================================================
+   RANDAZZO DESIGNS — OUTCOME
+   ========================================================= */
+
+.case-study--randazzo .randazzo-case-outcome {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(6rem, 11vw, 10rem) 0;
+  background:
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(130, 86, 200, 0.18),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 15% 85%,
+      rgba(49, 95, 214, 0.18),
+      transparent 32%
+    ),
+    #071526;
+  color: #ffffff;
+}
+
+.case-study--randazzo .randazzo-case-outcome .case-study-eyebrow {
+  color: #6ed8d4;
+}
+
+.case-study--randazzo .randazzo-case-outcome-content {
+  max-width: 1000px;
+}
+
+.case-study--randazzo .randazzo-case-outcome-content h2 {
+  max-width: 950px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.8rem, 5.8vw, 5.6rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.case-study--randazzo
+  .randazzo-case-outcome-content
+  > p:not(.case-study-eyebrow) {
+  max-width: 760px;
+  margin: 2rem 0 0;
+  color: #aebccc;
+  font-size: 1.04rem;
+  line-height: 1.75;
+}
+
+.case-study--randazzo .randazzo-case-outcome-principle {
+  max-width: 1000px;
+  margin-top: clamp(4rem, 7vw, 6rem);
+  padding: clamp(2rem, 4vw, 3rem);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.case-study--randazzo .randazzo-case-outcome-principle span {
+  display: block;
+  margin-bottom: 1.1rem;
+  color: #6ed8d4;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.case-study--randazzo .randazzo-case-outcome-principle p {
+  max-width: 800px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  font-weight: 850;
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+}
+
+.case-study--randazzo .randazzo-case-outcome-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2.5rem;
+}
+
+.case-study--randazzo .randazzo-case-outcome-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0.9rem 1.15rem;
+  border-radius: 9px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.case-study--randazzo .randazzo-case-outcome-actions a:hover {
+  transform: translateY(-2px);
+}
+
+.case-study--randazzo .randazzo-case-outcome-primary {
+  border: 1px solid var(--rd-teal);
+  background: var(--rd-teal);
+  color: #061817;
+}
+
+.case-study--randazzo .randazzo-case-outcome-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+}
+
+.case-study--randazzo .randazzo-case-outcome-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* =========================================================
+   RANDAZZO DESIGNS — REMAINING RESPONSIVE RULES
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .case-study--randazzo .randazzo-case-method-grid,
+  .case-study--randazzo .randazzo-case-evidence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .case-study--randazzo .randazzo-case-ai-grid,
+  .case-study--randazzo .randazzo-case-method-grid,
+  .case-study--randazzo .randazzo-case-evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study--randazzo .randazzo-case-method-card,
+  .case-study--randazzo .randazzo-case-evidence-card {
+    min-height: auto;
+  }
+
+  .case-study--randazzo .randazzo-case-outcome-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .case-study--randazzo .randazzo-case-outcome-actions a {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-study--randazzo .randazzo-case-outcome-actions a {
+    transition: none;
+  }
+}

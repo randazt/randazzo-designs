@@ -21,6 +21,7 @@ import SiteFooter from './sections/SiteFooter'
 import DaisyCaseStudy from './case-studies/DaisyCaseStudy'
 import StudioOneCaseStudy from './case-studies/StudioOneCaseStudy'
 import AIAssistantsCaseStudy from './case-studies/AIAssistantsCaseStudy'
+import RandazzoDesignsCaseStudy from './case-studies/RandazzoDesignsCaseStudy'
 
 function HomePage() {
   return (
@@ -57,6 +58,10 @@ function App() {
       <Route
         path="/work/ai-assistants"
         element={<AIAssistantsCaseStudy />}
+      />
+      <Route
+        path="/work/randazzo-designs"
+        element={<RandazzoDesignsCaseStudy />}
       />
     </Routes>
   )
