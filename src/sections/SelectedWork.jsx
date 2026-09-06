@@ -42,6 +42,7 @@ const projects = [
       'An original connected universe combining visual storytelling, characters, worldbuilding, media, and audience-facing creative development.',
     capabilities:
       'Creative direction, visual storytelling, narrative systems, multimedia communication, original IP development, and AI-assisted creative workflows.',
+    caseStudyHref: '/work/awesomeverse',
     href: '#awesomeverse',
     linkLabel: 'Enter the Awesomeverse',
     accent: 'blue',
