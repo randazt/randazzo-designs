@@ -16,6 +16,7 @@ import ServicesLearn from './sections/ServicesLearn'
 import About from './sections/About'
 import FAQ from './sections/FAQ'
 import ProjectNavigator from './sections/ProjectNavigator'
+import SystemInPractice from './sections/SystemInPractice'
 import SocialNetwork from './sections/SocialNetwork'
 import SiteFooter from './sections/SiteFooter'
 
@@ -43,6 +44,7 @@ function HomePage() {
         <About />
         <FAQ />
         <ProjectNavigator />
+        <SystemInPractice />
         <SocialNetwork />
       </main>
       <SiteFooter />
