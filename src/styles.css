@@ -11692,8 +11692,8 @@ a.ai-experience-link:hover {
 
 .daisy-concierge__close {
   display: grid;
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
   flex: 0 0 auto;
   place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -11822,17 +11822,9 @@ a.ai-experience-link:hover {
   line-height: 1.4;
 }
 
-.daisy-concierge__form-footer p {
-  max-width: 235px;
-  margin: 0;
-  color: #6f7c8e;
-  font-size: 0.67rem;
-  line-height: 1.4;
-}
-
 .daisy-concierge__form-footer button {
   min-width: 78px;
-  min-height: 40px;
+  min-height: 44px;
   padding: 0.65rem 0.9rem;
   border: 1px solid #44c9bd;
   border-radius: 7px;
@@ -11967,11 +11959,12 @@ a.ai-experience-link:hover {
 
 .daisy-concierge__handoff {
   display: flex;
+  min-height: 44px;
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
   margin-top: 0.9rem;
-  padding-top: 0.8rem;
+  padding: 0.8rem 0.5rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
   color: #8f9cad;
   font-size: 0.7rem;
