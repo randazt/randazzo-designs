@@ -3,28 +3,24 @@ import daisyInterface from '../assets/daisy-interface.webp'
 function DaisyCaseStudy() {
   const mechanisms = [
     {
-      number: '01',
       title: 'Cognition-first clarification',
       description:
         'Before normal planning or routing, D.AI.SY can identify targeted cognitive-bottleneck situations and clarify where the person is actually getting stuck.',
       principle: 'Clarify before automating.',
     },
     {
-      number: '02',
       title: 'User-owned strategy memory',
       description:
         'D.AI.SY can propose remembering a strategy that works for the person, but persistence remains explicitly authorized by the user.',
       principle: 'Memory is permission, not assumption.',
     },
     {
-      number: '03',
       title: 'Adaptive guidance',
       description:
         'Approved strategies can influence how later assistance is structured, allowing the interaction to adapt to the human rather than continually asking the human to adapt to the AI.',
       principle: 'Personalization follows human direction.',
     },
     {
-      number: '04',
       title: 'Bounded agentic execution',
       description:
         'Agentic behavior occurs downstream of human direction and authorization, with observable execution results and control returning to the person.',
@@ -56,6 +52,24 @@ function DaisyCaseStudy() {
       label: 'Security hardening',
       detail:
         'The release included CORS verification, secret and repository hygiene checks, and removal of raw chat-request logging.',
+    },
+  ]
+
+  const lessons = [
+    {
+      title: 'Progressive disclosure needs to go deeper.',
+      description:
+        'Response density remains an important UX consideration for a product designed around cognitive accessibility and clarity.',
+    },
+    {
+      title: 'Cognition routing needs greater flexibility.',
+      description:
+        'Natural formulations do not always reach the cognition-first experience as reliably as intended, creating a clear target for continued refinement.',
+    },
+    {
+      title: 'Memory interactions need greater determinism.',
+      description:
+        'Permission-based memory is implemented, but the interaction behavior can become more consistent across different conversational conditions.',
     },
   ]
 
@@ -170,9 +184,7 @@ function DaisyCaseStudy() {
             <div>
               <p className="section-eyebrow">Designed Into the System</p>
 
-              <h2>
-                Human agency became product behavior.
-              </h2>
+              <h2>Human agency became product behavior.</h2>
             </div>
 
             <p className="case-study-mechanisms-intro">
@@ -186,12 +198,8 @@ function DaisyCaseStudy() {
             {mechanisms.map((mechanism) => (
               <article
                 className="case-study-mechanism-card"
-                key={mechanism.number}
+                key={mechanism.title}
               >
-                <p className="case-study-mechanism-number">
-                  {mechanism.number}
-                </p>
-
                 <h3>{mechanism.title}</h3>
 
                 <p className="case-study-mechanism-description">
@@ -212,19 +220,16 @@ function DaisyCaseStudy() {
 
             <div className="case-study-authority-grid">
               <div>
-                <span>01</span>
                 <strong>Permission to store</strong>
                 <p>Can this information persist?</p>
               </div>
 
               <div>
-                <span>02</span>
                 <strong>Permission to use</strong>
                 <p>Can it shape future assistance?</p>
               </div>
 
               <div>
-                <span>03</span>
                 <strong>Permission to act</strong>
                 <p>Can the system execute on the person&apos;s behalf?</p>
               </div>
@@ -238,9 +243,7 @@ function DaisyCaseStudy() {
           <div className="case-study-evidence-heading">
             <p className="section-eyebrow">Built &amp; Validated</p>
 
-            <h2>
-              The design principles became working software.
-            </h2>
+            <h2>The design principles became working software.</h2>
 
             <p>
               D.AI.SY moved from product concept into a tested, documented,
@@ -309,9 +312,7 @@ function DaisyCaseStudy() {
             <div>
               <p className="section-eyebrow">Product Experience</p>
 
-              <h2>
-                Designed around the person, not the prompt.
-              </h2>
+              <h2>Designed around the person, not the prompt.</h2>
             </div>
 
             <p>
@@ -332,35 +333,137 @@ function DaisyCaseStudy() {
 
             <figcaption>
               D.AI.SY production interface
-              <span>Human-centered AI · Adaptive assistance · Authorized action</span>
+              <span>
+                Human-centered AI · Adaptive assistance · Authorized action
+              </span>
             </figcaption>
           </figure>
 
           <div className="case-study-product-progression">
             <div>
-              <span>01</span>
               <strong>Cognitive Friction</strong>
             </div>
 
             <div>
-              <span>02</span>
               <strong>Clarity</strong>
             </div>
 
             <div>
-              <span>03</span>
               <strong>Agency</strong>
             </div>
 
             <div>
-              <span>04</span>
               <strong>Everyday Workflows</strong>
             </div>
 
             <div>
-              <span>05</span>
               <strong>Authorized Action</strong>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="case-study-delivery">
+        <div className="case-study-section-inner">
+          <div className="case-study-delivery-heading">
+            <p className="section-eyebrow">Delivery Decisions</p>
+
+            <h2>Shipping required deciding what not to build.</h2>
+          </div>
+
+          <div className="case-study-delivery-layout">
+            <div className="case-study-delivery-copy">
+              <p>
+                The hackathon introduced a fixed deadline and a growing list
+                of possible improvements. The critical delivery question
+                became simple: is this a product improvement, or is it a
+                submission blocker?
+              </p>
+
+              <p>
+                Features including additional agents, RAG expansion,
+                unnecessary authentication work, additional frameworks, and
+                late-stage interface redesign were deliberately kept outside
+                the critical path.
+              </p>
+
+              <p>
+                That scope discipline protected the core experience:
+                authorized memory, adaptive guidance, bounded action,
+                testing, production hardening, deployment, documentation,
+                and demonstration.
+              </p>
+            </div>
+
+            <div className="case-study-delivery-principle">
+              <span>Delivery principle</span>
+              <strong>
+                Protect the experience that matters. Cut complexity that does
+                not help it ship.
+              </strong>
+            </div>
+          </div>
+
+          <div className="case-study-lessons">
+            <div className="case-study-lessons-heading">
+              <p className="section-eyebrow">What We Learned</p>
+
+              <h3>A shipped system creates better questions.</h3>
+            </div>
+
+            <div className="case-study-lessons-grid">
+              {lessons.map((lesson) => (
+                <article
+                  className="case-study-lesson"
+                  key={lesson.title}
+                >
+                  <h4>{lesson.title}</h4>
+                  <p>{lesson.description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="case-study-outcome">
+        <div className="case-study-section-inner">
+          <p className="section-eyebrow">Outcome</p>
+
+          <h2>
+            From product concept to a tested, publicly deployed agentic AI
+            system.
+          </h2>
+
+          <p className="case-study-outcome-copy">
+            The completed hackathon phase connected product vision,
+            human-centered AI design, working software engineering, testing,
+            cloud deployment, documentation, and disciplined delivery into
+            one functioning release.
+          </p>
+
+          <p className="case-study-outcome-principle">
+            AI Assists. Humans Decide.
+          </p>
+
+          <div className="case-study-outcome-actions">
+            <a
+              className="case-study-outcome-primary"
+              href="https://daisy.randazzodesignsai.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Explore D.AI.SY
+              <span aria-hidden="true"> ↗</span>
+            </a>
+
+            <a
+              className="case-study-outcome-secondary"
+              href="/#selected-work"
+            >
+              Back to Selected Work
+              <span aria-hidden="true"> →</span>
+            </a>
           </div>
         </div>
       </section>
