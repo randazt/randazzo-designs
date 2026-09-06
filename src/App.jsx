@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom'
 import './styles.css'
 import Header from './components/Header'
 import Hero from './sections/Hero'
@@ -15,7 +16,7 @@ import FAQ from './sections/FAQ'
 import ProjectNavigator from './sections/ProjectNavigator'
 import SiteFooter from './sections/SiteFooter'
 
-function App() {
+function HomePage() {
   return (
     <>
       <Header />
@@ -38,6 +39,23 @@ function App() {
 
       <SiteFooter />
     </>
+  )
+}
+
+function DaisyCaseStudy() {
+  return (
+    <main>
+      <h1>D.AI.SY Case Study</h1>
+    </main>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/work/daisy" element={<DaisyCaseStudy />} />
+    </Routes>
   )
 }
 
