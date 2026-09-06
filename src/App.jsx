@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './styles.css'
 
@@ -21,11 +22,19 @@ import SystemInPractice from './sections/SystemInPractice'
 import SocialNetwork from './sections/SocialNetwork'
 import SiteFooter from './sections/SiteFooter'
 
-import DaisyCaseStudy from './case-studies/DaisyCaseStudy'
-import StudioOneCaseStudy from './case-studies/StudioOneCaseStudy'
-import AIAssistantsCaseStudy from './case-studies/AIAssistantsCaseStudy'
-import RandazzoDesignsCaseStudy from './case-studies/RandazzoDesignsCaseStudy'
-import AwesomeverseCaseStudy from './case-studies/AwesomeverseCaseStudy'
+const DaisyCaseStudy = lazy(() => import('./case-studies/DaisyCaseStudy'))
+const StudioOneCaseStudy = lazy(
+  () => import('./case-studies/StudioOneCaseStudy'),
+)
+const AIAssistantsCaseStudy = lazy(
+  () => import('./case-studies/AIAssistantsCaseStudy'),
+)
+const RandazzoDesignsCaseStudy = lazy(
+  () => import('./case-studies/RandazzoDesignsCaseStudy'),
+)
+const AwesomeverseCaseStudy = lazy(
+  () => import('./case-studies/AwesomeverseCaseStudy'),
+)
 
 function HomePage() {
   return (
@@ -56,23 +65,25 @@ function HomePage() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/work/daisy" element={<DaisyCaseStudy />} />
-      <Route path="/work/studio-one" element={<StudioOneCaseStudy />} />
-      <Route
-        path="/work/ai-assistants"
-        element={<AIAssistantsCaseStudy />}
-      />
-      <Route
-        path="/work/randazzo-designs"
-        element={<RandazzoDesignsCaseStudy />}
-      />
-      <Route
-        path="/work/awesomeverse"
-        element={<AwesomeverseCaseStudy />}
-      />
-    </Routes>
+    <Suspense fallback={null}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/work/daisy" element={<DaisyCaseStudy />} />
+        <Route path="/work/studio-one" element={<StudioOneCaseStudy />} />
+        <Route
+          path="/work/ai-assistants"
+          element={<AIAssistantsCaseStudy />}
+        />
+        <Route
+          path="/work/randazzo-designs"
+          element={<RandazzoDesignsCaseStudy />}
+        />
+        <Route
+          path="/work/awesomeverse"
+          element={<AwesomeverseCaseStudy />}
+        />
+      </Routes>
+    </Suspense>
   )
 }
 
