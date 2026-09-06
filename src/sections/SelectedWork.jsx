@@ -7,6 +7,7 @@ function SelectedWork() {
         'A human-directed AI platform designed to help people move from cognitive friction toward clarity, useful workflows, and explicitly authorized action.',
       proof:
         'Product strategy, UX/UI, information architecture, agentic AI systems, permission-based memory, testing, cloud deployment, and technical communication.',
+      caseStudyHref: '/work/daisy',
       href: 'https://daisy.randazzodesignsai.com',
       linkLabel: 'Explore D.AI.SY',
     },
@@ -79,19 +80,35 @@ function SelectedWork() {
                 </div>
               </div>
 
-              <a
-                className="selected-work-link"
-                href={project.href}
-                {...(project.href.startsWith('http')
-                  ? {
-                      target: '_blank',
-                      rel: 'noreferrer',
-                    }
-                  : {})}
-              >
-                {project.linkLabel}
-                <span aria-hidden="true"> →</span>
-              </a>
+              <div className="selected-work-actions">
+                {project.caseStudyHref && (
+                  <a
+                    className="selected-work-link selected-work-link--case-study"
+                    href={project.caseStudyHref}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Case Study
+                    <span aria-hidden="true"> ↗</span>
+                  </a>
+                )}
+
+                <a
+                  className="selected-work-link"
+                  href={project.href}
+                  {...(project.href.startsWith('http')
+                    ? {
+                        target: '_blank',
+                        rel: 'noreferrer',
+                      }
+                    : {})}
+                >
+                  {project.linkLabel}
+                  <span aria-hidden="true">
+                    {project.href.startsWith('http') ? ' ↗' : ' →'}
+                  </span>
+                </a>
+              </div>
             </article>
           ))}
         </div>
