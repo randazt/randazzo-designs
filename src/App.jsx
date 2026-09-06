@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import './styles.css'
 
 import Header from './components/Header'
+import DaisyConcierge from './components/DaisyConcierge'
 
 import Hero from './sections/Hero'
 import Ecosystem from './sections/Ecosystem'
@@ -48,6 +49,7 @@ function HomePage() {
         <SocialNetwork />
       </main>
       <SiteFooter />
+      <DaisyConcierge />
     </>
   )
 }
