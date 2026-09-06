@@ -11306,3 +11306,271 @@ a.ai-experience-link:hover {
     transition: none;
   }
 }
+
+/* =========================================================
+   STUDIO//ONE — AWESOMEVERSE BRIDGE
+   ========================================================= */
+
+.case-study--studio-one .studio-awesomeverse-bridge {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(6rem, 11vw, 10rem) 0;
+  background:
+    radial-gradient(
+      circle at 88% 16%,
+      rgba(120, 185, 139, 0.1),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 12% 88%,
+      rgba(98, 169, 216, 0.08),
+      transparent 32%
+    ),
+    #080b10;
+  color: #f3f1e9;
+}
+
+.case-study--studio-one .studio-awesomeverse-heading {
+  max-width: 980px;
+}
+
+.case-study--studio-one
+  .studio-awesomeverse-heading
+  .case-study-eyebrow {
+  color: #78b98b;
+}
+
+.case-study--studio-one .studio-awesomeverse-heading h2 {
+  max-width: 900px;
+  margin: 0;
+  color: #f3f1e9;
+  font-size: clamp(2.8rem, 5.8vw, 5.5rem);
+  font-weight: 850;
+  letter-spacing: -0.06em;
+  line-height: 0.97;
+}
+
+.case-study--studio-one
+  .studio-awesomeverse-heading
+  > p:last-child {
+  max-width: 760px;
+  margin: 2rem 0 0;
+  color: #a8adb5;
+  font-size: 1.04rem;
+  line-height: 1.78;
+}
+
+/* =========================================================
+   AWESOMEVERSE FEATURE
+   ========================================================= */
+
+.case-study--studio-one .studio-awesomeverse-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  gap: 1px;
+  margin-top: clamp(4rem, 8vw, 6rem);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.case-study--studio-one .studio-awesomeverse-feature-copy {
+  display: flex;
+  min-height: 400px;
+  flex-direction: column;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  background:
+    radial-gradient(
+      circle at 92% 12%,
+      rgba(154, 123, 196, 0.11),
+      transparent 30%
+    ),
+    #0e141d;
+}
+
+.case-study--studio-one .studio-awesomeverse-label {
+  margin: 0 0 2rem;
+  color: #78b98b;
+  font-family: monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .studio-awesomeverse-feature-copy h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.8rem, 5.5vw, 5.2rem);
+  font-weight: 850;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+}
+
+.case-study--studio-one
+  .studio-awesomeverse-feature-copy
+  > p:not(.studio-awesomeverse-label) {
+  max-width: 620px;
+  margin: 1.5rem 0 0;
+  color: #a8adb5;
+  line-height: 1.75;
+}
+
+.case-study--studio-one .studio-awesomeverse-primary-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: auto;
+  padding-top: 2.5rem;
+}
+
+.case-study--studio-one .studio-awesomeverse-primary-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.84rem;
+  font-weight: 800;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease;
+}
+
+.case-study--studio-one
+  .studio-awesomeverse-primary-actions
+  .studio-awesomeverse-primary {
+  border-color: #78b98b;
+  background: #78b98b;
+  color: #08110c;
+}
+
+.case-study--studio-one .studio-awesomeverse-primary-actions a:hover {
+  border-color: #78b98b;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   AWESOMEVERSE NETWORK
+   ========================================================= */
+
+.case-study--studio-one .studio-awesomeverse-network {
+  padding: clamp(2rem, 4vw, 3rem);
+  background: #111821;
+}
+
+.case-study--studio-one .studio-awesomeverse-network > p {
+  margin: 0 0 1.5rem;
+  color: #7e8998;
+  font-family: monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .studio-awesomeverse-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.case-study--studio-one .studio-awesomeverse-links a {
+  display: flex;
+  min-height: 58px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #dce1e8;
+  font-size: 0.95rem;
+  font-weight: 750;
+  transition:
+    color 160ms ease,
+    padding-left 160ms ease;
+}
+
+.case-study--studio-one .studio-awesomeverse-links a:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.case-study--studio-one .studio-awesomeverse-links a:hover {
+  padding-left: 0.35rem;
+  color: #9bd1a9;
+}
+
+/* =========================================================
+   AWESOMEVERSE BRIDGE PRINCIPLE
+   ========================================================= */
+
+.case-study--studio-one .studio-awesomeverse-principle {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.case-study--studio-one .studio-awesomeverse-principle span {
+  color: #78b98b;
+  font-family: monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .studio-awesomeverse-principle strong {
+  color: #f3f1e9;
+  font-size: clamp(1.45rem, 3vw, 2.5rem);
+  font-weight: 825;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+/* =========================================================
+   STUDIO//ONE — AWESOMEVERSE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 850px) {
+  .case-study--studio-one .studio-awesomeverse-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study--studio-one .studio-awesomeverse-feature-copy {
+    min-height: 360px;
+  }
+
+  .case-study--studio-one .studio-awesomeverse-principle {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-study--studio-one .studio-awesomeverse-feature-copy {
+    min-height: auto;
+  }
+
+  .case-study--studio-one .studio-awesomeverse-primary-actions {
+    flex-direction: column;
+  }
+
+  .case-study--studio-one .studio-awesomeverse-primary-actions a {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-study--studio-one .studio-awesomeverse-primary-actions a,
+  .case-study--studio-one .studio-awesomeverse-links a {
+    transition: none;
+  }
+}

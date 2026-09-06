@@ -728,6 +728,114 @@ function StudioOneCaseStudy() {
           </div>
         </div>
       </section>
+
+      <section className="studio-awesomeverse-bridge">
+        <div className="case-study-shell">
+          <div className="studio-awesomeverse-heading">
+            <p className="case-study-eyebrow">Beyond the Tool</p>
+
+            <h2>
+              Creative technology matters most when it helps make something.
+            </h2>
+
+            <p>
+              The Awesomeverse demonstrates the kind of human-directed creative
+              production that specialized tools such as STUDIO//ONE and the
+              Uncanny Art Director can support—bringing together original IP,
+              worldbuilding, visual storytelling, cross-platform publishing,
+              and audience-facing experiences.
+            </p>
+          </div>
+
+          <div className="studio-awesomeverse-feature">
+            <div className="studio-awesomeverse-feature-copy">
+              <p className="studio-awesomeverse-label">
+                Original IP · Applied Creative Practice
+              </p>
+
+              <h3>The Awesomeverse</h3>
+
+              <p>
+                Explore the connected storyworld, production practice, and
+                creative systems behind an ongoing body of visual storytelling.
+              </p>
+
+              <div className="studio-awesomeverse-primary-actions">
+                <a
+                  className="studio-awesomeverse-primary"
+                  href="/work/awesomeverse"
+                >
+                  Explore the Awesomeverse Case Study
+                  <span aria-hidden="true"> →</span>
+                </a>
+
+                <a
+                  href="https://www.youtube.com/@thaawesomeverse"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Watch on YouTube
+                  <span aria-hidden="true"> ↗</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="studio-awesomeverse-network">
+              <p>Follow the Awesomeverse</p>
+
+              <div className="studio-awesomeverse-links">
+                <a
+                  href="https://www.instagram.com/thaawesomeverse/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Instagram ↗
+                </a>
+
+                <a
+                  href="https://www.tiktok.com/@thaawesomeverse"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  TikTok ↗
+                </a>
+
+                <a
+                  href="https://www.facebook.com/profile.php?id=100067917529621&sk=reels_tab"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Facebook ↗
+                </a>
+
+                <a
+                  href="https://www.reddit.com/r/TheAwesomeverse/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Reddit ↗
+                </a>
+
+                <a
+                  href="https://discord.gg/eswWrbyNjQ"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Discord ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="studio-awesomeverse-principle">
+            <span>Human-Directed Production</span>
+
+            <strong>
+              Tools support the practice. Creative authority stays human.
+            </strong>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
