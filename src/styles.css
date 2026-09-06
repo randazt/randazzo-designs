@@ -11800,7 +11800,7 @@ a.ai-experience-link:hover {
 }
 
 .daisy-concierge__form textarea::placeholder {
-  color: #697687;
+  color: #8793a3;
 }
 
 .daisy-concierge__form textarea:focus {
@@ -11814,12 +11814,12 @@ a.ai-experience-link:hover {
   box-shadow: 0 0 0 3px rgba(68, 201, 189, 0.16);
 }
 
-.daisy-concierge__form-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 0.8rem;
+.daisy-concierge__form-footer p {
+  max-width: 235px;
+  margin: 0;
+  color: #8d99a8;
+  font-size: 0.67rem;
+  line-height: 1.4;
 }
 
 .daisy-concierge__form-footer p {
@@ -11950,7 +11950,7 @@ a.ai-experience-link:hover {
   justify-content: flex-end;
   gap: 0.8rem;
   margin-top: 0.4rem;
-  color: #647183;
+  color: #8793a3;
   font-size: 0.62rem;
   line-height: 1.4;
 }
