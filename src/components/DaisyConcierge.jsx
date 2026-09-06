@@ -24,6 +24,9 @@ function DaisyConcierge() {
   const [error, setError] = useState('')
 
   const chatRef = useRef(null)
+  const panelRef = useRef(null)
+  const launcherRef = useRef(null)
+  const closeButtonRef = useRef(null)
   const messagesEndRef = useRef(null)
   const textareaRef = useRef(null)
 
@@ -35,6 +38,14 @@ function DaisyConcierge() {
     }
 
     return chatRef.current
+  }
+
+  function closeConcierge() {
+    setIsOpen(false)
+
+    window.setTimeout(() => {
+      launcherRef.current?.focus()
+    }, 0)
   }
 
   useEffect(() => {
@@ -49,10 +60,87 @@ function DaisyConcierge() {
   }, [messages, isSending, isOpen])
 
   useEffect(() => {
-    if (isOpen) {
-      window.setTimeout(() => {
-        textareaRef.current?.focus()
-      }, 120)
+    if (!isOpen) {
+      return
+    }
+
+    window.setTimeout(() => {
+      closeButtonRef.current?.focus()
+    }, 0)
+  }, [isOpen])
+
+  useEffect(() => {
+    if (!isOpen) {
+      return
+    }
+
+    function handleKeyDown(event) {
+      if (event.key === 'Escape') {
+        event.preventDefault()
+        closeConcierge()
+        return
+      }
+
+      if (event.key !== 'Tab') {
+        return
+      }
+
+      const panel = panelRef.current
+
+      if (!panel) {
+        return
+      }
+
+      const focusableElements = Array.from(
+        panel.querySelectorAll(
+          [
+            'a[href]',
+            'button:not([disabled])',
+            'textarea:not([disabled])',
+            'input:not([disabled])',
+            'select:not([disabled])',
+            '[tabindex]:not([tabindex="-1"])',
+          ].join(',')
+        )
+      ).filter(
+        (element) =>
+          !element.hasAttribute('hidden') &&
+          element.getAttribute('aria-hidden') !== 'true'
+      )
+
+      if (focusableElements.length === 0) {
+        event.preventDefault()
+        panel.focus()
+        return
+      }
+
+      const firstElement = focusableElements[0]
+      const lastElement =
+        focusableElements[focusableElements.length - 1]
+      const activeElement = document.activeElement
+
+      if (
+        event.shiftKey &&
+        activeElement === firstElement
+      ) {
+        event.preventDefault()
+        lastElement.focus()
+      } else if (
+        !event.shiftKey &&
+        activeElement === lastElement
+      ) {
+        event.preventDefault()
+        firstElement.focus()
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      document.removeEventListener(
+        'keydown',
+        handleKeyDown
+      )
     }
   }, [isOpen])
 
@@ -88,7 +176,10 @@ function DaisyConcierge() {
         },
       ])
     } catch (requestError) {
-      console.error('D.AI.SY concierge request failed:', requestError)
+      console.error(
+        'D.AI.SY concierge request failed:',
+        requestError
+      )
 
       setError(
         'D.AI.SY could not complete that request. Please try again.'
@@ -110,12 +201,6 @@ function DaisyConcierge() {
     }
   }
 
-  function handleContainerKeyDown(event) {
-    if (event.key === 'Escape') {
-      setIsOpen(false)
-    }
-  }
-
   function handleStarterPrompt(prompt) {
     setInput(prompt)
 
@@ -124,15 +209,27 @@ function DaisyConcierge() {
     }, 0)
   }
 
+  function handleLauncherClick() {
+    if (isOpen) {
+      closeConcierge()
+      return
+    }
+
+    setIsOpen(true)
+  }
+
   return (
-    <div
-      className="daisy-concierge"
-      onKeyDown={handleContainerKeyDown}
-    >
+    <div className="daisy-concierge">
       {isOpen && (
         <section
+          ref={panelRef}
+          id="daisy-concierge-dialog"
           className="daisy-concierge__panel"
-          aria-label="D.AI.SY Client Concierge"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="daisy-concierge-title"
+          aria-describedby="daisy-concierge-description"
+          tabIndex="-1"
         >
           <header className="daisy-concierge__header">
             <div>
@@ -140,27 +237,33 @@ function DaisyConcierge() {
                 Randazzo Designs
               </p>
 
-              <h2>D.AI.SY Client Concierge</h2>
+              <h2 id="daisy-concierge-title">
+                D.AI.SY Client Concierge
+              </h2>
 
-              <p className="daisy-concierge__status">
+              <p
+                className="daisy-concierge__status"
+                id="daisy-concierge-description"
+              >
                 AI assists. Humans decide.
               </p>
             </div>
 
             <button
+              ref={closeButtonRef}
               className="daisy-concierge__close"
               type="button"
-              onClick={() => setIsOpen(false)}
+              onClick={closeConcierge}
               aria-label="Close D.AI.SY Client Concierge"
             >
-              ×
+              <span aria-hidden="true">×</span>
             </button>
           </header>
 
           <div
             className="daisy-concierge__messages"
             aria-live="polite"
-            aria-busy={isSending}
+            aria-relevant="additions text"
           >
             {messages.map((message, index) => (
               <div
@@ -183,7 +286,9 @@ function DaisyConcierge() {
                     <button
                       type="button"
                       key={prompt}
-                      onClick={() => handleStarterPrompt(prompt)}
+                      onClick={() =>
+                        handleStarterPrompt(prompt)
+                      }
                     >
                       {prompt}
                     </button>
@@ -192,20 +297,36 @@ function DaisyConcierge() {
               </div>
             )}
 
-            {isSending && (
-              <div className="daisy-concierge__message daisy-concierge__message--assistant">
-                <p>D.AI.SY is thinking…</p>
-              </div>
-            )}
-
             {error && (
-              <p className="daisy-concierge__error" role="alert">
+              <p
+                className="daisy-concierge__error"
+                role="alert"
+              >
                 {error}
               </p>
             )}
 
             <div ref={messagesEndRef} />
           </div>
+
+          <p
+            className="sr-only"
+            role="status"
+            aria-live="polite"
+          >
+            {isSending
+              ? 'D.AI.SY is preparing a response.'
+              : ''}
+          </p>
+
+          {isSending && (
+            <div
+              className="daisy-concierge__message daisy-concierge__message--assistant"
+              aria-hidden="true"
+            >
+              <p>D.AI.SY is thinking…</p>
+            </div>
+          )}
 
           <form
             className="daisy-concierge__form"
@@ -222,23 +343,31 @@ function DaisyConcierge() {
               ref={textareaRef}
               id="daisy-concierge-input"
               value={input}
-              onChange={(event) => setInput(event.target.value)}
+              onChange={(event) =>
+                setInput(event.target.value)
+              }
               onKeyDown={handleTextareaKeyDown}
               placeholder="Tell D.AI.SY what you're working through..."
               rows="3"
               disabled={isSending}
+              aria-describedby="daisy-concierge-input-hint daisy-concierge-boundary"
             />
 
-            <div className="daisy-concierge__input-hint">
+            <div
+              className="daisy-concierge__input-hint"
+              id="daisy-concierge-input-hint"
+            >
               <span>Enter to send</span>
-              <span>Shift + Enter for a new line</span>
+              <span>
+                Shift + Enter for a new line
+              </span>
             </div>
 
             <div className="daisy-concierge__form-footer">
-              <p>
-                D.AI.SY can help clarify and prepare. Pricing,
-                availability, and project acceptance require human
-                review.
+              <p id="daisy-concierge-boundary">
+                D.AI.SY can help clarify and prepare.
+                Pricing, availability, and project
+                acceptance require human review.
               </p>
 
               <button
@@ -261,10 +390,13 @@ function DaisyConcierge() {
       )}
 
       <button
+        ref={launcherRef}
         className="daisy-concierge__launcher"
         type="button"
-        onClick={() => setIsOpen((current) => !current)}
+        onClick={handleLauncherClick}
         aria-expanded={isOpen}
+        aria-haspopup="dialog"
+        aria-controls="daisy-concierge-dialog"
         aria-label={
           isOpen
             ? 'Close D.AI.SY Client Concierge'
