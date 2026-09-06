@@ -1,4 +1,4 @@
-import heroImg from '../assets/randazzo-designs-logo.png'
+import heroImg from '../assets/randazzo-designs-logo-optimized.png'
 
 function Hero() {
   return (
