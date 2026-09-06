@@ -19,6 +19,7 @@ import ProjectNavigator from './sections/ProjectNavigator'
 import SiteFooter from './sections/SiteFooter'
 
 import DaisyCaseStudy from './case-studies/DaisyCaseStudy'
+import StudioOneCaseStudy from './case-studies/StudioOneCaseStudy'
 
 function HomePage() {
   return (
@@ -51,6 +52,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/work/daisy" element={<DaisyCaseStudy />} />
+      <Route path="/work/studio-one" element={<StudioOneCaseStudy />} />
     </Routes>
   )
 }

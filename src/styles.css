@@ -5802,3 +5802,1553 @@ a.ai-experience-link:hover {
     transform: none;
   }
 }
+
+/* =========================================================
+   STUDIO//ONE CASE STUDY
+   ========================================================= */
+
+.case-study--studio-one {
+  --studio-bg: #090d14;
+  --studio-surface: #101722;
+  --studio-surface-soft: #151e2b;
+  --studio-text: #f4f6fa;
+  --studio-muted: #aeb8c6;
+  --studio-line: rgba(255, 255, 255, 0.12);
+  --studio-accent: #16aaa7;
+
+  background: var(--studio-bg);
+  color: var(--studio-text);
+  min-height: 100vh;
+}
+
+.case-study--studio-one .case-study-shell {
+  width: min(100% - 3rem, 1200px);
+  margin-inline: auto;
+}
+
+/* Hero */
+
+.case-study--studio-one .case-study-hero {
+  padding: 3rem 0 6.5rem;
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(22, 170, 167, 0.14),
+      transparent 32rem
+    ),
+    linear-gradient(135deg, #071526 0%, #090d14 72%);
+}
+
+.case-study--studio-one .case-study-back-link {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 5rem;
+  color: var(--studio-muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.case-study--studio-one .case-study-back-link:hover {
+  color: var(--studio-text);
+  transform: translateX(-3px);
+}
+
+.case-study--studio-one .case-study-hero-content {
+  max-width: 900px;
+}
+
+.case-study--studio-one .case-study-eyebrow {
+  margin: 0 0 1rem;
+  color: var(--studio-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .case-study-hero h1 {
+  max-width: 1000px;
+  margin: 0;
+  color: var(--studio-text);
+  font-size: clamp(4rem, 9vw, 8.5rem);
+  font-weight: 800;
+  letter-spacing: -0.065em;
+  line-height: 0.88;
+}
+
+.case-study--studio-one .case-study-lede {
+  max-width: 760px;
+  margin: 2.25rem 0 0;
+  color: #d5dbe4;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.65;
+}
+
+.case-study--studio-one .case-study-principle {
+  max-width: 760px;
+  margin: 2.5rem 0 0;
+  color: var(--studio-text);
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+/* Project metadata */
+
+.case-study--studio-one .case-study-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 920px;
+  margin-top: 3.5rem;
+}
+
+.case-study--studio-one .case-study-meta > div {
+  min-height: 120px;
+  padding: 1.4rem;
+  border: 1px solid var(--studio-line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.case-study--studio-one .case-study-meta span,
+.case-study--studio-one .case-study-meta strong {
+  display: block;
+}
+
+.case-study--studio-one .case-study-meta span {
+  margin-bottom: 0.65rem;
+  color: var(--studio-muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .case-study-meta strong {
+  color: var(--studio-text);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+/* Hero actions */
+
+.case-study--studio-one .case-study-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.case-study--studio-one .case-study-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.8rem 1.15rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1;
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease;
+}
+
+.case-study--studio-one .case-study-button:hover {
+  transform: translateY(-2px);
+}
+
+.case-study--studio-one .case-study-button--primary {
+  background: var(--studio-accent);
+  color: #061211;
+}
+
+.case-study--studio-one .case-study-button--primary:hover {
+  background: #25c2be;
+}
+
+.case-study--studio-one .case-study-button--secondary {
+  border-color: var(--studio-line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--studio-text);
+}
+
+.case-study--studio-one .case-study-button--secondary:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Content sections */
+
+.case-study--studio-one .case-study-section {
+  padding: clamp(5rem, 9vw, 8rem) 0;
+}
+
+.case-study--studio-one .case-study-section--light {
+  background: #f5f6f7;
+  color: #121820;
+}
+
+.case-study--studio-one .case-study-section--dark {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(22, 170, 167, 0.05),
+      transparent 42%
+    ),
+    var(--studio-bg);
+  color: var(--studio-text);
+}
+
+.case-study--studio-one .case-study-section-heading {
+  max-width: 920px;
+}
+
+.case-study--studio-one .case-study-section-heading h2 {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(2.75rem, 6vw, 5.75rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.case-study--studio-one
+  .case-study-section--light
+  .case-study-section-heading h2 {
+  color: #121820;
+}
+
+.case-study--studio-one
+  .case-study-section--light
+  .case-study-eyebrow {
+  color: #087f7c;
+}
+
+.case-study--studio-one .case-study-copy {
+  max-width: 760px;
+  margin-top: 3rem;
+}
+
+.case-study--studio-one .case-study-copy p {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  line-height: 1.75;
+}
+
+.case-study--studio-one .case-study-copy p + p {
+  margin-top: 1.35rem;
+}
+
+.case-study--studio-one
+  .case-study-section--light
+  .case-study-copy {
+  color: #46505c;
+}
+
+.case-study--studio-one
+  .case-study-section--dark
+  .case-study-copy {
+  color: var(--studio-muted);
+}
+
+/* Responsive */
+
+@media (max-width: 760px) {
+  .case-study--studio-one .case-study-shell {
+    width: min(100% - 2rem, 1200px);
+  }
+
+  .case-study--studio-one .case-study-hero {
+    padding: 2rem 0 4.5rem;
+  }
+
+  .case-study--studio-one .case-study-back-link {
+    margin-bottom: 3.5rem;
+  }
+
+  .case-study--studio-one .case-study-hero h1 {
+    font-size: clamp(3.3rem, 17vw, 5.5rem);
+  }
+
+  .case-study--studio-one .case-study-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study--studio-one .case-study-meta > div {
+    min-height: auto;
+  }
+
+  .case-study--studio-one .case-study-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .case-study--studio-one .case-study-button {
+    width: 100%;
+  }
+
+  .case-study--studio-one .case-study-section-heading h2 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-study--studio-one .case-study-back-link,
+  .case-study--studio-one .case-study-button {
+    transition: none;
+  }
+}
+
+/* =========================================================
+   STUDIO//ONE — GOVERNED WORKFLOW
+   ========================================================= */
+
+.case-study--studio-one .studio-workflow {
+  padding: clamp(5.5rem, 10vw, 9rem) 0;
+  background:
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(22, 170, 167, 0.12),
+      transparent 30rem
+    ),
+    #101722;
+  color: var(--studio-text);
+}
+
+.case-study--studio-one .studio-workflow-intro {
+  max-width: 920px;
+}
+
+.case-study--studio-one .studio-workflow-intro h2 {
+  max-width: 900px;
+  margin: 0;
+  color: var(--studio-text);
+  font-size: clamp(2.75rem, 6vw, 5.75rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.case-study--studio-one .studio-workflow-intro > p:last-child {
+  max-width: 760px;
+  margin: 2.5rem 0 0;
+  color: var(--studio-muted);
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  line-height: 1.75;
+}
+
+/* Workflow cards */
+
+.case-study--studio-one .studio-workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 4.5rem;
+}
+
+.case-study--studio-one .studio-workflow-card {
+  position: relative;
+  min-height: 235px;
+  padding: 1.6rem;
+  overflow: hidden;
+  border: 1px solid var(--studio-line);
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.055),
+      rgba(255, 255, 255, 0.018)
+    );
+}
+
+.case-study--studio-one .studio-workflow-card::before {
+  position: absolute;
+  top: 0;
+  left: 1.6rem;
+  width: 42px;
+  height: 3px;
+  background: var(--studio-accent);
+  content: '';
+}
+
+.case-study--studio-one .studio-workflow-card h3 {
+  margin: 0;
+  padding-top: 0.75rem;
+  color: var(--studio-text);
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.case-study--studio-one .studio-workflow-card p {
+  margin: 1.25rem 0 0;
+  color: var(--studio-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Direct → Remember → Reason → Approve → Act */
+
+.case-study--studio-one .studio-workflow-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 2rem;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--studio-line);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.case-study--studio-one .studio-workflow-flow span:nth-child(odd) {
+  color: var(--studio-text);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .studio-workflow-flow span:nth-child(even) {
+  color: var(--studio-accent);
+  font-weight: 800;
+}
+
+/* Governing principle */
+
+.case-study--studio-one .studio-workflow-principle {
+  margin-top: 3.5rem;
+  padding: 2rem 0 0;
+  border-top: 1px solid var(--studio-line);
+}
+
+.case-study--studio-one .studio-workflow-principle p {
+  max-width: 780px;
+  margin: 0;
+  color: var(--studio-text);
+  font-size: clamp(1.45rem, 3vw, 2.35rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+/* Workflow responsive behavior */
+
+@media (max-width: 1000px) {
+  .case-study--studio-one .studio-workflow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-study--studio-one .studio-workflow-card:last-child {
+    grid-column: 1 / -1;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-study--studio-one .studio-workflow-grid {
+    grid-template-columns: 1fr;
+    margin-top: 3.25rem;
+  }
+
+  .case-study--studio-one .studio-workflow-card,
+  .case-study--studio-one .studio-workflow-card:last-child {
+    grid-column: auto;
+    min-height: auto;
+  }
+
+  .case-study--studio-one .studio-workflow-flow {
+    gap: 0.55rem;
+  }
+
+  .case-study--studio-one .studio-workflow-flow span:nth-child(odd) {
+    font-size: 0.72rem;
+  }
+}
+
+/* =========================================================
+   STUDIO//ONE — PRODUCTION MEMORY
+   ========================================================= */
+
+.case-study--studio-one .studio-memory {
+  padding: clamp(5.5rem, 10vw, 9rem) 0;
+  background: #f5f6f7;
+  color: #121820;
+}
+
+.case-study--studio-one .studio-memory-heading {
+  max-width: 980px;
+}
+
+.case-study--studio-one .studio-memory-heading .case-study-eyebrow {
+  color: #087f7c;
+}
+
+.case-study--studio-one .studio-memory-heading h2 {
+  max-width: 940px;
+  margin: 0;
+  color: #121820;
+  font-size: clamp(2.75rem, 6vw, 5.75rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.case-study--studio-one .studio-memory-heading > p:last-child {
+  max-width: 760px;
+  margin: 2.5rem 0 0;
+  color: #505b68;
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  line-height: 1.75;
+}
+
+/* Memory function cards */
+
+.case-study--studio-one .studio-memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 4.5rem;
+}
+
+.case-study--studio-one .studio-memory-card {
+  position: relative;
+  min-height: 235px;
+  padding: 1.65rem;
+  border: 1px solid #d7dde5;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.case-study--studio-one .studio-memory-card::before {
+  position: absolute;
+  top: 0;
+  left: 1.65rem;
+  width: 42px;
+  height: 3px;
+  background: var(--studio-accent);
+  content: '';
+}
+
+.case-study--studio-one .studio-memory-card h3 {
+  margin: 0;
+  padding-top: 0.75rem;
+  color: #121820;
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.case-study--studio-one .studio-memory-card p {
+  margin: 1.25rem 0 0;
+  color: #5d6875;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Creator → Memory → Agent model */
+
+.case-study--studio-one .studio-memory-model {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin-top: 3.5rem;
+  padding: 1.5rem;
+  border: 1px solid #d7dde5;
+  border-radius: 16px;
+  background: #eef2f5;
+}
+
+.case-study--studio-one .studio-memory-model > div {
+  min-height: 110px;
+  padding: 1.25rem;
+  border: 1px solid #d8dee5;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.case-study--studio-one .studio-memory-model span,
+.case-study--studio-one .studio-memory-model strong {
+  display: block;
+}
+
+.case-study--studio-one .studio-memory-model > div span {
+  margin-bottom: 0.6rem;
+  color: #087f7c;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .studio-memory-model strong {
+  color: #121820;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.case-study--studio-one .studio-memory-arrow {
+  color: var(--studio-accent);
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Governing memory principle */
+
+.case-study--studio-one .studio-memory-principle {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #d4dae2;
+}
+
+.case-study--studio-one .studio-memory-principle p {
+  max-width: 820px;
+  margin: 0;
+  color: #121820;
+  font-size: clamp(1.45rem, 3vw, 2.35rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+/* Responsive behavior */
+
+@media (max-width: 1000px) {
+  .case-study--studio-one .studio-memory-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-study--studio-one .studio-memory-model {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study--studio-one .studio-memory-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .case-study--studio-one .studio-memory-grid {
+    grid-template-columns: 1fr;
+    margin-top: 3.25rem;
+  }
+
+  .case-study--studio-one .studio-memory-card {
+    min-height: auto;
+  }
+
+  .case-study--studio-one .studio-memory-model {
+    padding: 1rem;
+  }
+
+  .case-study--studio-one .studio-memory-model > div {
+    min-height: auto;
+  }
+}
+
+/* =========================================================
+   STUDIO//ONE — HUMAN AUTHORITY
+   ========================================================= */
+
+.case-study--studio-one .studio-authority {
+  padding: clamp(5.5rem, 10vw, 9rem) 0;
+  background:
+    radial-gradient(
+      circle at 88% 20%,
+      rgba(22, 170, 167, 0.11),
+      transparent 30rem
+    ),
+    #090d14;
+  color: var(--studio-text);
+}
+
+.case-study--studio-one .studio-authority-heading {
+  max-width: 980px;
+}
+
+.case-study--studio-one .studio-authority-heading h2 {
+  max-width: 920px;
+  margin: 0;
+  color: var(--studio-text);
+  font-size: clamp(2.75rem, 6vw, 5.75rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.case-study--studio-one .studio-authority-heading > p:last-child {
+  max-width: 760px;
+  margin: 2.5rem 0 0;
+  color: var(--studio-muted);
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  line-height: 1.75;
+}
+
+/* Authority cards */
+
+.case-study--studio-one .studio-authority-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 4.5rem;
+}
+
+.case-study--studio-one .studio-authority-card {
+  position: relative;
+  min-height: 235px;
+  padding: 1.65rem;
+  border: 1px solid var(--studio-line);
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.055),
+      rgba(255, 255, 255, 0.018)
+    );
+}
+
+.case-study--studio-one .studio-authority-card::before {
+  position: absolute;
+  top: 0;
+  left: 1.65rem;
+  width: 42px;
+  height: 3px;
+  background: var(--studio-accent);
+  content: '';
+}
+
+.case-study--studio-one .studio-authority-card h3 {
+  margin: 0;
+  padding-top: 0.75rem;
+  color: var(--studio-text);
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.case-study--studio-one .studio-authority-card p {
+  margin: 1.25rem 0 0;
+  color: var(--studio-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Agent → Creator → Production model */
+
+.case-study--studio-one .studio-authority-model {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin-top: 3.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--studio-line);
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.case-study--studio-one .studio-authority-model > div {
+  min-height: 115px;
+  padding: 1.25rem;
+  border: 1px solid var(--studio-line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.case-study--studio-one
+  .studio-authority-model
+  > div.studio-authority-model--human {
+  border-color: rgba(22, 170, 167, 0.6);
+  background: rgba(22, 170, 167, 0.1);
+}
+
+.case-study--studio-one .studio-authority-model span,
+.case-study--studio-one .studio-authority-model strong {
+  display: block;
+}
+
+.case-study--studio-one .studio-authority-model > div span {
+  margin-bottom: 0.6rem;
+  color: var(--studio-accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .studio-authority-model strong {
+  color: var(--studio-text);
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.case-study--studio-one .studio-authority-divider {
+  color: var(--studio-accent);
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Governing authority principle */
+
+.case-study--studio-one .studio-authority-principle {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--studio-line);
+}
+
+.case-study--studio-one .studio-authority-principle p {
+  max-width: 820px;
+  margin: 0;
+  color: var(--studio-text);
+  font-size: clamp(1.45rem, 3vw, 2.35rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+/* Responsive behavior */
+
+@media (max-width: 1000px) {
+  .case-study--studio-one .studio-authority-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-study--studio-one .studio-authority-model {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study--studio-one .studio-authority-divider {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .case-study--studio-one .studio-authority-grid {
+    grid-template-columns: 1fr;
+    margin-top: 3.25rem;
+  }
+
+  .case-study--studio-one .studio-authority-card {
+    min-height: auto;
+  }
+
+  .case-study--studio-one .studio-authority-model {
+    padding: 1rem;
+  }
+
+  .case-study--studio-one .studio-authority-model > div {
+    min-height: auto;
+  }
+}
+
+/* =========================================================
+   STUDIO//ONE — TECHNICAL ARCHITECTURE
+   ========================================================= */
+
+.case-study--studio-one .studio-architecture {
+  padding: clamp(5.5rem, 10vw, 9rem) 0;
+  background: #f5f6f7;
+  color: #121820;
+}
+
+.case-study--studio-one .studio-architecture-heading {
+  max-width: 980px;
+}
+
+.case-study--studio-one
+  .studio-architecture-heading
+  .case-study-eyebrow {
+  color: #087f7c;
+}
+
+.case-study--studio-one .studio-architecture-heading h2 {
+  max-width: 940px;
+  margin: 0;
+  color: #121820;
+  font-size: clamp(2.75rem, 6vw, 5.75rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.case-study--studio-one .studio-architecture-heading > p:last-child {
+  max-width: 760px;
+  margin: 2.5rem 0 0;
+  color: #505b68;
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  line-height: 1.75;
+}
+
+/* Architecture flow */
+
+.case-study--studio-one .studio-architecture-stack {
+  max-width: 920px;
+  margin-top: 4.5rem;
+}
+
+.case-study--studio-one .studio-architecture-step {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.case-study--studio-one .studio-architecture-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.35fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  padding: 1.75rem;
+  border: 1px solid #d7dde5;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.case-study--studio-one .studio-architecture-card > span {
+  color: #087f7c;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .studio-architecture-card p {
+  margin: 0;
+  color: #4f5b68;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.case-study--studio-one .studio-architecture-arrow {
+  align-self: center;
+  padding: 0.6rem 0;
+  color: var(--studio-accent);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+/* Implementation evidence */
+
+.case-study--studio-one .studio-architecture-evidence {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.case-study--studio-one .studio-architecture-evidence > div {
+  min-height: 125px;
+  padding: 1.35rem;
+  border: 1px solid #d7dde5;
+  border-radius: 14px;
+  background: #eef2f5;
+}
+
+.case-study--studio-one .studio-architecture-evidence span,
+.case-study--studio-one .studio-architecture-evidence strong {
+  display: block;
+}
+
+.case-study--studio-one .studio-architecture-evidence span {
+  margin-bottom: 0.7rem;
+  color: #087f7c;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .studio-architecture-evidence strong {
+  color: #121820;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Architecture principle */
+
+.case-study--studio-one .studio-architecture-principle {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #d4dae2;
+}
+
+.case-study--studio-one .studio-architecture-principle p {
+  max-width: 840px;
+  margin: 0;
+  color: #121820;
+  font-size: clamp(1.45rem, 3vw, 2.35rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+/* Responsive behavior */
+
+@media (max-width: 900px) {
+  .case-study--studio-one .studio-architecture-card {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .case-study--studio-one .studio-architecture-evidence {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .case-study--studio-one .studio-architecture-stack {
+    margin-top: 3.25rem;
+  }
+
+  .case-study--studio-one .studio-architecture-card {
+    padding: 1.35rem;
+  }
+
+  .case-study--studio-one .studio-architecture-evidence {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study--studio-one .studio-architecture-evidence > div {
+    min-height: auto;
+  }
+}
+
+/* =========================================================
+   STUDIO//ONE — BUILT & VALIDATED
+   ========================================================= */
+
+.case-study--studio-one .studio-evidence {
+  padding: clamp(5.5rem, 10vw, 9rem) 0;
+  background:
+    radial-gradient(
+      circle at 84% 14%,
+      rgba(22, 170, 167, 0.1),
+      transparent 28rem
+    ),
+    #101722;
+  color: var(--studio-text);
+}
+
+.case-study--studio-one .studio-evidence-heading {
+  max-width: 980px;
+}
+
+.case-study--studio-one .studio-evidence-heading h2 {
+  max-width: 920px;
+  margin: 0;
+  color: var(--studio-text);
+  font-size: clamp(2.75rem, 6vw, 5.75rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.case-study--studio-one .studio-evidence-heading > p:last-child {
+  max-width: 760px;
+  margin: 2.5rem 0 0;
+  color: var(--studio-muted);
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  line-height: 1.75;
+}
+
+/* Build evidence cards */
+
+.case-study--studio-one .studio-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 4.5rem;
+}
+
+.case-study--studio-one .studio-evidence-card {
+  position: relative;
+  min-height: 250px;
+  padding: 1.65rem;
+  border: 1px solid var(--studio-line);
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.055),
+      rgba(255, 255, 255, 0.018)
+    );
+}
+
+.case-study--studio-one .studio-evidence-card::before {
+  position: absolute;
+  top: 0;
+  left: 1.65rem;
+  width: 42px;
+  height: 3px;
+  background: var(--studio-accent);
+  content: '';
+}
+
+.case-study--studio-one .studio-evidence-card > span {
+  display: block;
+  margin-top: 0.75rem;
+  color: var(--studio-accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .studio-evidence-card h3 {
+  margin: 1.1rem 0 0;
+  color: var(--studio-text);
+  font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.case-study--studio-one .studio-evidence-card p {
+  margin: 1.25rem 0 0;
+  color: var(--studio-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Runtime proof */
+
+.case-study--studio-one .studio-runtime-proof {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--studio-line);
+}
+
+.case-study--studio-one .studio-runtime-proof-heading {
+  max-width: 820px;
+}
+
+.case-study--studio-one .studio-runtime-proof-heading h3 {
+  max-width: 760px;
+  margin: 0;
+  color: var(--studio-text);
+  font-size: clamp(2rem, 4vw, 3.75rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.case-study--studio-one .studio-runtime-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  padding: 1.4rem;
+  border: 1px solid var(--studio-line);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.case-study--studio-one .studio-runtime-flow span:nth-child(odd) {
+  color: var(--studio-text);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .studio-runtime-flow span:nth-child(even) {
+  color: var(--studio-accent);
+  font-weight: 800;
+}
+
+.case-study--studio-one .studio-runtime-proof > p:last-child {
+  max-width: 760px;
+  margin: 2rem 0 0;
+  color: var(--studio-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* Competition context */
+
+.case-study--studio-one .studio-competition-context {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1.45fr);
+  gap: 4rem;
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--studio-line);
+}
+
+.case-study--studio-one .studio-competition-context h3 {
+  max-width: 460px;
+  margin: 0;
+  color: var(--studio-text);
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.case-study--studio-one .studio-competition-context > div:last-child {
+  max-width: 720px;
+}
+
+.case-study--studio-one .studio-competition-context > div:last-child p {
+  margin: 0;
+  color: var(--studio-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.case-study--studio-one
+  .studio-competition-context
+  > div:last-child
+  p
+  + p {
+  margin-top: 1.35rem;
+}
+
+.case-study--studio-one .studio-competition-context strong {
+  color: var(--studio-text);
+}
+
+/* Evidence principle */
+
+.case-study--studio-one .studio-evidence-principle {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--studio-line);
+}
+
+.case-study--studio-one .studio-evidence-principle p {
+  max-width: 860px;
+  margin: 0;
+  color: var(--studio-text);
+  font-size: clamp(1.45rem, 3vw, 2.35rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .case-study--studio-one .studio-evidence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-study--studio-one .studio-competition-context {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-study--studio-one .studio-evidence-grid {
+    grid-template-columns: 1fr;
+    margin-top: 3.25rem;
+  }
+
+  .case-study--studio-one .studio-evidence-card {
+    min-height: auto;
+  }
+
+  .case-study--studio-one .studio-runtime-flow {
+    gap: 0.55rem;
+  }
+
+  .case-study--studio-one .studio-runtime-flow span:nth-child(odd) {
+    font-size: 0.7rem;
+  }
+
+  .case-study--studio-one .studio-competition-context {
+    margin-top: 4rem;
+  }
+}
+
+/* =========================================================
+   STUDIO//ONE — CURRENT STATE / LESSONS / OUTCOME
+   ========================================================= */
+
+.case-study--studio-one .studio-current-state {
+  padding: clamp(5.5rem, 10vw, 9rem) 0;
+  background: #f5f6f7;
+  color: #121820;
+}
+
+.case-study--studio-one .studio-current-state-heading {
+  max-width: 980px;
+}
+
+.case-study--studio-one
+  .studio-current-state-heading
+  .case-study-eyebrow {
+  color: #087f7c;
+}
+
+.case-study--studio-one .studio-current-state-heading h2 {
+  max-width: 900px;
+  margin: 0;
+  color: #121820;
+  font-size: clamp(2.75rem, 6vw, 5.75rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.case-study--studio-one .studio-current-state-heading > p:last-child {
+  max-width: 760px;
+  margin: 2.5rem 0 0;
+  color: #505b68;
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  line-height: 1.75;
+}
+
+/* Current-state cards */
+
+.case-study--studio-one .studio-current-state-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 4.5rem;
+}
+
+.case-study--studio-one .studio-current-state-grid article {
+  min-height: 245px;
+  padding: 1.65rem;
+  border: 1px solid #d7dde5;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.case-study--studio-one .studio-current-state-grid span {
+  display: block;
+  margin-bottom: 1rem;
+  color: #087f7c;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.case-study--studio-one .studio-current-state-grid h3 {
+  margin: 0;
+  color: #121820;
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.case-study--studio-one .studio-current-state-grid p {
+  margin: 1.2rem 0 0;
+  color: #5c6774;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* What We Learned */
+
+.case-study--studio-one .studio-lessons {
+  margin-top: 6rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid #d4dae2;
+}
+
+.case-study--studio-one .studio-lessons-heading {
+  max-width: 860px;
+}
+
+.case-study--studio-one .studio-lessons-heading h3 {
+  max-width: 780px;
+  margin: 0;
+  color: #121820;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.case-study--studio-one .studio-lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 3.5rem;
+}
+
+.case-study--studio-one .studio-lesson-card {
+  min-height: 220px;
+  padding: 1.6rem;
+  border: 1px solid #d7dde5;
+  border-radius: 16px;
+  background: #eef2f5;
+}
+
+.case-study--studio-one .studio-lesson-card h4 {
+  margin: 0;
+  color: #121820;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.case-study--studio-one .studio-lesson-card p {
+  margin: 1rem 0 0;
+  color: #5d6875;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Outcome */
+
+.case-study--studio-one .studio-outcome {
+  padding: clamp(6rem, 11vw, 10rem) 0;
+  background:
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(22, 170, 167, 0.14),
+      transparent 30rem
+    ),
+    linear-gradient(135deg, #071526 0%, #090d14 74%);
+  color: var(--studio-text);
+}
+
+.case-study--studio-one .studio-outcome .case-study-eyebrow {
+  color: var(--studio-accent);
+}
+
+.case-study--studio-one .studio-outcome h2 {
+  max-width: 980px;
+  margin: 0;
+  color: var(--studio-text);
+  font-size: clamp(3rem, 6.5vw, 6.25rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 0.96;
+}
+
+.case-study--studio-one .studio-outcome-copy {
+  max-width: 760px;
+  margin: 2.75rem 0 0;
+  color: var(--studio-muted);
+  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  line-height: 1.75;
+}
+
+.case-study--studio-one .studio-outcome-principle {
+  max-width: 760px;
+  margin: 2.5rem 0 0;
+  color: var(--studio-text);
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+/* Outcome actions */
+
+.case-study--studio-one .studio-outcome-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2.5rem;
+}
+
+.case-study--studio-one .studio-outcome-primary,
+.case-study--studio-one .studio-outcome-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.85rem 1.15rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1;
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease;
+}
+
+.case-study--studio-one .studio-outcome-primary {
+  background: var(--studio-accent);
+  color: #061211;
+}
+
+.case-study--studio-one .studio-outcome-primary:hover {
+  background: #25c2be;
+  transform: translateY(-2px);
+}
+
+.case-study--studio-one .studio-outcome-secondary {
+  border: 1px solid var(--studio-line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--studio-text);
+}
+
+.case-study--studio-one .studio-outcome-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .case-study--studio-one .studio-current-state-grid,
+  .case-study--studio-one .studio-lessons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study--studio-one .studio-current-state-grid article,
+  .case-study--studio-one .studio-lesson-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-study--studio-one .studio-current-state-grid,
+  .case-study--studio-one .studio-lessons-grid {
+    margin-top: 3.25rem;
+  }
+
+  .case-study--studio-one .studio-outcome-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .case-study--studio-one .studio-outcome-primary,
+  .case-study--studio-one .studio-outcome-secondary {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-study--studio-one .studio-outcome-primary,
+  .case-study--studio-one .studio-outcome-secondary {
+    transition: none;
+  }
+}
