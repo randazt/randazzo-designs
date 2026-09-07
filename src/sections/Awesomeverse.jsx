@@ -32,7 +32,7 @@ function Awesomeverse() {
 
           <div className="awesomeverse-story">
             <p className="awesomeverse-label">
-              Something is wrong with the system.
+              Original IP · Worldbuilding · Visual Storytelling
             </p>
 
             <h3>

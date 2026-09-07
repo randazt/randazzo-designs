@@ -1288,7 +1288,7 @@ button:focus-visible {
 
 .awesomeverse-feature {
   display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.75fr);
+  grid-template-columns: minmax(0, 1.5fr) minmax(360px, 1fr);
 
   overflow: hidden;
 
