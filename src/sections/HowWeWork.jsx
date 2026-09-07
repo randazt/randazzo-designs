@@ -64,8 +64,9 @@ function HowWeWork() {
             <p className="how-we-work-label">Client Outcome</p>
 
             <h3>
-              Leave more <span className="how-we-work-keep">capable—</span>not
-              more dependent.
+              Leave more capable —
+              <br />
+              not more dependent.
             </h3>
           </div>
 
