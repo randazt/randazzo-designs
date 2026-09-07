@@ -7203,7 +7203,7 @@ a.ai-experience-link:hover {
     ),
     radial-gradient(
       circle at 62% 48%,
-      rgba(92, 124, 255, 0.12),
+      rgba(48, 62, 117, 0.12),
       transparent 34rem
     ),
     linear-gradient(145deg, #08111f 0%, #090d17 58%, #050a12 100%);
@@ -7239,6 +7239,11 @@ a.ai-experience-link:hover {
   letter-spacing: 0.12em;
   line-height: 1.4;
   text-transform: uppercase;
+}
+
+.case-study--ai-assistants .case-study-shell {
+  width: min(100% - 3rem, 1200px);
+  margin-inline: auto;
 }
 
 .case-study--ai-assistants .ai-assistants-hero h1 {
@@ -7610,6 +7615,10 @@ a.ai-experience-link:hover {
 }
 
 @media (max-width: 600px) {
+  .case-study--ai-assistants .case-study-shell {
+    width: min(100% - 2rem, 1200px);
+  }
+
   .case-study--ai-assistants .ai-assistants-hero h1 {
     font-size: clamp(3.4rem, 17vw, 5rem);
   }
@@ -7634,13 +7643,6 @@ a.ai-experience-link:hover {
 
   .case-study--ai-assistants .ai-assistants-button {
     width: 100%;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .case-study--ai-assistants .case-study-back-link,
-  .case-study--ai-assistants .ai-assistants-button {
-    transition: none;
   }
 }
 
