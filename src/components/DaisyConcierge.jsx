@@ -11,9 +11,10 @@ You don't need to have it all worked out yet.`,
 }
 
 const starterPrompts = [
-  'I know I need design help, but I’m not sure what kind.',
-  'I’m planning a website and need help figuring out what it should do.',
-  'I have a project idea, but I need help organizing it.',
+  'Explore Services',
+  'Explore AI Experiences',
+  'Explore Selected Work',
+  'Help Me Choose',
 ]
 
 function DaisyConcierge() {
