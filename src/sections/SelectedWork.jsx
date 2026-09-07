@@ -109,9 +109,11 @@ function SelectedWork() {
                   <a
                     className="selected-work-link selected-work-link--case-study"
                     href={project.caseStudyHref}
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     View Case Study
-                    <span aria-hidden="true"> →</span>
+                    <span aria-hidden="true"> ↗</span>
                   </a>
                 )}
 

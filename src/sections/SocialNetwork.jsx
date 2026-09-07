@@ -24,11 +24,19 @@ const channels = [
     accent: 'pink',
   },
   {
-    name: 'Facebook',
+    name: 'Facebook — The Awesomeverse',
     descriptor: 'Follow',
     description:
       'Awesomeverse releases, visual storytelling, project updates, and audience-facing creative work.',
     href: 'https://www.facebook.com/profile.php?id=100067917529621&sk=reels_tab',
+    accent: 'blue',
+  },
+  {
+    name: 'Facebook — Randazzo Designs',
+    descriptor: 'Follow',
+    description:
+      'Follow Randazzo Designs for professional design, creative technology, AI systems, project updates, and ongoing studio work.',
+    href: 'https://www.facebook.com/RandazzoDesignsCNY/',
     accent: 'blue',
   },
   {
@@ -82,7 +90,7 @@ function SocialNetwork() {
           {channels.map((channel) => (
             <article
               className={`social-network-card social-network-${channel.accent}`}
-              key={channel.name}
+              key={channel.href}
             >
               <div className="social-network-card-top">
                 <p>{channel.descriptor}</p>

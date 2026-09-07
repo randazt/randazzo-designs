@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const questions = [
   {
     question: 'What kinds of projects does Randazzo Designs take on?',
@@ -32,6 +34,14 @@ const questions = [
 ]
 
 function FAQ() {
+  const [openIndex, setOpenIndex] = useState(null)
+
+  const handleToggle = (index) => {
+    setOpenIndex((currentIndex) =>
+      currentIndex === index ? null : index,
+    )
+  }
+
   return (
     <section className="faq" id="faq">
       <div className="faq-inner">
@@ -50,12 +60,21 @@ function FAQ() {
         </header>
 
         <div className="faq-list">
-          {questions.map((item) => (
-            <details className="faq-item" key={item.question}>
-              <summary>
+          {questions.map((item, index) => (
+            <details
+              className="faq-item"
+              key={item.question}
+              open={openIndex === index}
+            >
+              <summary
+                onClick={(event) => {
+                  event.preventDefault()
+                  handleToggle(index)
+                }}
+              >
                 <span>{item.question}</span>
                 <span className="faq-toggle" aria-hidden="true">
-                  +
+                  {openIndex === index ? '×' : '+'}
                 </span>
               </summary>
 
