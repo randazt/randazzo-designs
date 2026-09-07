@@ -99,7 +99,6 @@ function HomePage() {
       </main>
 
       <SiteFooter />
-      <DaisyConcierge />
     </>
   )
 }
@@ -147,6 +146,8 @@ function App() {
           />
         </Routes>
       </Suspense>
+
+      <DaisyConcierge />
     </>
   )
 }
