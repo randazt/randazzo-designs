@@ -3660,6 +3660,18 @@ a.ai-experience-link:hover {
     left: 1.5rem;
     right: 1.5rem;
   }
+
+  .selected-work-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9rem;
+    margin-top: 2rem;
+  }
+
+  .selected-work-links .selected-work-link {
+    margin-top: 0;
+  }
 }
 
 
