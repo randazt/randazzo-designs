@@ -764,6 +764,8 @@ function StudioOneCaseStudy() {
                 <a
                   className="studio-awesomeverse-primary"
                   href="/work/awesomeverse"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Explore the Awesomeverse Case Study
                   <span aria-hidden="true"> →</span>

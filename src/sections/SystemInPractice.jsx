@@ -57,7 +57,11 @@ function SystemInPractice() {
             </p>
 
             <div className="system-practice-actions">
-              <Link to="/work/studio-one">
+              <Link
+                to="/work/studio-one"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Explore STUDIO//ONE
                 <span aria-hidden="true"> →</span>
               </Link>
