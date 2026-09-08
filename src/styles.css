@@ -4098,6 +4098,46 @@ a.ai-experience-link:hover {
   background: var(--color-teal);
 }
 
+.how-we-work-stage:nth-child(7) {
+  grid-column: 1 / -1;
+
+  min-height: auto;
+
+  display: grid;
+  grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1.35fr);
+  column-gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.how-we-work-stage:nth-child(7)::before {
+  background: var(--color-purple);
+}
+
+.how-we-work-stage:nth-child(7)::after {
+  content: "↺  Evidence can return the process to Human Direction";
+
+  grid-column: 2;
+
+  margin-top: 1rem;
+
+  color: var(--color-blue);
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+}
+
+.how-we-work-stage:nth-child(7) h3 {
+  grid-row: 1 / span 2;
+
+  margin-top: 2.25rem;
+}
+
+.how-we-work-stage:nth-child(7) p {
+  grid-column: 2;
+}
+
 .how-we-work-stage:hover {
   transform: translateY(-3px);
 
@@ -4198,6 +4238,21 @@ a.ai-experience-link:hover {
   .how-we-work-inner {
     width: min(100% - 1.5rem, var(--max-width));
     padding: 4.5rem 0;
+  }
+
+  .how-we-work-stage {
+  min-height: 180px;
+  padding: 1.5rem;
+  }
+
+  .how-we-work-stage:nth-child(7) {
+  display: block;
+  }
+
+.how-we-work-stage:nth-child(7)::after {
+  display: block;
+
+  margin-top: 1.25rem;
   }
 
   .how-we-work-heading h2 {

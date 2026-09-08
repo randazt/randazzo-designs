@@ -1,33 +1,38 @@
 const stages = [
   {
-    title: 'Understand',
+    title: 'Human Direction',
     description:
-      'Identify the real problem, audience, context, constraints, and desired outcome before prescribing a solution.',
+      'Define the problem, intent, constraints, and desired outcome. Human judgment establishes what the work is trying to accomplish and what matters most.',
   },
   {
-    title: 'Structure',
+    title: 'AI Collaboration',
     description:
-      'Organize information, workflows, priorities, and relationships into something people can understand and use.',
+      'Use AI to help research, reason, organize, explore, draft, and troubleshoot while keeping consequential decisions under human direction.',
   },
   {
-    title: 'Design',
+    title: 'Implementation',
     description:
-      'Shape the experience around human needs through hierarchy, interaction, communication, and accessibility-conscious design.',
+      'Move approved thinking into the appropriate working environment, where ideas become tangible designs, interfaces, systems, content, or code.',
   },
   {
-    title: 'Augment',
+    title: 'External Systems',
     description:
-      'Apply the appropriate design and technology to extend human capability without adding unnecessary complexity.',
+      'Connect the work to the platforms, services, production environments, and other systems required to test how it performs beyond the workspace.',
   },
   {
-    title: 'Validate',
+    title: 'Evidence',
     description:
-      'Review the result against requirements, evidence, usability, accessibility, and the intended outcome.',
+      'Bring real results back into the process through testing, screenshots, output, behavior, feedback, and other observable evidence.',
   },
   {
-    title: 'Enable',
+    title: 'Review & Refine',
     description:
-      'Transfer understanding, documentation, and practical control so the client can confidently use what was created.',
+      'Interpret what actually happened, identify what needs to change, and choose the smallest useful correction before returning to implementation.',
+  },
+  {
+    title: 'Verified Outcome',
+    description:
+      'Confirm that the result works as intended before treating it as complete. New evidence can reopen the loop whenever further refinement is needed.',
   },
 ]
 
@@ -36,17 +41,18 @@ function HowWeWork() {
     <section className="how-we-work" id="process">
       <div className="how-we-work-inner">
         <header className="how-we-work-heading">
-          <p className="section-eyebrow">How We Work</p>
+          <p className="section-eyebrow">The Randazzo Method™</p>
 
           <h2>
-            A clear process
+            A human-directed feedback loop
             <br />
             from problem to capability.
           </h2>
 
           <p className="how-we-work-intro">
-            Randazzo Designs uses a repeatable human-centered process to turn
-            unclear problems into useful systems, experiences, and outcomes.
+            Human direction starts the process and evidence brings it back.
+            AI, design, technology, and production tools assist throughout the
+            loop while people retain judgment, agency, and final authority.
           </p>
         </header>
 
