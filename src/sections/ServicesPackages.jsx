@@ -3,6 +3,7 @@ const servicePillars = [
     category: 'Web & Digital Experience Design',
     statement:
       'Create clear, responsive digital experiences that help people find information, understand it, and take meaningful action.',
+    cta: 'Improve the digital experience',
     engagements: [
       {
         title: 'Focused Web Presence',
@@ -29,6 +30,7 @@ const servicePillars = [
     category: 'Design & Information Systems',
     statement:
       'Turn ideas, identities, and complex information into clearer visual systems that people can understand and use.',
+    cta: 'Make information clearer',
     engagements: [
       {
         title: 'Visual Communication',
@@ -55,6 +57,7 @@ const servicePillars = [
     category: 'AI Advisory & Systems',
     statement:
       'Help people and organizations understand where AI belongs, design useful workflows, and preserve meaningful human control.',
+    cta: 'Find where AI actually belongs',
     engagements: [
       {
         title: 'AI Clarity & Workflow Session',
@@ -81,6 +84,7 @@ const servicePillars = [
     category: 'AI Workforce Enablement',
     statement:
       'Build practical AI capability through role-relevant instruction, workflow guidance, visual learning resources, responsible use, and meaningful human decision-making.',
+    cta: 'Build a more capable team',
     engagements: [
       {
         title: 'AI Workforce Workshop',
@@ -219,7 +223,7 @@ function ServicesPackages() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Discuss your project
+                  {pillar.cta}
                   <span aria-hidden="true"> →</span>
                 </a>
               </div>
