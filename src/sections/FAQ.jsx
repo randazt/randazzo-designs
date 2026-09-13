@@ -29,7 +29,7 @@ const questions = [
   {
     question: 'Will I be able to manage what you create?',
     answer:
-      'Client enablement is part of the working method. Appropriate documentation, handoff materials, guidance, or knowledge transfer are defined around the project so the client leaves with greater understanding and practical control rather than unnecessary dependence.',
+      'Client enablement is part of the delivery method. Appropriate documentation, handoff materials, guidance, or knowledge transfer are defined around the project so the client leaves with greater understanding and practical control rather than unnecessary dependence.',
   },
 ]
 
