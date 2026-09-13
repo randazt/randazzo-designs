@@ -12097,3 +12097,99 @@ a.ai-experience-link:hover {
   outline: 2px solid #44c9bd;
   outline-offset: 3px;
 }
+
+/* =========================================================
+   PROBLEM FRAMING
+   ========================================================= */
+
+.problem-framing {
+  padding: var(--space-6) var(--space-2);
+  background: var(--color-surface);
+}
+
+.problem-framing-inner {
+  width: min(100%, var(--max-width));
+  margin: 0 auto;
+}
+
+.problem-framing-heading {
+  max-width: 860px;
+}
+
+.problem-framing-heading h2 {
+  max-width: 820px;
+  margin: 0;
+
+  color: var(--color-navy);
+
+  font-size: clamp(3rem, 6vw, 5.6rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.problem-framing-intro {
+  max-width: 720px;
+  margin: var(--space-3) 0 0;
+
+  color: var(--color-muted);
+
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.problem-framing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+
+  margin-top: var(--space-5);
+}
+
+.problem-framing-card {
+  padding: var(--space-4);
+
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.problem-framing-card h3 {
+  margin: 0;
+
+  color: var(--color-navy);
+
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.problem-framing-card p {
+  max-width: 52ch;
+  margin: var(--space-2) 0 0;
+
+  color: var(--color-muted);
+
+  line-height: 1.7;
+}
+
+@media (max-width: 720px) {
+  .problem-framing {
+    padding: var(--space-5) var(--space-2);
+  }
+
+  .problem-framing-heading h2 {
+    font-size: clamp(2.8rem, 14vw, 4rem);
+  }
+
+  .problem-framing-intro {
+    font-size: 1rem;
+  }
+
+  .problem-framing-grid {
+    grid-template-columns: 1fr;
+    margin-top: var(--space-4);
+  }
+
+  .problem-framing-card {
+    padding: var(--space-3);
+  }
+}

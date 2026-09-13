@@ -7,6 +7,7 @@ import DaisyConcierge from './components/DaisyConcierge'
 import Seo from './components/Seo'
 
 import Hero from './sections/Hero'
+import ProblemFraming from './sections/ProblemFraming'
 import Ecosystem from './sections/Ecosystem'
 import DaisyFeature from './sections/DaisyFeature'
 import WorkingTechnology from './sections/WorkingTechnology'
@@ -97,6 +98,7 @@ function HomePage() {
 
       <main>
         <Hero />
+        <ProblemFraming />
         <Ecosystem />
         <DaisyFeature />
         <WorkingTechnology />
