@@ -383,6 +383,12 @@ function DaisyConcierge() {
               </button>
             </div>
 
+            <p className="daisy-concierge__legal-notice">
+              Please don't share sensitive or confidential information. Use of
+              D.AI.SY is subject to our <a href="/privacy">Privacy Policy</a>{' '}
+              and <a href="/terms">Terms</a>.
+            </p>
+
             <a
               className="daisy-concierge__handoff"
               href="#contact"

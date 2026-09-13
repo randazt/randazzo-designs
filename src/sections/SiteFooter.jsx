@@ -52,11 +52,11 @@ function SiteFooter() {
 
           <nav className="footer-nav" aria-label="Footer navigation">
             <p>Explore</p>
-            <a href="#selected-work">Work</a>
-            <a href="#technology">Technology</a>
-            <a href="#awesomeverse">Awesomeverse</a>
-            <a href="#learn">Learn</a>
-            <a href="#about">About</a>
+            <a href="/#selected-work">Work</a>
+            <a href="/#technology">Technology</a>
+            <a href="/#awesomeverse">Awesomeverse</a>
+            <a href="/#learn">Learn</a>
+            <a href="/#about">About</a>
           </nav>
 
           <div className="footer-projects">
@@ -96,6 +96,12 @@ function SiteFooter() {
 
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} Randazzo Designs.</p>
+
+          <nav className="footer-legal" aria-label="Legal">
+            <a href="/privacy" target="_blank" rel="noreferrer">Privacy</a>
+            <a href="/terms" target="_blank" rel="noreferrer">Terms</a>
+          </nav>
+
           <p>Designed and built with human direction.</p>
         </div>
       </footer>

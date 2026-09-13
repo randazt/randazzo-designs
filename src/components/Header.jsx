@@ -7,11 +7,11 @@ function Header() {
         </a>
 
         <nav className="main-nav" aria-label="Main navigation">
-          <a href="#selected-work">Work</a>
-          <a href="#services">Services</a>
-          <a href="#process">Process</a>
-          <a href="#learn">Learn</a>
-          <a href="#about">About</a>
+          <a href="/#selected-work">Work</a>
+          <a href="/#services">Services</a>
+          <a href="/#process">Process</a>
+          <a href="/#learn">Learn</a>
+          <a href="/#about">About</a>
         </nav>
 
         <a

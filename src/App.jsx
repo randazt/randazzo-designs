@@ -23,6 +23,9 @@ import SystemInPractice from './sections/SystemInPractice'
 import SocialNetwork from './sections/SocialNetwork'
 import SiteFooter from './sections/SiteFooter'
 
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfUse from './pages/TermsOfUse'
+
 const DaisyCaseStudy = lazy(() => import('./case-studies/DaisyCaseStudy'))
 const StudioOneCaseStudy = lazy(
   () => import('./case-studies/StudioOneCaseStudy'),
@@ -72,6 +75,18 @@ const seoByPath = {
     title: 'The Awesomeverse',
     description:
       'An original storyworld and creative production case study connecting visual storytelling, worldbuilding, digital media, creative systems, and human-directed AI workflows.',
+  },
+
+  '/privacy': {
+    title: 'Privacy Policy | Randazzo Designs',
+    description:
+      'Learn how Randazzo Designs handles information across its website, D.AI.SY concierge, analytics, security, and third-party services.',
+  },
+
+  '/terms': {
+    title: 'Terms of Use | Randazzo Designs',
+    description:
+      'Review the terms governing use of the Randazzo Designs website, D.AI.SY concierge, intellectual property, and third-party services.',
   },
 }
 
@@ -144,6 +159,9 @@ function App() {
             path="/work/awesomeverse"
             element={<AwesomeverseCaseStudy />}
           />
+
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfUse />} />
         </Routes>
       </Suspense>
 
