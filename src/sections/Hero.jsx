@@ -14,17 +14,18 @@ function Hero() {
           </h1>
 
           <p className="hero-description">
-            Human-centered technology, creative tools, educational
-            experiences, and original worlds.
+            Design better systems for people. Human-centered design and
+            technology that improves digital experiences, information,
+            workflows, and the way people use AI.
           </p>
 
           <div className="hero-actions">
-            <a className="button button-primary" href="#selected-work">
-              Explore Our Work
+            <a className="button button-primary" href="#contact">
+              Start with the problem
             </a>
 
-            <a className="button button-secondary" href="#daisy">
-              Discover D.AI.SY
+            <a className="button button-secondary" href="#services">
+              Explore Services
             </a>
           </div>
         </div>
