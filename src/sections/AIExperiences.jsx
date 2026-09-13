@@ -87,18 +87,19 @@ function AIExperiences() {
     <section className="ai-experiences" id="ai-experiences">
       <div className="ai-experiences-inner">
         <div className="ai-experiences-heading">
-          <p className="section-eyebrow">Interactive AI Experiences</p>
+          <p className="section-eyebrow">AI Systems in Practice</p>
 
           <h2>
-            Built to think
+            Different problems.
             <br />
-            differently.
+            Purpose-built intelligence.
           </h2>
 
           <p className="ai-experiences-intro">
-            Purpose-built AI experiences for design, research, operations,
-            learning, storytelling, creative systems, and structured problem
-            solving.
+            These working AI experiences explore how specialized systems can be
+            designed around different people, contexts, workflows, and forms of
+            human judgment—from cognition and operations to research, learning,
+            design, and storytelling.
           </p>
         </div>
 
