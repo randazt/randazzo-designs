@@ -1,24 +1,24 @@
 function ServicesLearn() {
-  const services = [
+  const learningAreas = [
     {
-      title: 'Web Design & Digital Experiences',
+      title: 'Practical AI Learning',
       description:
-        'Responsive websites and digital experiences built around clear information architecture, thoughtful UX/UI, visual communication, accessibility, and performance.',
+        'Clear, practical guidance that helps people understand emerging AI, evaluate where it is useful, and approach it with greater confidence and responsible human judgment.',
     },
     {
-      title: 'AI & Creative Technology',
+      title: 'Visual Explanation',
       description:
-        'Generative and agentic AI systems, human-directed workflows, prompt and system design, interactive tools, and AI-enhanced creative work.',
+        'Diagrams, instructional communication, and information design that make complex ideas, systems, and processes easier to understand and use.',
     },
     {
-      title: 'Media & Storytelling',
+      title: 'Creative & Technical Exploration',
       description:
-        'Visual storytelling, content development, video and media production, interactive experiences, and original creative development.',
+        'Working explorations that connect design, media, storytelling, emerging technology, and human-directed experimentation.',
     },
     {
-      title: 'Education & Knowledge',
+      title: 'Knowledge & Resources',
       description:
-        'Practical AI education, guides, learning resources, and systems that help people understand and use emerging technology.',
+        'Guides, learning materials, documentation, and practical resources developed as the practice evolves and new knowledge becomes useful to share.',
     },
   ]
 
@@ -26,27 +26,28 @@ function ServicesLearn() {
     <section className="services-learn" id="learn">
       <div className="services-learn-inner">
         <div className="services-learn-heading">
-          <p className="section-eyebrow">Services & Learning</p>
+          <p className="section-eyebrow">Learning & Knowledge</p>
 
           <h2>
-            Design what matters.
+            Understand what
             <br />
-            Learn what comes next.
+            comes next.
           </h2>
 
           <p className="services-learn-intro">
-            Randazzo Designs combines creative practice, technical systems,
-            media, and education to help people and organizations turn ideas
-            into clearer, more useful outcomes.
+            Technology becomes more useful when people understand the ideas,
+            systems, and decisions behind it. Randazzo Designs develops
+            practical learning, visual explanation, and knowledge resources
+            that make emerging technology easier to understand and use.
           </p>
         </div>
 
         <div className="services-learn-grid">
-          {services.map((service) => (
-            <article className="service-learn-card" key={service.title}>
-              <h3>{service.title}</h3>
+          {learningAreas.map((area) => (
+            <article className="service-learn-card" key={area.title}>
+              <h3>{area.title}</h3>
 
-              <p>{service.description}</p>
+              <p>{area.description}</p>
             </article>
           ))}
         </div>
@@ -54,7 +55,7 @@ function ServicesLearn() {
         <div className="services-learn-cta">
           <div>
             <p className="services-learn-label">
-              Consultation & Strategy
+              Start With the Problem
             </p>
 
             <h3>
@@ -75,7 +76,7 @@ function ServicesLearn() {
             target="_blank"
             rel="noreferrer"
           >
-            Book a Conversation
+            Start a Conversation
             <span aria-hidden="true"> →</span>
           </a>
         </div>
