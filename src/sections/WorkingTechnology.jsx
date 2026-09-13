@@ -3,17 +3,17 @@ function WorkingTechnology() {
     {
       title: 'Creative Systems',
       description:
-        'Interactive experiences, digital tools, web interfaces, and structured systems designed to turn ideas into usable experiences.',
+        'Interactive experiences, digital tools, web interfaces, and structured creative systems designed to turn ideas into clear, usable experiences.',
     },
     {
       title: 'AI & Agentic Systems',
       description:
-        'Human-directed AI workflows, generative AI systems, prompt and system design, and agent-based applications built around practical use.',
+        'Human-directed AI workflows, generative and agentic systems, prompt and system design, and purpose-built AI experiences shaped around practical use and meaningful human control.',
     },
     {
       title: 'Web, Information & Experience Design',
       description:
-        'Information architecture, UX/UI, responsive web design, visual communication, interactive media, and digital experiences grounded in communication and information design.',
+        'Information architecture, UX/UI, responsive web design, visual communication, interactive systems, and digital experiences grounded in clarity and human-centered design.',
     },
   ]
 
@@ -30,9 +30,9 @@ function WorkingTechnology() {
           </h2>
 
           <p className="working-technology-intro">
-            Randazzo Designs brings together design, AI, interaction, and
-            information systems to create practical digital experiences that
-            people can actually use.
+            Randazzo Designs combines design, AI, interaction, and information
+            systems to turn ideas into working digital experiences—connecting
+            creative thinking with practical implementation.
           </p>
         </div>
 
@@ -53,10 +53,11 @@ function WorkingTechnology() {
             <h3>Technology shaped around real work.</h3>
 
             <p>
-              Current work includes D.AI.SY, creative AI systems, agentic
-              workflows, responsive websites, digital publishing systems,
-              interactive experiences, and purpose-built assistants supporting
-              research, storytelling, design, production, and operations.
+              Current work includes D.AI.SY, human-directed agentic systems
+              and workflows, responsive web systems, creative production
+              systems, publishing workflows, and purpose-built AI assistants
+              supporting research, storytelling, design, production, learning,
+              and operations.
             </p>
           </div>
 
