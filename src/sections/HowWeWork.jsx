@@ -82,6 +82,18 @@ function HowWeWork() {
             problem being solved.
           </p>
         </div>
+
+        <div className="how-we-work-daisy-bridge">
+          <p className="how-we-work-daisy-label">The Method in Practice</p>
+
+          <h3>D.AI.SY makes the principle tangible.</h3>
+
+          <p>
+            D.AI.SY — Daily AI Systems demonstrates this human-directed
+            approach through a working AI system designed around clarity,
+            agency, evidence, and explicitly authorized action.
+          </p>
+        </div>
       </div>
     </section>
   )

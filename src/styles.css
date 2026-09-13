@@ -2000,6 +2000,27 @@ button:focus-visible {
 .about-milestone {
   position: relative;
   padding: clamp(2rem, 4vw, 3rem);
+
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.about-milestone:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 18px 40px rgba(7, 21, 38, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-milestone {
+    transition: none;
+  }
+
+  .about-milestone:hover {
+    transform: none;
+  }
 }
 
 .about-milestone + .about-milestone {
@@ -2819,6 +2840,30 @@ a.ai-experience-link:hover {
   border-radius: var(--radius-md);
 
   background: rgba(255, 255, 255, 0.92);
+
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.service-outcome:hover {
+  transform: translateY(-3px);
+
+  border-color: #cfd6df;
+
+  box-shadow:
+    0 18px 40px rgba(7, 21, 38, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-outcome {
+    transition: none;
+  }
+
+  .service-outcome:hover {
+    transform: none;
+  }
 }
 
 .service-outcome::before {
@@ -3998,6 +4043,43 @@ a.ai-experience-link:hover {
   margin-right: -0.02em;
 }
 
+.how-we-work-daisy-bridge {
+  max-width: 760px;
+  margin: clamp(2.5rem, 5vw, 4rem) auto 0;
+  padding-top: clamp(1.5rem, 3vw, 2rem);
+
+  border-top: 1px solid var(--color-border);
+
+  text-align: center;
+}
+
+.how-we-work-daisy-label {
+  margin: 0 0 0.75rem;
+
+  color: var(--color-blue);
+
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.how-we-work-daisy-bridge h3 {
+  margin: 0;
+
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.how-we-work-daisy-bridge > p:last-child {
+  max-width: 650px;
+  margin: 0.9rem auto 0;
+
+  color: var(--color-text-muted);
+
+  line-height: 1.7;
+}
 
 /* =========================================================
    HOW WE WORK HEADING
@@ -10680,6 +10762,17 @@ a.ai-experience-link:hover {
       rgba(255, 255, 255, 0.045),
       rgba(255, 255, 255, 0.018)
     );
+
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.social-network-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 }
 
 .social-network-card::before {
@@ -10883,9 +10976,14 @@ a.ai-experience-link:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .social-network-card,
   .social-network-link,
   .social-network-community-copy a {
     transition: none;
+  }
+
+  .social-network-card:hover {
+    transform: none;
   }
 }
 
