@@ -12151,6 +12151,30 @@ a.ai-experience-link:hover {
   background: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
+
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.problem-framing-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #cfd6df;
+
+  box-shadow:
+    0 18px 40px rgba(7, 21, 38, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .problem-framing-card {
+    transition: none;
+  }
+
+  .problem-framing-card:hover {
+    transform: none;
+  }
 }
 
 .problem-framing-card h3 {

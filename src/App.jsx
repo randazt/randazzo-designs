@@ -99,14 +99,14 @@ function HomePage() {
       <main>
         <Hero />
         <ProblemFraming />
-        <Ecosystem />
-        <DaisyFeature />
-        <WorkingTechnology />
-        <AIExperiences />
-        <Awesomeverse />
         <SelectedWork />
         <ServicesPackages />
         <HowWeWork />
+        <DaisyFeature />
+        <Ecosystem />
+        <WorkingTechnology />
+        <AIExperiences />
+        <Awesomeverse />
         <ServicesLearn />
         <About />
         <FAQ />
