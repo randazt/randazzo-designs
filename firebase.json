@@ -8,7 +8,35 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/work/daisy",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/work/studio-one",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/work/ai-assistants",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/work/randazzo-designs",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/work/awesomeverse",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/privacy",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/terms",
         "destination": "/index.html"
       }
     ]
