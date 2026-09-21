@@ -43,10 +43,10 @@ const AwesomeverseCaseStudy = lazy(
 
 const seoByPath = {
   '/': {
-    title: 'Randazzo Designs | Design, Technology & Creative Systems',
-    description:
-      'Randazzo Designs is an independent creative and technology practice spanning design, AI and creative systems, digital media, storytelling, education, and original creative worlds.',
-  },
+  title: 'Randazzo Designs | Design, Technology & AI Systems',
+  description:
+    'Randazzo Designs creates human-centered digital experiences, information systems, workflows, and practical AI solutions designed to help people and organizations work better.',
+},
 
   '/work/daisy': {
     title: 'D.AI.SY — Daily AI Systems',
