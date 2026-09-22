@@ -11,7 +11,6 @@ const servicePillars = [
       'Accessibility-conscious design',
       'Frontend implementation',
     ],
-    ctaLabel: 'Build a Better Website',
   },
   {
     title: 'Design & Information Systems',
@@ -25,7 +24,6 @@ const servicePillars = [
       'Knowledge and content structure',
       'Operational design support',
     ],
-    ctaLabel: 'Make Work Easier',
   },
   {
     title: 'AI Advisory & Systems',
@@ -39,7 +37,6 @@ const servicePillars = [
       'AI system planning',
       'Responsible implementation guidance',
     ],
-    ctaLabel: 'Find Where AI Can Help',
   },
   {
     title: 'AI Workforce Enablement',
@@ -53,7 +50,6 @@ const servicePillars = [
       'Role-specific guidance',
       'Human-in-the-loop working practices',
     ],
-    ctaLabel: 'Help Your Team Use AI',
   },
 ]
 
@@ -139,13 +135,6 @@ function ServicesPackages() {
                   <li key={service}>{service}</li>
                 ))}
               </ul>
-
-              <div className="service-pillar-cta">
-                <a href={bookingUrl} target="_blank" rel="noreferrer">
-                  {pillar.ctaLabel}
-                  <span aria-hidden="true"> ↗</span>
-                </a>
-              </div>
             </article>
           ))}
         </div>
