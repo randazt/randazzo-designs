@@ -6,7 +6,7 @@ function Awesomeverse() {
       <div className="awesomeverse-inner">
         <div className="awesomeverse-heading">
           <p className="awesomeverse-eyebrow">
-            Original Worlds · Stories · Creative IP
+            Original Worlds · Stories · Visual Storytelling
           </p>
 
           <h2>The Awesomeverse</h2>
@@ -32,20 +32,20 @@ function Awesomeverse() {
 
           <div className="awesomeverse-story">
             <p className="awesomeverse-label">
-              Original IP · Worldbuilding · Visual Storytelling
+              Original IP · Worldbuilding · Creative Exploration
             </p>
 
             <h3>
-              Worldbuilding through
+              A growing universe
               <br />
-              visual storytelling.
+              built through stories.
             </h3>
 
             <p>
-              The Awesomeverse is the original entertainment and creative-IP
-              side of Randazzo Designs—a growing universe expressed through
-              cinematic imagery, short-form science-fiction, characters, and
-              connected stories.
+              The Awesomeverse is an original creative project from Randazzo
+              Designs, bringing together cinematic imagery, science-fiction
+              storytelling, characters, environments, and connected stories
+              within a growing fictional universe.
             </p>
 
             <div className="awesomeverse-actions">

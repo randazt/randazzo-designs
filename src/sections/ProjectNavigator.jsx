@@ -1,37 +1,40 @@
 const projectPaths = [
   {
-    title: 'I need a website or digital experience.',
+    title: 'My website needs to be created or improved.',
     description:
-      'For a new web presence, a more substantial business website, or a custom digital experience.',
+      'For businesses that need a new website, a stronger online presence, or an existing experience that is clearer, easier to use, and better suited to what people need.',
     href: '#services',
-    linkLabel: 'Explore web services',
+    linkLabel: 'See Website Options',
   },
   {
-    title: 'I need clearer design or communication.',
+    title: "People aren't understanding what we need to communicate.",
     description:
-      'For visual communication, information design, brand foundations, and complex information that needs structure.',
+      'For information, visuals, messaging, or processes that have become difficult to understand and need clearer structure and communication.',
     href: '#services',
-    linkLabel: 'Explore design services',
+    linkLabel: 'See Design Options',
   },
   {
-    title: 'I want to understand or use AI better.',
+    title: "I know AI could help, but I'm not sure where.",
     description:
-      'For individual guidance, workflow assessment, human-directed AI systems, and practical implementation.',
+      'For understanding where AI may be useful, identifying practical opportunities, improving a workflow, or exploring a focused AI solution.',
     href: '#services',
-    linkLabel: 'Explore AI services',
+    linkLabel: 'See AI Options',
   },
   {
-    title: 'My team needs practical AI capability.',
+    title: 'My team needs practical help using AI.',
     description:
-      'For workforce workshops, on-site learning, and structured AI enablement across an organization.',
+      'For teams that need clearer guidance, hands-on learning, and practical ways to use AI confidently and responsibly in their everyday work.',
     href: '#services',
-    linkLabel: 'Explore workforce enablement',
+    linkLabel: 'See Team Options',
   },
 ]
 
 function ProjectNavigator() {
   return (
-    <section className="project-navigator" aria-labelledby="project-navigator-title">
+    <section
+      className="project-navigator"
+      aria-labelledby="project-navigator-title"
+    >
       <div className="project-navigator-inner">
         <header className="project-navigator-heading">
           <p className="section-eyebrow">Find Your Starting Point</p>
@@ -43,8 +46,9 @@ function ProjectNavigator() {
           </h2>
 
           <p>
-            Start with the problem you want to solve. The right scope can be
-            defined from there.
+            You do not need to know the name of the service. Start with what
+            needs to work better, and we can define the right approach from
+            there.
           </p>
         </header>
 
@@ -66,8 +70,8 @@ function ProjectNavigator() {
 
         <div className="project-navigator-direct">
           <p>
-            Something different? You don&apos;t need to fit your idea into a
-            predefined category.
+            Something different? You don&apos;t need to fit your problem into
+            one of these categories.
           </p>
 
           <a
@@ -75,7 +79,7 @@ function ProjectNavigator() {
             target="_blank"
             rel="noreferrer"
           >
-            Start with a conversation
+            Tell Us What You&apos;re Working On
             <span aria-hidden="true"> →</span>
           </a>
         </div>

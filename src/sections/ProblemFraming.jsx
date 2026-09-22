@@ -1,23 +1,23 @@
 const problems = [
   {
-    title: 'Digital Experiences',
+    title: "Your website isn't doing enough",
     description:
-      'Websites and digital tools become harder to use when information, navigation, and interaction no longer match what people actually need.',
+      'People struggle when information is hard to find, navigation is confusing, or a website no longer supports what the business and its customers need.',
   },
   {
-    title: 'Information & Work Systems',
+    title: 'Work feels more complicated than it should',
     description:
-      'Fragmented information and unclear workflows create friction, make decisions harder, and leave useful knowledge scattered across tools and processes.',
+      'Important information gets scattered across tools, tasks get repeated, and unclear processes make everyday work slower and harder to manage.',
   },
   {
-    title: 'AI Adoption',
+    title: "You're not sure where AI actually helps",
     description:
-      'AI creates more confusion than value when organizations adopt tools before understanding where they belong, what they should improve, and where human judgment must remain.',
+      'AI is easy to experiment with but harder to use well. The challenge is finding where it can solve a real problem without creating more complexity.',
   },
   {
-    title: 'Workforce Capability',
+    title: 'Your team needs more than another tool',
     description:
-      'New technology only helps when people understand how to use it confidently, responsibly, and in ways that support the work they actually do.',
+      'New technology only helps when people understand how to use it confidently, responsibly, and in ways that make their work better.',
   },
 ]
 
@@ -29,15 +29,16 @@ function ProblemFraming() {
           <p className="section-eyebrow">Start With the Problem</p>
 
           <h2>
-            Better technology starts
+            The problem usually isn't
             <br />
-            with understanding people.
+            a lack of technology.
           </h2>
 
           <p className="problem-framing-intro">
-            Digital systems should make work clearer, information easier to
-            understand, and technology more useful. When they do not, the
-            problem is rarely solved by adding another tool.
+            When websites are difficult to use, work gets scattered across too
+            many tools, or new technology creates more confusion than progress,
+            adding something else rarely fixes the underlying problem. Start by
+            understanding what isn't working—and what people actually need.
           </p>
         </header>
 

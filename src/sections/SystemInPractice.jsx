@@ -8,52 +8,53 @@ function SystemInPractice() {
           <p className="section-eyebrow">See the System in Practice</p>
 
           <h2>
-            The tools are only
+            We build ideas.
             <br />
-            part of the story.
+            Then put them to work.
           </h2>
 
           <p>
-            Randazzo Designs develops creative technology alongside the work it
-            helps make possible. The Awesomeverse provides a living example of
-            a human-directed production practice spanning original IP,
-            worldbuilding, visual storytelling, cross-platform publishing, and
-            interactive experiences.
+            Randazzo Designs doesn&apos;t only explore new technology in
+            theory. Original projects provide a place to build, test, and learn
+            from creative systems in practice while keeping people in control
+            of the work.
           </p>
         </div>
 
         <div className="system-practice-grid">
           <div className="system-practice-feature">
-            <p className="system-practice-label">Applied Creative Practice</p>
+            <p className="system-practice-label">Original Creative Project</p>
 
             <h3>The Awesomeverse</h3>
 
             <p>
-              An original connected universe developed through a repeatable
-              creative production system—bringing together storyworld
-              development, visual media, audience-facing experiences, and
-              AI-assisted creative workflows.
+              The Awesomeverse is an original connected storyworld from
+              Randazzo Designs, developed through characters, environments,
+              visual storytelling, and connected experiences. It provides a
+              real creative setting for exploring how ideas, design, and
+              technology can work together.
             </p>
 
             <Link to="/work/awesomeverse">
-              Explore the Awesomeverse Case Study
+              See How the Awesomeverse Is Built
               <span aria-hidden="true"> →</span>
             </Link>
           </div>
 
           <div className="system-practice-tools">
-            <p className="system-practice-label">Related Creative Technology</p>
+            <p className="system-practice-label">Creative Technology in Practice</p>
 
             <h3>
-              Specialized tools.
+              Tools that support
               <br />
-              Human creative authority.
+              the person doing the work.
             </h3>
 
             <p>
-              Systems such as STUDIO//ONE and the Uncanny Art Director
-              demonstrate different approaches to supporting creative
-              development and production without replacing human direction.
+              Projects such as STUDIO//ONE and the Uncanny Art Director explore
+              different ways technology and AI can help organize, develop, and
+              move creative work forward while people remain responsible for
+              direction and decisions.
             </p>
 
             <div className="system-practice-actions">

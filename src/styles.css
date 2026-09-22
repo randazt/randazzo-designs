@@ -3110,6 +3110,10 @@ a.ai-experience-link:hover {
    ENGAGEMENT CARDS
    ========================================================= */
 
+   .service-engagements {
+  margin-top: 4rem;
+}
+
 .service-engagement-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3654,6 +3658,17 @@ a.ai-experience-link:hover {
   line-height: 1.65;
 }
 
+.selected-work-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.selected-work-links .selected-work-link {
+  margin-top: 0;
+}
 
 /* =========================================================
    SELECTED WORK LINKS

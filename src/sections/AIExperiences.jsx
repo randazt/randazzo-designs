@@ -1,81 +1,81 @@
 const experiences = [
   {
     name: 'D.AI.SY',
-    descriptor: 'Cognitive Accessibility & Agency Companion',
+    descriptor: 'Clarity, Accessibility & Human Agency',
     description:
-      'A human-agency AI experience that helps users move from confusion toward clarity, action, confidence, and greater independence through structured cognitive translation.',
+      'Helps people work through uncertainty, understand what matters, and move toward useful next steps while keeping important decisions and actions in human hands.',
     href: 'https://chatgpt.com/g/g-6a2a163a6ef88191a067d5ecfa927b73-daisy-v0-2',
     cta: 'Open D.AI.SY',
     accent: 'green',
   },
   {
     name: 'Creative Systems Assistant',
-    descriptor: 'AI Design Collaborator',
+    descriptor: 'Design & Creative Collaboration',
     description:
-      'A senior-level design partner grounded in UX psychology, cognitive science, visual hierarchy, accessibility, branding systems, web design, and rationale-driven critique.',
+      'Supports design thinking, branding, UX/UI, accessibility, web design, visual hierarchy, and constructive critique with clear reasoning behind recommendations.',
     href: 'https://chatgpt.com/g/g-691fb42b3aa88191ba5291ce59554971-creative-systems-assistant',
     cta: 'Explore Creative Systems',
     accent: 'blue',
   },
   {
     name: 'Studio Forge AI',
-    descriptor: 'Creative Systems Architect',
+    descriptor: 'Creative Planning & Production',
     description:
-      'A systems-first creative intelligence for designing sustainable infrastructure across games, live production, identity, strategy, and complex creative workflows.',
+      'Helps organize complex creative work across production, identity, strategy, games, and live experiences by connecting ideas, workflows, and project decisions.',
     href: 'https://chatgpt.com/g/g-692b7fb82d108191a807121b8c8793b0-studio-forge-ai',
     cta: 'Enter Studio Forge',
     accent: 'purple',
   },
   {
     name: 'R&D Assistant',
-    descriptor: 'R&D, Funding & Project Architect',
+    descriptor: 'Research, Funding & Project Planning',
     description:
-      'Compliance-first support for grants, project planning, financial modeling, commercialization, eligibility, risk, and structured proposal development.',
+      'Supports grants, project planning, financial modeling, commercialization, eligibility review, risk identification, and structured proposal development.',
     href: 'https://chatgpt.com/g/g-6927cc5876c48191b35fa49b370b5a78-r-d-assistant',
     cta: 'Explore R&D Assistant',
     accent: 'teal',
   },
   {
     name: 'FrontDeskIQ',
-    descriptor: 'Operational Intelligence for Front Desk Professionals',
+    descriptor: 'Support for Front Desk Professionals',
     description:
-      'Role-adaptive support for high-pressure hospitality operations, including decision compression, escalation clarity, revenue guardrails, documentation discipline, and training scenarios.',
+      'Helps hospitality professionals work through demanding front desk situations with clearer decisions, escalation guidance, documentation support, operational boundaries, and training scenarios.',
     href: 'https://chatgpt.com/g/g-69a3addd7e348191a6db434ec4911ac7-frontdeskiq',
     cta: 'Open FrontDeskIQ',
     accent: 'orange',
   },
   {
     name: 'PressLab',
-    descriptor: 'Newsroom Analysis & Verification Assistant',
+    descriptor: 'Newsroom Analysis & Verification',
     description:
-      'A newsroom-grade AI experience built around AP Style, structured summaries, source integrity, uncertainty labeling, editorial QA, and responsible verification guidance.',
+      'Supports journalists and newsroom work with structured summaries, AP Style guidance, source awareness, uncertainty labeling, editorial review, and responsible verification practices.',
     href: 'https://chatgpt.com/g/g-6907bd0983c08191a400870d85ac9832-presslab',
     cta: 'Explore PressLab',
     accent: 'red',
   },
   {
     name: 'SkyLens AI',
-    descriptor: 'Atmospheric Literacy Assistant',
+    descriptor: 'Learning Through Sky Observation',
     description:
-      'An educational sky-observation experience that teaches cloud structure, storm morphology, and atmospheric optics while separating observation from inference and avoiding forecasting.',
+      'Helps people learn about clouds, storm structure, and atmospheric optics by separating what can be directly observed from what can only be inferred, without providing weather forecasts.',
     href: 'https://chatgpt.com/g/g-6907ca47df8c819180f744c6a65c3f14-skylens-ai',
     cta: 'Explore SkyLens',
     accent: 'sky',
   },
   {
     name: 'Design Art Studio',
-    descriptor: 'Visual Design & Art Experience',
+    descriptor: 'Visual Design & Art',
     description:
-      'A purpose-built visual design and art experience within the Randazzo Designs creative AI collection.',
+      'A creative AI experience focused on visual design, art exploration, and developing ideas within the Randazzo Designs creative practice.',
     href: 'https://chatgpt.com/g/g-6a6cb613c79c8191a07bf88dbb0fdc6b-randazzo-designs-art-studio-assistant',
     cta: 'Enter Design Art Studio',
     accent: 'pink',
   },
   {
     name: 'The Uncanny Art Director',
-    descriptor: 'Concept Art & Visual Worldbuilding Director',
+    descriptor: 'Concept Art & Visual Worldbuilding',
     description:
-      'A cinematic AI art director for uncanny, liminal, existential, and system-horror concepts—developing layered visual ideas, narrative-rich prompts, and worlds designed to feel discovered rather than generated.',
+      'Supports the development of uncanny, liminal, existential, and system-horror concepts through visual direction, layered ideas, prompts, and narrative worldbuilding.',
     href: 'https://chatgpt.com/g/g-6a344e9d64b88191bdfb0dddd8b7cf57-uncanny-content-director',
     cta: 'Enter the Uncanny',
     accent: 'uncanny',
@@ -90,16 +90,17 @@ function AIExperiences() {
           <p className="section-eyebrow">AI Systems in Practice</p>
 
           <h2>
-            Different problems.
+            Different needs.
             <br />
-            Purpose-built intelligence.
+            AI designed for the work.
           </h2>
 
           <p className="ai-experiences-intro">
-            These working AI experiences explore how specialized systems can be
-            designed around different people, contexts, workflows, and forms of
-            human judgment—from cognition and operations to research, learning,
-            design, and storytelling.
+            These working AI experiences show how the same technology can be
+            shaped around very different needs—from design and research to
+            learning, operations, accessibility, and creative work. Each one
+            starts with the role it should support rather than the technology
+            itself.
           </p>
         </div>
 

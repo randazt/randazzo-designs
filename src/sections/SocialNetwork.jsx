@@ -3,7 +3,7 @@ const channels = [
     name: 'YouTube',
     descriptor: 'Watch',
     description:
-      'Short-form science fiction, visual storytelling, creative experiments, and project demonstrations from The Awesomeverse and Randazzo Designs.',
+      'Short-form science fiction, visual storytelling, creative experiments, and behind-the-scenes looks at work from The Awesomeverse and Randazzo Designs.',
     href: 'https://www.youtube.com/@thaawesomeverse',
     accent: 'red',
   },
@@ -11,7 +11,7 @@ const channels = [
     name: 'Instagram',
     descriptor: 'Follow',
     description:
-      'Visual development, artwork, environments, characters, and ongoing creative work from The Awesomeverse.',
+      'Artwork, environments, characters, visual development, and ongoing creative work from The Awesomeverse.',
     href: 'https://www.instagram.com/thaawesomeverse/',
     accent: 'purple',
   },
@@ -19,7 +19,7 @@ const channels = [
     name: 'TikTok',
     descriptor: 'Watch & Discover',
     description:
-      'Fast-moving visual stories, short-form Awesomeverse episodes, experiments, and cinematic creative work.',
+      'Short-form Awesomeverse stories, visual experiments, cinematic creative work, and new ideas in development.',
     href: 'https://www.tiktok.com/@thaawesomeverse',
     accent: 'pink',
   },
@@ -27,7 +27,7 @@ const channels = [
     name: 'Facebook — The Awesomeverse',
     descriptor: 'Follow',
     description:
-      'Awesomeverse releases, visual storytelling, project updates, and audience-facing creative work.',
+      'Awesomeverse releases, visual storytelling, project updates, and new creative work as the universe continues to grow.',
     href: 'https://www.facebook.com/profile.php?id=100067917529621&sk=reels_tab',
     accent: 'blue',
   },
@@ -35,7 +35,7 @@ const channels = [
     name: 'Facebook — Randazzo Designs',
     descriptor: 'Follow',
     description:
-      'Follow Randazzo Designs for professional design, creative technology, AI systems, project updates, and ongoing studio work.',
+      'Follow Randazzo Designs for design, creative technology, practical AI, project updates, and ongoing studio work.',
     href: 'https://www.facebook.com/RandazzoDesignsCNY/',
     accent: 'blue',
   },
@@ -43,7 +43,7 @@ const channels = [
     name: 'Reddit',
     descriptor: 'Discuss',
     description:
-      'A community space for The Awesomeverse, story discussion, worldbuilding, mysteries, and in-universe engagement.',
+      'A community space for The Awesomeverse, story discussion, worldbuilding, mysteries, and exploring the universe together.',
     href: 'https://www.reddit.com/r/TheAwesomeverse/',
     accent: 'orange',
   },
@@ -51,7 +51,7 @@ const channels = [
     name: 'Discord',
     descriptor: 'Join the Community',
     description:
-      'Join The Awesomeverse community for conversation, updates, shared discovery, and future interactive experiences.',
+      'Join The Awesomeverse community for conversation, project updates, story discussion, and future interactive experiences.',
     href: 'https://discord.gg/eswWrbyNjQ',
     accent: 'indigo',
   },
@@ -59,7 +59,7 @@ const channels = [
     name: 'LinkedIn',
     descriptor: 'Connect Professionally',
     description:
-      'Connect with Thaddeus Randazzo for professional design, creative technology, AI systems, and collaboration.',
+      'Connect with Thaddeus Randazzo for professional design, creative technology, practical AI, and collaboration.',
     href: 'https://www.linkedin.com/in/thaddeus-randazzo-48a66b6a/',
     accent: 'teal',
   },
@@ -81,8 +81,9 @@ function SocialNetwork() {
           </h2>
 
           <p className="social-network-intro">
-            Follow the projects, stories, experiments, systems, and communities
-            developing across Randazzo Designs and The Awesomeverse.
+            Follow the work as it develops across Randazzo Designs and The
+            Awesomeverse—from design and technology to original stories,
+            experiments, and community.
           </p>
         </div>
 
@@ -132,9 +133,9 @@ function SocialNetwork() {
 
           <div className="social-network-community-copy">
             <p>
-              The Awesomeverse extends beyond individual episodes into a growing
-              network of visual storytelling, discussion, shared discovery, and
-              community participation.
+              The Awesomeverse extends beyond individual episodes into a
+              growing community built around visual storytelling, discussion,
+              discovery, and participation.
             </p>
 
             <a

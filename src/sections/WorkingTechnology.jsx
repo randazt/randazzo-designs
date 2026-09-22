@@ -1,19 +1,19 @@
 function WorkingTechnology() {
   const capabilityGroups = [
     {
-      title: 'Creative Systems',
+      title: 'Digital & Creative Tools',
       description:
-        'Interactive experiences, digital tools, web interfaces, and structured creative systems designed to turn ideas into clear, usable experiences.',
+        'Interactive tools, digital resources, and creative systems designed to turn ideas into useful experiences people can understand and work with.',
     },
     {
-      title: 'AI & Agentic Systems',
+      title: 'Practical AI Systems',
       description:
-        'Human-directed AI workflows, generative and agentic systems, prompt and system design, and purpose-built AI experiences shaped around practical use and meaningful human control.',
+        'AI tools and workflows designed around real tasks, clear boundaries, and meaningful human control rather than technology for its own sake.',
     },
     {
-      title: 'Web, Information & Experience Design',
+      title: 'Websites & Digital Experiences',
       description:
-        'Information architecture, UX/UI, responsive web design, visual communication, interactive systems, and digital experiences grounded in clarity and human-centered design.',
+        'Responsive websites and digital experiences that make information easier to find, interactions easier to understand, and technology easier to use.',
     },
   ]
 
@@ -30,9 +30,9 @@ function WorkingTechnology() {
           </h2>
 
           <p className="working-technology-intro">
-            Randazzo Designs combines design, AI, interaction, and information
-            systems to turn ideas into working digital experiences—connecting
-            creative thinking with practical implementation.
+            Randazzo Designs turns ideas into working websites, digital tools,
+            workflows, and AI experiences by bringing design and technology
+            together around what people actually need to accomplish.
           </p>
         </div>
 
@@ -53,11 +53,11 @@ function WorkingTechnology() {
             <h3>Technology shaped around real work.</h3>
 
             <p>
-              Current work includes D.AI.SY, human-directed agentic systems
-              and workflows, responsive web systems, creative production
-              systems, publishing workflows, and purpose-built AI assistants
-              supporting research, storytelling, design, production, learning,
-              and operations.
+              Current work includes D.AI.SY, responsive websites, creative
+              production systems, publishing workflows, purpose-built AI
+              assistants, and human-directed AI workflows supporting research,
+              storytelling, design, production, learning, and everyday
+              operations.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ function WorkingTechnology() {
             aria-label="Technology areas"
           >
             <span>Human-in-the-loop AI</span>
-            <span>Agentic workflows</span>
+            <span>AI workflows</span>
             <span>Responsive web design</span>
             <span>UX/UI</span>
             <span>Information design</span>

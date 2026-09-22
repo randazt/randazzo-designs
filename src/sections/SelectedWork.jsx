@@ -3,33 +3,33 @@ const projects = [
     category: 'Human-Centered AI',
     title: 'D.AI.SY — Daily AI Systems',
     description:
-      'A human-directed AI platform designed to help people move from cognitive friction toward clarity, useful workflows, and explicitly authorized action.',
+      'An AI experience designed to help people turn uncertainty and information overload into clearer thinking, useful next steps, and actions they remain in control of.',
     capabilities:
-      'Product strategy, UX/UI, information architecture, agentic AI systems, permission-based memory, testing, cloud deployment, and technical communication.',
+      'AI experience design, clear guidance, user control, memory with permission, testing, and reliable cloud delivery.',
     caseStudyHref: '/work/daisy',
     href: 'https://daisy.randazzodesignsai.com',
     linkLabel: 'Explore D.AI.SY',
     accent: 'blue',
   },
   {
-    category: 'Agentic Creative Technology',
+    category: 'Creative Technology',
     title: 'STUDIO//ONE',
     description:
-      'A production-coordination system designed for one-person creative teams, bringing structured workflows, persistent production context, AI-assisted reasoning, and human approval into a connected creative process.',
+      'A creative production system designed to help one-person teams organize projects, maintain context, work with AI, and keep important decisions in human hands.',
     capabilities:
-      'Agentic workflow design, production systems, persistent production memory, human approval controls, AI-assisted reasoning, interface design, and cloud implementation.',
+      'Creative workflow design, project coordination, persistent context, human approval, AI-assisted support, interface design, and cloud delivery.',
     caseStudyHref: '/work/studio-one',
     href: 'https://studio.randazzodesignsai.com',
     linkLabel: 'Explore STUDIO//ONE',
     accent: 'teal',
   },
   {
-    category: 'Web & Digital Systems',
+    category: 'Web & Digital Design',
     title: 'Randazzo Designs',
     description:
-      'A responsive digital ecosystem bringing together professional services, creative technology, AI systems, education, and original intellectual property.',
+      'A responsive business website that brings services, projects, technology, learning, and original creative work together in one clear experience.',
     capabilities:
-      'Information architecture, responsive UX, visual communication, frontend development, service architecture, accessibility-conscious design, deployment, and SEO.',
+      'Website planning, responsive design, clear navigation, visual communication, frontend development, accessibility, deployment, and search visibility.',
     caseStudyHref: '/work/randazzo-designs',
     href: '#services',
     linkLabel: 'Explore Services',
@@ -39,9 +39,9 @@ const projects = [
     category: 'Creative Direction & Original IP',
     title: 'The Awesomeverse',
     description:
-      'An original connected universe combining visual storytelling, characters, worldbuilding, media, and audience-facing creative development.',
+      'An original connected storyworld built through characters, visual storytelling, worldbuilding, media, and ongoing creative development.',
     capabilities:
-      'Creative direction, visual storytelling, narrative systems, multimedia communication, original IP development, and AI-assisted creative workflows.',
+      'Creative direction, visual storytelling, worldbuilding, multimedia communication, original IP development, and AI-assisted creative work.',
     caseStudyHref: '/work/awesomeverse',
     href: '#awesomeverse',
     linkLabel: 'Enter the Awesomeverse',
@@ -49,11 +49,11 @@ const projects = [
   },
   {
     category: 'AI Experience Design',
-    title: 'AI Assistants & Specialized GPT Experiences',
+    title: 'AI Assistants',
     description:
-      'A collection of purpose-built AI assistants designed around specific roles, workflows, knowledge domains, and user needs through structured guidance, guardrails, and human-directed interaction.',
+      'Purpose-built AI assistants that help with specific kinds of work—from design and research to learning, accessibility, planning, and creative production.',
     capabilities:
-      'Cognitive support, accessibility, design collaboration, research and analysis, operational guidance, creative production, learning, and specialized workflow support.',
+      'Clear guidance, cognitive support, accessibility, design collaboration, research, learning, planning, and specialized work support.',
     caseStudyHref: '/work/ai-assistants',
     href: '#ai-experiences',
     linkLabel: 'Explore AI Experiences',
@@ -77,9 +77,9 @@ function SelectedWork() {
           </h2>
 
           <p className="selected-work-intro">
-            Selected projects demonstrate how Randazzo Designs combines
-            information design, human-centered technology, visual communication,
-            and practical implementation.
+            These projects show how ideas can become useful websites, tools,
+            creative systems, and AI experiences built around real people and
+            real needs.
           </p>
         </div>
 
@@ -99,7 +99,7 @@ function SelectedWork() {
                 </p>
 
                 <div className="selected-work-capabilities">
-                  <p>Demonstrated Capabilities</p>
+                  <p>What It Demonstrates</p>
                   <span>{project.capabilities}</span>
                 </div>
               </div>
@@ -129,7 +129,7 @@ function SelectedWork() {
                 >
                   {project.linkLabel}
                   <span aria-hidden="true">
-                    {project.href.startsWith('http') ? ' ↗' : ' →'}
+                    {' →'}
                   </span>
                 </a>
               </div>

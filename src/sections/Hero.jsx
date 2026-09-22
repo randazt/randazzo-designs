@@ -14,18 +14,18 @@ function Hero() {
           </h1>
 
           <p className="hero-description">
-            Design better systems for people. Human-centered design and
-            technology that improves digital experiences, information,
-            workflows, and the way people use AI.
+            Design better systems for people. We help businesses create better
+            websites, simplify how work gets done, communicate more clearly,
+            and use AI in practical ways.
           </p>
 
           <div className="hero-actions">
-            <a className="button button-primary" href="#contact">
-              Start with the problem
+            <a className="button button-primary" href="#services">
+              See How We Can Help
             </a>
 
-            <a className="button button-secondary" href="#services">
-              Explore Services
+            <a className="button button-secondary" href="#contact">
+              Start a Conversation
             </a>
           </div>
         </div>

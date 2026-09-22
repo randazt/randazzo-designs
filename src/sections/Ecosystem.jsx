@@ -66,15 +66,16 @@ function Ecosystem() {
           <p className="section-eyebrow">The Ecosystem</p>
 
           <h2>
-            One creative system.
+            Different kinds of work.
             <br />
-            Multiple expressions.
+            One connected practice.
           </h2>
 
           <p className="section-intro">
-            Randazzo Designs brings together technology, creative work,
-            education, and original intellectual property under one connected
-            studio.
+            Randazzo Designs brings together design, technology, AI, learning,
+            and original creative work. Each area explores different problems,
+            but the ideas and lessons developed in one can strengthen the
+            others.
           </p>
         </div>
 
@@ -87,8 +88,9 @@ function Ecosystem() {
             <h3>D.AI.SY</h3>
 
             <p>
-              Human-directed AI systems built around understanding, decision,
-              and authorized action.
+              A human-directed AI experience that helps people understand what
+              they are working through, make decisions, and take action while
+              remaining in control.
             </p>
 
             <a href="#daisy">Explore D.AI.SY →</a>
@@ -102,8 +104,8 @@ function Ecosystem() {
             <h3>Creative Technology</h3>
 
             <p>
-              Interactive tools, hosted experiences, and creative systems
-              designed to turn ideas into usable experiences.
+              Websites, interactive tools, and working systems that turn ideas
+              into useful digital experiences people can actually use.
             </p>
 
             <a href="#technology">Explore Technology →</a>
@@ -117,8 +119,9 @@ function Ecosystem() {
             <h3>Awesomeverse</h3>
 
             <p>
-              Original worlds, stories, characters, and creative intellectual
-              property developed as a connected universe.
+              An original connected storyworld developed through characters,
+              visual storytelling, worldbuilding, media, and creative
+              exploration.
             </p>
 
             <a href="#awesomeverse">Enter the Awesomeverse →</a>
@@ -132,8 +135,9 @@ function Ecosystem() {
             <h3>Learn</h3>
 
             <p>
-              Practical education, guides, and resources for building skills
-              around AI, creativity, and emerging technology.
+              Practical learning, guides, and resources that help people build
+              useful skills around AI, creativity, design, and emerging
+              technology.
             </p>
 
             <a href="#learn">Browse Learning →</a>

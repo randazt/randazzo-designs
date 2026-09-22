@@ -10,13 +10,13 @@ function About() {
       label: 'Digital Media',
       title: 'Strategy, Storytelling & Audience',
       description:
-        'A career spanning newsroom production, digital content, audience development, and leadership across web, mobile, social, and connected platforms.',
+        'Professional experience spanning newsroom production, digital content, audience development, and leadership across web, mobile, social, and connected platforms.',
     },
     {
       label: 'Emerging Technology',
       title: 'AI & Creative Systems',
       description:
-        'Ongoing work with generative AI, human-directed systems, assistants, agentic workflows, data analysis, and experimental creative technology.',
+        'Ongoing work exploring practical AI, purpose-built assistants, creative workflows, data analysis, and new ways technology can support people and their work.',
     },
   ]
 
@@ -51,15 +51,16 @@ function About() {
 
             <p>
               Randazzo Designs is the independent creative and technology
-              practice of Thad Randazzo. His work brings together information
-              design, digital media, visual storytelling, interactive systems,
-              artificial intelligence, and original creative work.
+              practice of Thad Randazzo. His background brings together
+              communication design, digital media, visual storytelling, web
+              experiences, artificial intelligence, and original creative
+              work.
             </p>
 
             <p>
-              Across professional media work and independent projects, the
-              underlying goal remains consistent: make complex information and
-              technology clearer, more useful, and more human.
+              That mix of experience shapes a simple approach: understand the
+              problem, make complexity easier to navigate, and create something
+              people can actually understand and use.
             </p>
           </div>
         </div>

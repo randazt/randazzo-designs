@@ -8,18 +8,18 @@ function SiteFooter() {
           <div className="final-cta-grid">
             <div>
               <h2>
-                Have an idea worth
+                Have something that
                 <br />
-                building?
+                needs to work better?
               </h2>
             </div>
 
             <div className="final-cta-content">
               <p>
-                Whether you’re exploring a creative project, digital
-                experience, AI system, educational idea, or something that
-                doesn’t fit neatly into a category, the best place to start is
-                a conversation.
+                You don&apos;t need to have the solution figured out before
+                reaching out. Whether it&apos;s a website, workflow,
+                communication challenge, AI question, learning need, or new
+                idea, start with what you&apos;re trying to improve.
               </p>
 
               <div className="final-cta-actions">
@@ -54,9 +54,9 @@ function SiteFooter() {
             </a>
 
             <p>
-              Design, technology, education,
+              Design, digital experiences, practical AI,
               <br />
-              and original creative worlds.
+              learning, and original creative work.
             </p>
           </div>
 
@@ -90,7 +90,7 @@ function SiteFooter() {
           </div>
 
           <div className="footer-location">
-            <p>Based on Florida’s Suncoast.</p>
+            <p>Based on Florida&apos;s Suncoast.</p>
             <p>Working wherever ideas travel.</p>
 
             <a

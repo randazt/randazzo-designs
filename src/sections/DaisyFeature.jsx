@@ -4,23 +4,23 @@ function DaisyFeature() {
   const progression = [
     {
       number: '01',
-      title: 'Cognitive Friction',
+      title: 'Uncertainty',
     },
     {
       number: '02',
-      title: 'Clarity',
+      title: 'Understanding',
     },
     {
       number: '03',
-      title: 'Agency',
+      title: 'Choice',
     },
     {
       number: '04',
-      title: 'Everyday Workflows',
+      title: 'Useful Work',
     },
     {
       number: '05',
-      title: 'Authorized Action',
+      title: 'Approved Action',
     },
   ]
 
@@ -39,10 +39,10 @@ function DaisyFeature() {
           </h2>
 
           <p className="daisy-intro">
-            D.AI.SY helps people move from cognitive friction toward clarity,
-            agency, useful everyday workflows, and explicitly authorized
-            action—supporting better productivity, cognition, accessibility,
-            and human agency.
+            D.AI.SY helps people make sense of what they are working through,
+            decide what matters, and turn that understanding into useful next
+            steps. AI provides support along the way, while people remain in
+            control of important decisions and actions.
           </p>
 
           <a

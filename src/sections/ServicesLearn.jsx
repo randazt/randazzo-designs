@@ -3,22 +3,22 @@ function ServicesLearn() {
     {
       title: 'Practical AI Learning',
       description:
-        'Clear, practical guidance that helps people understand emerging AI, evaluate where it is useful, and approach it with greater confidence and responsible human judgment.',
+        'Clear guidance that helps people understand AI, recognize where it may be useful, and make informed decisions about how to use it responsibly.',
     },
     {
       title: 'Visual Explanation',
       description:
-        'Diagrams, instructional communication, and information design that make complex ideas, systems, and processes easier to understand and use.',
+        'Diagrams, instructional communication, and information design that make complex ideas, processes, and technology easier to understand and use.',
     },
     {
       title: 'Creative & Technical Exploration',
       description:
-        'Working explorations that connect design, media, storytelling, emerging technology, and human-directed experimentation.',
+        'Hands-on exploration that connects design, media, storytelling, and technology to help people understand what is possible and what may be worth pursuing.',
     },
     {
       title: 'Knowledge & Resources',
       description:
-        'Guides, learning materials, documentation, and practical resources developed as the practice evolves and new knowledge becomes useful to share.',
+        'Guides, learning materials, documentation, and practical resources that turn useful knowledge into something people can apply to their own work.',
     },
   ]
 
@@ -35,10 +35,10 @@ function ServicesLearn() {
           </h2>
 
           <p className="services-learn-intro">
-            Technology becomes more useful when people understand the ideas,
-            systems, and decisions behind it. Randazzo Designs develops
-            practical learning, visual explanation, and knowledge resources
-            that make emerging technology easier to understand and use.
+            New technology is more useful when people understand what it can
+            do, where it fits, and how to make informed decisions about it.
+            Randazzo Designs develops practical learning and resources that
+            make complex ideas easier to understand and apply.
           </p>
         </div>
 
@@ -55,18 +55,19 @@ function ServicesLearn() {
         <div className="services-learn-cta">
           <div>
             <p className="services-learn-label">
-              Start With the Problem
+              Build Understanding
             </p>
 
             <h3>
-              Have a project, system,
+              Need help making something
               <br />
-              or idea worth exploring?
+              complex easier to understand?
             </h3>
 
             <p>
-              Start with a conversation about the problem, the audience,
-              and what a useful outcome should actually look like.
+              Whether you are introducing AI, explaining a process, or helping
+              people work with new technology, start with what they need to
+              understand and what they need to do next.
             </p>
           </div>
 
@@ -76,7 +77,7 @@ function ServicesLearn() {
             target="_blank"
             rel="noreferrer"
           >
-            Start a Conversation
+            Discuss Your Learning Needs
             <span aria-hidden="true"> →</span>
           </a>
         </div>

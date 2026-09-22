@@ -1,265 +1,217 @@
 const servicePillars = [
   {
-    category: 'Web & Digital Experience Design',
+    title: 'Web & Digital Experience Design',
     statement:
-      'Create clear, responsive digital experiences that help people find information, understand it, and take meaningful action.',
-    cta: 'Improve the digital experience',
-    engagements: [
-      {
-        title: 'Focused Web Presence',
-        price: 'Starting at $1,800',
-        description:
-          'A focused professional web presence for individuals, creators, founders, and small organizations that need clear communication, straightforward functionality, and a credible digital home.',
-      },
-      {
-        title: 'Professional Website',
-        price: 'Starting at $3,500',
-        description:
-          'A structured business website with deeper information architecture, user pathways, responsive UX, reusable design patterns, and a more substantial digital presence.',
-      },
-      {
-        title: 'Custom Digital Experience',
-        price: 'Starting at $6,000',
-        description:
-          'A purpose-built digital experience for projects that go beyond a conventional website—combining custom interaction, workflows, systems architecture, integrations, AI-assisted functionality, or specialized implementation around a defined user or business need.',
-      },
+      'Build a website or digital experience that is easier to understand, easier to use, and better aligned with what your business needs to accomplish.',
+    services: [
+      'Website strategy and planning',
+      'UX and interface design',
+      'Responsive website design',
+      'Information and navigation design',
+      'Accessibility-conscious design',
+      'Frontend implementation',
     ],
+    ctaLabel: 'Build a Better Website',
   },
-
   {
-    category: 'Design & Information Systems',
+    title: 'Design & Information Systems',
     statement:
-      'Turn ideas, identities, and complex information into clearer visual systems that people can understand and use.',
-    cta: 'Make information clearer',
-    engagements: [
-      {
-        title: 'Visual Communication',
-        price: 'Custom scope',
-        description:
-          'Coordinated visual communication designed around audience, hierarchy, clarity, and consistent presentation.',
-      },
-      {
-        title: 'Information Design',
-        price: 'Custom scope',
-        description:
-          'Structure complex information into clearer documents, diagrams, visual explanations, interfaces, and communication systems.',
-      },
-      {
-        title: 'Brand & Communication Foundation',
-        price: 'Custom scope',
-        description:
-          'Build or refine a coherent visual foundation across identity, typography, color, and essential communication applications.',
-      },
+      'Make information, workflows, and everyday tools easier to understand so people can spend less time navigating complexity and more time getting useful work done.',
+    services: [
+      'Workflow and process design',
+      'Information organization',
+      'Internal tools and resources',
+      'Visual communication systems',
+      'Knowledge and content structure',
+      'Operational design support',
     ],
+    ctaLabel: 'Make Work Easier',
   },
-
   {
-    category: 'AI Advisory & Systems',
+    title: 'AI Advisory & Systems',
     statement:
-      'Help people and organizations understand where AI belongs, design useful workflows, and preserve meaningful human control.',
-    cta: 'Find where AI actually belongs',
-    engagements: [
-      {
-        title: 'AI Clarity & Workflow Session',
-        price: 'From $175',
-        description:
-          'Focused guidance for individuals, professionals, and founders who want to understand where AI can meaningfully improve their work.',
-      },
-      {
-        title: 'AI Workflow & Systems Assessment',
-        price: 'Starting at $900',
-        description:
-          'A structured organizational assessment of workflows, friction points, AI opportunities, constraints, and implementation priorities.',
-      },
-      {
-        title: 'Custom AI Experience',
-        price: 'Custom scope',
-        description:
-          'A purpose-built AI experience designed around a specific audience, workflow, problem, or interaction while preserving meaningful human authority.',
-      },
+      'Find practical places where AI can help, then design the experience around real needs, clear boundaries, and meaningful human control.',
+    services: [
+      'AI opportunity assessment',
+      'AI workflow design',
+      'Human-centered AI experiences',
+      'Purpose-built AI assistants',
+      'AI system planning',
+      'Responsible implementation guidance',
     ],
+    ctaLabel: 'Find Where AI Can Help',
   },
-
   {
-    category: 'AI Workforce Enablement',
+    title: 'AI Workforce Enablement',
     statement:
-      'Build practical AI capability through role-relevant instruction, workflow guidance, visual learning resources, responsible use, and meaningful human decision-making.',
-    cta: 'Build a more capable team',
-    engagements: [
-      {
-        title: 'AI Workforce Workshop',
-        price: 'Remote from $1,500',
-        description:
-          'Customized practical training built around real roles, workflows, use cases, guided exercises, demonstrations, and responsible-use guidance.',
-      },
-      {
-        title: 'On-Site Workshop Delivery',
-        price: 'Starting at $2,500',
-        description:
-          'The workforce workshop delivered in person with scope adjusted for location, participant needs, organizational requirements, and appropriate instructional materials.',
-      },
-      {
-        title: 'AI Enablement Program',
-        price: 'Starting at $5,000',
-        description:
-          'A multi-stage engagement combining assessment, learning, workflow development, tutorials, visual and instructional resources, implementation guidance, and follow-up support.',
-      },
+      'Help people understand how to use AI confidently and responsibly in the work they already do, without making technology the center of the process.',
+    services: [
+      'AI clarity sessions',
+      'Team workshops',
+      'Workflow assessments',
+      'Practical AI training',
+      'Role-specific guidance',
+      'Human-in-the-loop working practices',
     ],
+    ctaLabel: 'Help Your Team Use AI',
   },
 ]
 
-const outcomes = [
+const engagements = [
   {
-    title: 'Productivity',
-    description: 'Reduce unnecessary friction around meaningful work.',
-  },
-  {
-    title: 'Cognition',
-    description: 'Make complexity easier to understand and navigate.',
-  },
-  {
-    title: 'Accessibility',
-    description: 'Reduce barriers to information, interaction, and participation.',
-  },
-  {
-    title: 'Agency',
+    title: 'AI Clarity Session',
+    price: 'From $175',
     description:
-      'Preserve meaningful human understanding, choice, and control.',
+      'A focused conversation for businesses or professionals who want help understanding where AI may be useful, what to prioritize, and what to avoid.',
+  },
+  {
+    title: 'AI Workflow Assessment',
+    price: 'From $900',
+    description:
+      'A structured review of an existing workflow to identify friction, opportunities for improvement, and practical places where AI or better process design may help.',
+  },
+  {
+    title: 'Remote AI Workshop',
+    price: 'From $1,500',
+    description:
+      'An interactive remote session that helps a team understand practical AI use, explore relevant workflows, and build confidence around responsible adoption.',
+  },
+  {
+    title: 'On-Site AI Workshop',
+    price: 'From $2,500',
+    description:
+      'A hands-on working session designed around the needs of your team, with practical guidance, examples, and opportunities to apply AI to real work.',
+  },
+  {
+    title: 'Professional Website',
+    price: 'From $3,500',
+    description:
+      'A professionally designed website for organizations that need a clearer, more credible, and more useful digital presence.',
+  },
+  {
+    title: 'AI Enablement Program',
+    price: 'From $5,000',
+    description:
+      'A more comprehensive engagement for organizations that need help identifying useful AI opportunities, improving workflows, and building practical capability across a team.',
+  },
+  {
+    title: 'Custom Digital Experience',
+    price: 'From $6,000',
+    description:
+      'A tailored digital project for organizations that need more than a standard website, combining strategy, design, technology, and implementation around a specific problem.',
   },
 ]
 
 function ServicesPackages() {
+  const bookingUrl = 'https://cal.com/randazzo-designs/conversation'
+
   return (
     <section className="services-packages" id="services">
       <div className="services-packages-inner">
-        <header className="services-outcomes-header">
-          <p className="section-eyebrow">Designed for Better Outcomes</p>
+        <header className="services-packages-heading">
+          <p className="section-eyebrow">Services</p>
 
           <h2>
-            Technology should help
+            Start with what
             <br />
-            people do better.
+            needs to work better.
           </h2>
 
-          <p className="services-outcomes-intro">
-            Randazzo Designs uses human-centered design and technology to help
-            people and organizations achieve better outcomes by improving
-            productivity, supporting cognition, expanding accessibility, and
-            preserving human agency.
+          <p className="services-packages-intro">
+            Randazzo Designs helps businesses improve websites, simplify
+            information and workflows, and use AI in practical ways. The work
+            starts with the problem, then brings together the right mix of
+            design, technology, and guidance to solve it.
           </p>
         </header>
 
-        <div className="services-outcomes-grid">
-          {outcomes.map((outcome) => (
-            <article className="service-outcome" key={outcome.title}>
-              <h3>{outcome.title}</h3>
-              <p>{outcome.description}</p>
+        <div className="service-pillars">
+          {servicePillars.map((pillar) => (
+            <article className="service-pillar" key={pillar.title}>
+              <div className="service-pillar-heading">
+                <h3>{pillar.title}</h3>
+              </div>
+
+              <p className="service-pillar-statement">{pillar.statement}</p>
+
+              <ul className="service-pillar-list">
+                {pillar.services.map((service) => (
+                  <li key={service}>{service}</li>
+                ))}
+              </ul>
+
+              <div className="service-pillar-cta">
+                <a href={bookingUrl} target="_blank" rel="noreferrer">
+                  {pillar.ctaLabel}
+                  <span aria-hidden="true"> ↗</span>
+                </a>
+              </div>
             </article>
           ))}
         </div>
 
-        <div className="services-principle">
-          <p className="services-principle-label">Human Agency Principle</p>
+        <div className="service-engagements">
+          <div className="service-engagements-heading">
+            <p className="section-eyebrow">Ways to Work Together</p>
 
-          <p className="services-principle-statement">
-            AI Assists. Humans Decide.
-          </p>
+            <h3>Choose the level of support that fits the problem.</h3>
 
-          <p className="services-principle-copy">
-            AI and automation should support human capability without
-            unnecessarily replacing understanding, judgment, authorization, or
-            meaningful control.
-          </p>
-        </div>
+            <p>
+              Start with a focused conversation, assessment, workshop, or
+              larger project. Engagements can scale with the complexity of the
+              work rather than forcing every problem into the same package.
+            </p>
+          </div>
 
-        <div className="services-offers-heading">
-          <p className="section-eyebrow">Services & Engagements</p>
-
-          <h2>Ways to work together.</h2>
-
-          <p>
-            Choose the area closest to what you want to improve. The exact
-            engagement can then be shaped around the problem, audience, scope,
-            and desired outcome.
-          </p>
-        </div>
-
-        <div className="services-pillar-list">
-          {servicePillars.map((pillar) => (
-            <section className="service-pillar" key={pillar.category}>
-              <div className="service-pillar-intro">
+          <div className="service-engagement-grid">
+            {engagements.map((engagement) => (
+              <article
+                className="service-engagement-card"
+                key={engagement.title}
+              >
                 <div>
-                  <h3>{pillar.category}</h3>
-                  <p>{pillar.statement}</p>
+                  <h4>{engagement.title}</h4>
+                  <p>{engagement.description}</p>
                 </div>
-              </div>
 
-              <div className="service-engagement-grid">
-                {pillar.engagements.map((engagement) => (
-                  <article
-                    className="service-engagement-card"
-                    key={engagement.title}
-                  >
-                    <div>
-                      <h4>{engagement.title}</h4>
+                <p className="service-engagement-price">{engagement.price}</p>
+              </article>
+            ))}
+          </div>
 
-                      <p className="service-engagement-description">
-                        {engagement.description}
-                      </p>
-                    </div>
+          <div className="service-pricing-note">
+            <p>
+              Starting prices provide a planning reference. Final scope,
+              schedule, and pricing depend on the needs and complexity of the
+              project and are confirmed before work begins.
+            </p>
+          </div>
 
-                    <div className="service-engagement-footer">
-                      <p className="service-engagement-price">
-                        {engagement.price}
-                      </p>
-                    </div>
-                  </article>
-                ))}
-              </div>
+          <div className="service-engagement-cta">
+            <div>
+              <p className="service-engagement-cta-label">
+                Not sure where to start?
+              </p>
 
-              <div className="service-pillar-cta">
-                <a
-                  href="https://cal.com/randazzo-designs/conversation"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {pillar.cta}
-                  <span aria-hidden="true"> →</span>
-                </a>
-              </div>
-            </section>
-          ))}
+              <h3>Start with the problem.</h3>
+
+              <p>
+                Tell us what is not working, what you are trying to improve, or
+                where you need more clarity. We can use the conversation to
+                determine what kind of support makes sense.
+              </p>
+            </div>
+
+            <a
+              className="button button-primary"
+              href={bookingUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Start a Conversation
+            </a>
+          </div>
         </div>
-
-        <aside className="services-scope-note">
-          <div>
-            <p className="services-scope-label">Clear Scope</p>
-
-            <h3>Defined around the work—not hidden assumptions.</h3>
-          </div>
-
-          <div className="services-scope-copy">
-            <p>
-              Published prices are starting points for defined scopes. Final
-              pricing depends on complexity, customization, implementation,
-              participant scale, delivery requirements, travel, third-party
-              services, and ongoing support.
-            </p>
-
-            <p>
-              Engagements establish appropriate deliverables, project
-              boundaries, revision limits, responsibilities, handoff
-              requirements, and change procedures before work begins.
-            </p>
-
-            <p>
-              Accessibility is treated as a design consideration throughout the
-              work. Specific accessibility standards, audits, testing, or
-              compliance requirements are defined separately when required by
-              the engagement.
-            </p>
-          </div>
-        </aside>
       </div>
     </section>
   )
