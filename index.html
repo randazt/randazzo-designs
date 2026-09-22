@@ -79,10 +79,25 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Randazzo Designs",
-        "url": "https://randazzodesignsai.com/",
-        "description": "Randazzo Designs creates human-centered digital experiences, information systems, workflows, and practical AI solutions designed to help people and organizations work better."
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://randazzodesignsai.com/#website",
+            "name": "Randazzo Designs",
+            "url": "https://randazzodesignsai.com/",
+            "description": "Randazzo Designs creates human-centered digital experiences, information systems, workflows, and practical AI solutions designed to help people and organizations work better.",
+            "publisher": {
+              "@id": "https://randazzodesignsai.com/#organization"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://randazzodesignsai.com/#organization",
+            "name": "Randazzo Designs",
+            "url": "https://randazzodesignsai.com/",
+            "description": "Randazzo Designs creates human-centered digital experiences, information systems, workflows, and practical AI solutions designed to help people and organizations work better."
+          }
+        ]
       }
     </script>
   </head>
