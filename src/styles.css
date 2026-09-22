@@ -3032,6 +3032,157 @@ a.ai-experience-link:hover {
 }
 
 /* =========================================================
+   SERVICE PILLARS
+   ========================================================= */
+
+.service-pillars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+
+  margin-top: 4rem;
+}
+
+.service-pillar {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+  padding: 2rem;
+
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1),
+      rgba(246, 247, 249, 0.65)
+    );
+
+  box-shadow: 0 12px 32px rgba(7, 21, 38, 0.035);
+
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.service-pillar::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 2rem;
+
+  width: 4rem;
+  height: 3px;
+
+  background: var(--color-blue);
+}
+
+.service-pillar:nth-child(2)::before {
+  background: var(--color-teal);
+}
+
+.service-pillar:nth-child(3)::before {
+  background: var(--color-purple);
+}
+
+.service-pillar:nth-child(4)::before {
+  background: var(--color-orange);
+}
+
+.service-pillar:hover {
+  transform: translateY(-3px);
+
+  border-color: #c8d2df;
+
+  box-shadow: 0 20px 44px rgba(7, 21, 38, 0.075);
+}
+
+.service-pillar-heading h3 {
+  max-width: 26rem;
+  margin: 0;
+
+  color: var(--color-navy);
+
+  font-size: clamp(1.6rem, 2.4vw, 2.15rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.service-pillar-statement {
+  max-width: 36rem;
+  margin: 1.25rem 0 0;
+
+  color: var(--color-muted);
+
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.service-pillar-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem 1.25rem;
+
+  margin: 1.75rem 0 0;
+  padding: 1.5rem 0 0;
+
+  border-top: 1px solid var(--color-border);
+
+  list-style: none;
+}
+
+.service-pillar-list li {
+  position: relative;
+
+  padding-left: 1rem;
+
+  color: var(--color-muted);
+
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.service-pillar-list li::before {
+  content: "";
+
+  position: absolute;
+  top: 0.62em;
+  left: 0;
+
+  width: 0.32rem;
+  height: 0.32rem;
+
+  border-radius: 50%;
+
+  background: var(--color-blue);
+}
+
+.service-pillar:nth-child(2) .service-pillar-list li::before {
+  background: var(--color-teal);
+}
+
+.service-pillar:nth-child(3) .service-pillar-list li::before {
+  background: var(--color-purple);
+}
+
+.service-pillar:nth-child(4) .service-pillar-list li::before {
+  background: var(--color-orange);
+}
+
+.service-pillar-cta {
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+/* =========================================================
    SERVICE PILLAR CTA
    ========================================================= */
 
@@ -3370,8 +3521,17 @@ a.ai-experience-link:hover {
     margin-top: 3rem;
   }
 
+  .service-pillars {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
   .service-pillar {
-    padding: 3rem 0;
+    padding: 1.6rem;
+  }
+
+  .service-pillar-list {
+    grid-template-columns: 1fr;
   }
 
   .service-pillar-intro {
