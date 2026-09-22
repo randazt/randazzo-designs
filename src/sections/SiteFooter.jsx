@@ -22,15 +22,25 @@ function SiteFooter() {
                 a conversation.
               </p>
 
-              <a
-                className="final-cta-button"
-                href="https://cal.com/randazzo-designs/conversation"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Book a Conversation
-                <span aria-hidden="true">→</span>
-              </a>
+              <div className="final-cta-actions">
+                <a
+                  className="final-cta-button"
+                  href="https://cal.com/randazzo-designs/conversation"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Book a Conversation
+                  <span aria-hidden="true">→</span>
+                </a>
+
+                <a
+                  className="final-cta-inquiry"
+                  href="mailto:randazzodesignsai@gmail.com"
+                >
+                  Send an Inquiry
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -98,8 +108,12 @@ function SiteFooter() {
           <p>© {new Date().getFullYear()} Randazzo Designs.</p>
 
           <nav className="footer-legal" aria-label="Legal">
-            <a href="/privacy" target="_blank" rel="noreferrer">Privacy</a>
-            <a href="/terms" target="_blank" rel="noreferrer">Terms</a>
+            <a href="/privacy" target="_blank" rel="noreferrer">
+              Privacy
+            </a>
+            <a href="/terms" target="_blank" rel="noreferrer">
+              Terms
+            </a>
           </nav>
 
           <p>Designed and built with human direction.</p>
