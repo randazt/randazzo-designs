@@ -348,7 +348,11 @@ function PrivacyPolicy() {
               <br />
               Florida, United States
               <br />
-              <a href="mailto:randazzodesignsai@gmail.com">
+              <a
+                href="mailto:randazzodesignsai@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 randazzodesignsai@gmail.com
               </a>
             </address>

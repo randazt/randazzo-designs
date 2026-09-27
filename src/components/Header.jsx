@@ -2,16 +2,32 @@ function Header() {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <a className="brand" href="/" aria-label="Randazzo Designs home">
+        <a
+          className="brand"
+          href="/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Randazzo Designs home"
+        >
           Randazzo Designs
         </a>
 
         <nav className="main-nav" aria-label="Main navigation">
-          <a href="/#selected-work">Work</a>
-          <a href="/#services">Services</a>
-          <a href="/#process">Process</a>
-          <a href="/#learn">Learn</a>
-          <a href="/#about">About</a>
+          <a href="/#selected-work" target="_blank" rel="noreferrer">
+            Work
+          </a>
+          <a href="/#services" target="_blank" rel="noreferrer">
+            Services
+          </a>
+          <a href="/#process" target="_blank" rel="noreferrer">
+            Process
+          </a>
+          <a href="/#learn" target="_blank" rel="noreferrer">
+            Learn
+          </a>
+          <a href="/#about" target="_blank" rel="noreferrer">
+            About
+          </a>
         </nav>
 
         <a

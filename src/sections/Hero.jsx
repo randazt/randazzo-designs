@@ -20,22 +20,28 @@ function Hero() {
           </p>
 
           <div className="hero-actions">
-            <a className="button button-primary" href="#services">
+            <a
+              className="button button-primary"
+              href="/#services"
+              target="_blank"
+              rel="noreferrer"
+            >
               See How We Can Help
             </a>
 
-            <a className="button button-secondary" href="#contact">
+            <a
+              className="button button-secondary"
+              href="/#contact"
+              target="_blank"
+              rel="noreferrer"
+            >
               Start a Conversation
             </a>
           </div>
         </div>
 
         <div className="hero-visual">
-          <img
-            className="hero-image"
-            src={heroImg}
-            alt=""
-          />
+          <img className="hero-image" src={heroImg} alt="" />
         </div>
       </div>
     </section>

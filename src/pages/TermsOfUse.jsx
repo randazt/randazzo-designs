@@ -436,9 +436,15 @@ function TermsOfUse() {
 
             <p>
               Use of the website is also subject to the{' '}
-              <a href="/privacy">Randazzo Designs Privacy Policy</a>, which
-              explains how information may be processed through the website
-              and its supporting technologies.
+              <a
+                href="/privacy"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Randazzo Designs Privacy Policy
+              </a>
+              , which explains how information may be processed through the
+              website and its supporting technologies.
             </p>
           </section>
 
@@ -472,7 +478,11 @@ function TermsOfUse() {
               <br />
               Florida, United States
               <br />
-              <a href="mailto:randazzodesignsai@gmail.com">
+              <a
+                href="mailto:randazzodesignsai@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 randazzodesignsai@gmail.com
               </a>
             </address>

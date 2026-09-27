@@ -117,7 +117,12 @@ function RandazzoDesignsCaseStudy() {
     <main className="case-study case-study--randazzo">
       <section className="randazzo-case-hero">
         <div className="case-study-shell">
-          <a className="case-study-back-link" href="/#selected-work">
+          <a
+            className="case-study-back-link"
+            href="/#selected-work"
+            target="_blank"
+            rel="noreferrer"
+          >
             ← Selected Work
           </a>
 
@@ -167,18 +172,22 @@ function RandazzoDesignsCaseStudy() {
           <div className="randazzo-case-actions">
             <a
               className="randazzo-case-button randazzo-case-button--primary"
-              href="#system"
+              href="/work/randazzo-designs#system"
+              target="_blank"
+              rel="noreferrer"
             >
               View the System
-              <span aria-hidden="true"> ↓</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
 
             <a
               className="randazzo-case-button randazzo-case-button--secondary"
               href="/#services"
+              target="_blank"
+              rel="noreferrer"
             >
               Explore Services
-              <span aria-hidden="true"> →</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
           </div>
         </div>
@@ -412,17 +421,21 @@ function RandazzoDesignsCaseStudy() {
             <a
               className="randazzo-case-outcome-primary"
               href="/#services"
+              target="_blank"
+              rel="noreferrer"
             >
               Explore Services
-              <span aria-hidden="true"> →</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
 
             <a
               className="randazzo-case-outcome-secondary"
               href="/#selected-work"
+              target="_blank"
+              rel="noreferrer"
             >
               Back to Selected Work
-              <span aria-hidden="true"> →</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
           </div>
         </div>

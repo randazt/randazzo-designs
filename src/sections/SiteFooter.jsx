@@ -36,6 +36,8 @@ function SiteFooter() {
                 <a
                   className="final-cta-inquiry"
                   href="mailto:randazzodesignsai@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Send an Inquiry
                   <span aria-hidden="true">→</span>
@@ -49,7 +51,12 @@ function SiteFooter() {
       <footer className="site-footer">
         <div className="footer-inner">
           <div className="footer-brand">
-            <a href="/" aria-label="Randazzo Designs home">
+            <a
+              href="/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Randazzo Designs home"
+            >
               Randazzo Designs
             </a>
 
@@ -62,11 +69,21 @@ function SiteFooter() {
 
           <nav className="footer-nav" aria-label="Footer navigation">
             <p>Explore</p>
-            <a href="/#selected-work">Work</a>
-            <a href="/#technology">Technology</a>
-            <a href="/#awesomeverse">Awesomeverse</a>
-            <a href="/#learn">Learn</a>
-            <a href="/#about">About</a>
+            <a href="/#selected-work" target="_blank" rel="noreferrer">
+              Work
+            </a>
+            <a href="/#technology" target="_blank" rel="noreferrer">
+              Technology
+            </a>
+            <a href="/#awesomeverse" target="_blank" rel="noreferrer">
+              Awesomeverse
+            </a>
+            <a href="/#learn" target="_blank" rel="noreferrer">
+              Learn
+            </a>
+            <a href="/#about" target="_blank" rel="noreferrer">
+              About
+            </a>
           </nav>
 
           <div className="footer-projects">

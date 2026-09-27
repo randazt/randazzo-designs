@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+
 import { conciergeModel } from '../firebase'
 
 const welcomeMessage = {
@@ -120,20 +121,13 @@ function DaisyConcierge() {
       }
 
       const firstElement = focusableElements[0]
-      const lastElement =
-        focusableElements[focusableElements.length - 1]
+      const lastElement = focusableElements[focusableElements.length - 1]
       const activeElement = document.activeElement
 
-      if (
-        event.shiftKey &&
-        activeElement === firstElement
-      ) {
+      if (event.shiftKey && activeElement === firstElement) {
         event.preventDefault()
         lastElement.focus()
-      } else if (
-        !event.shiftKey &&
-        activeElement === lastElement
-      ) {
+      } else if (!event.shiftKey && activeElement === lastElement) {
         event.preventDefault()
         firstElement.focus()
       }
@@ -142,10 +136,7 @@ function DaisyConcierge() {
     document.addEventListener('keydown', handleKeyDown)
 
     return () => {
-      document.removeEventListener(
-        'keydown',
-        handleKeyDown
-      )
+      document.removeEventListener('keydown', handleKeyDown)
     }
   }, [isOpen])
 
@@ -385,13 +376,30 @@ function DaisyConcierge() {
 
             <p className="daisy-concierge__legal-notice">
               Please don't share sensitive or confidential information. Use of
-              D.AI.SY is subject to our <a href="/privacy">Privacy Policy</a>{' '}
-              and <a href="/terms">Terms</a>.
+              D.AI.SY is subject to our{' '}
+              <a
+                href="/privacy"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Privacy Policy
+              </a>{' '}
+              and{' '}
+              <a
+                href="/terms"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Terms
+              </a>
+              .
             </p>
 
             <a
               className="daisy-concierge__handoff"
-              href="#contact"
+              href="/#contact"
+              target="_blank"
+              rel="noreferrer"
             >
               Ready to talk with a person?
               <span aria-hidden="true"> →</span>

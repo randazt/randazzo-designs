@@ -460,9 +460,11 @@ function DaisyCaseStudy() {
             <a
               className="case-study-outcome-secondary"
               href="/#selected-work"
+              target="_blank"
+              rel="noreferrer"
             >
               Back to Selected Work
-              <span aria-hidden="true"> →</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
           </div>
         </div>

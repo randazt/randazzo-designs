@@ -93,7 +93,9 @@ function Ecosystem() {
               remaining in control.
             </p>
 
-            <a href="#daisy">Explore D.AI.SY →</a>
+            <a href="/#daisy" target="_blank" rel="noreferrer">
+              Explore D.AI.SY →
+            </a>
           </article>
 
           <article className="ecosystem-card">
@@ -108,7 +110,9 @@ function Ecosystem() {
               into useful digital experiences people can actually use.
             </p>
 
-            <a href="#technology">Explore Technology →</a>
+            <a href="/#technology" target="_blank" rel="noreferrer">
+              Explore Technology →
+            </a>
           </article>
 
           <article className="ecosystem-card">
@@ -124,7 +128,9 @@ function Ecosystem() {
               exploration.
             </p>
 
-            <a href="#awesomeverse">Enter the Awesomeverse →</a>
+            <a href="/#awesomeverse" target="_blank" rel="noreferrer">
+              Enter the Awesomeverse →
+            </a>
           </article>
 
           <article className="ecosystem-card">
@@ -140,7 +146,9 @@ function Ecosystem() {
               technology.
             </p>
 
-            <a href="#learn">Browse Learning →</a>
+            <a href="/#learn" target="_blank" rel="noreferrer">
+              Browse Learning →
+            </a>
           </article>
         </div>
       </div>

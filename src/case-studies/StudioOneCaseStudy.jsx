@@ -150,7 +150,12 @@ function StudioOneCaseStudy() {
     <main className="case-study case-study--studio-one">
       <section className="case-study-hero">
         <div className="case-study-shell">
-          <a className="case-study-back-link" href="/#selected-work">
+          <a
+            className="case-study-back-link"
+            href="/#selected-work"
+            target="_blank"
+            rel="noreferrer"
+          >
             ← Selected Work
           </a>
 
@@ -203,10 +208,12 @@ function StudioOneCaseStudy() {
 
             <a
               className="case-study-button case-study-button--secondary"
-              href="#production-problem"
+              href="/work/studio-one#production-problem"
+              target="_blank"
+              rel="noreferrer"
             >
               View Case Study
-              <span aria-hidden="true"> ↓</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
           </div>
         </div>
@@ -721,9 +728,11 @@ function StudioOneCaseStudy() {
             <a
               className="studio-outcome-secondary"
               href="/#selected-work"
+              target="_blank"
+              rel="noreferrer"
             >
               Back to Selected Work
-              <span aria-hidden="true"> →</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
           </div>
         </div>
@@ -768,7 +777,7 @@ function StudioOneCaseStudy() {
                   rel="noreferrer"
                 >
                   Explore the Awesomeverse Case Study
-                  <span aria-hidden="true"> →</span>
+                  <span aria-hidden="true"> ↗</span>
                 </a>
 
                 <a

@@ -31,7 +31,7 @@ const projects = [
     capabilities:
       'Website planning, responsive design, clear navigation, visual communication, frontend development, accessibility, deployment, and search visibility.',
     caseStudyHref: '/work/randazzo-designs',
-    href: '#services',
+    href: '/#services',
     linkLabel: 'Explore Services',
     accent: 'purple',
   },
@@ -43,7 +43,7 @@ const projects = [
     capabilities:
       'Creative direction, visual storytelling, worldbuilding, multimedia communication, original IP development, and AI-assisted creative work.',
     caseStudyHref: '/work/awesomeverse',
-    href: '#awesomeverse',
+    href: '/#awesomeverse',
     linkLabel: 'Enter the Awesomeverse',
     accent: 'blue',
   },
@@ -55,7 +55,7 @@ const projects = [
     capabilities:
       'Clear guidance, cognitive support, accessibility, design collaboration, research, learning, planning, and specialized work support.',
     caseStudyHref: '/work/ai-assistants',
-    href: '#ai-experiences',
+    href: '/#ai-experiences',
     linkLabel: 'Explore AI Experiences',
     accent: 'teal',
   },
@@ -120,17 +120,11 @@ function SelectedWork() {
                 <a
                   className="selected-work-link"
                   href={project.href}
-                  target={
-                    project.href.startsWith('http') ? '_blank' : undefined
-                  }
-                  rel={
-                    project.href.startsWith('http') ? 'noreferrer' : undefined
-                  }
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {project.linkLabel}
-                  <span aria-hidden="true">
-                    {' →'}
-                  </span>
+                  <span aria-hidden="true"> ↗</span>
                 </a>
               </div>
             </article>

@@ -301,7 +301,12 @@ function AIAssistantsCaseStudy() {
     <main className="case-study case-study--ai-assistants">
       <section className="ai-assistants-hero">
         <div className="case-study-shell">
-          <a className="case-study-back-link" href="/#selected-work">
+          <a
+            className="case-study-back-link"
+            href="/#selected-work"
+            target="_blank"
+            rel="noreferrer"
+          >
             ← Selected Work
           </a>
 
@@ -349,18 +354,22 @@ function AIAssistantsCaseStudy() {
           <div className="ai-assistants-hero-actions">
             <a
               className="ai-assistants-button ai-assistants-button--primary"
-              href="#assistant-profiles"
+              href="/work/ai-assistants#assistant-profiles"
+              target="_blank"
+              rel="noreferrer"
             >
               Explore the Assistants
-              <span aria-hidden="true"> →</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
 
             <a
               className="ai-assistants-button ai-assistants-button--secondary"
-              href="#specialization"
+              href="/work/ai-assistants#specialization"
+              target="_blank"
+              rel="noreferrer"
             >
               View Case Study
-              <span aria-hidden="true"> ↓</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
           </div>
         </div>
@@ -631,25 +640,31 @@ function AIAssistantsCaseStudy() {
             <a
               className="ai-assistants-outcome-primary"
               href="/#ai-experiences"
+              target="_blank"
+              rel="noreferrer"
             >
               Explore the AI Experiences
-              <span aria-hidden="true"> →</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
 
             <a
               className="ai-assistants-outcome-secondary"
               href="/#services"
+              target="_blank"
+              rel="noreferrer"
             >
               Explore AI Services
-              <span aria-hidden="true"> →</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
 
             <a
               className="ai-assistants-outcome-secondary"
               href="/#selected-work"
+              target="_blank"
+              rel="noreferrer"
             >
               Back to Selected Work
-              <span aria-hidden="true"> →</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
           </div>
         </div>

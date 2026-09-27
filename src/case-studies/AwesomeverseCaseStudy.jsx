@@ -164,7 +164,12 @@ function AwesomeverseCaseStudy() {
     <main className="case-study case-study--awesomeverse">
       <section className="awesomeverse-case-hero">
         <div className="case-study-shell">
-          <a className="case-study-back-link" href="/#selected-work">
+          <a
+            className="case-study-back-link"
+            href="/#selected-work"
+            target="_blank"
+            rel="noreferrer"
+          >
             ← Selected Work
           </a>
 
@@ -224,9 +229,11 @@ function AwesomeverseCaseStudy() {
                 <a
                   className="awesomeverse-case-secondary"
                   href="/#awesomeverse"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Project Overview
-                  <span aria-hidden="true"> →</span>
+                  <span aria-hidden="true"> ↗</span>
                 </a>
               </div>
             </div>
@@ -341,7 +348,7 @@ function AwesomeverseCaseStudy() {
               <div
                 className="awesomeverse-case-authority-item"
                 key={layer.title}
-              >                
+              >
                 <div>
                   <h3>{layer.title}</h3>
                   <p>{layer.description}</p>
@@ -604,9 +611,11 @@ function AwesomeverseCaseStudy() {
             <a
               className="awesomeverse-case-secondary"
               href="/#selected-work"
+              target="_blank"
+              rel="noreferrer"
             >
               Back to Selected Work
-              <span aria-hidden="true"> →</span>
+              <span aria-hidden="true"> ↗</span>
             </a>
           </div>
         </div>
